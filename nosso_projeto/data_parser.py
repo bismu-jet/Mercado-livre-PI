@@ -60,6 +60,7 @@ class InstanceParser:
 
         # 5. Pós-processamento
         instance.build_item_locations()
+        instance.build_orders_by_item()
         print("Mapeamento item -> corredor construído.")
         
         print("Parsing concluído.")

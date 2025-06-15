@@ -125,10 +125,33 @@ class WaveSolver:
         self.model.addConstr(total_units_in_wave >= self.instance.min_wave_size, "min_wave_size")
         self.model.addConstr(total_units_in_wave <= self.instance.max_wave_size, "max_wave_size")
         
-        all_item_ids = range(self.instance.num_items)
-        for item_id in all_item_ids:
-            demand = gp.quicksum(self.instance.orders[o].items.get(item_id, 0) * self.x[o] for o in range(self.instance.num_orders))
-            supply = gp.quicksum(self.instance.aisles[a].inventory.get(item_id, 0) * self.y[a] for a in range(self.instance.num_aisles))
+#        all_item_ids = range(self.instance.num_items)
+#        for item_id in all_item_ids:
+#            demand = gp.quicksum(self.instance.orders[o].items.get(item_id, 0) * self.x[o] for o in range(self.instance.num_orders))
+#            supply = gp.quicksum(self.instance.aisles[a].inventory.get(item_id, 0) * self.y[a] for a in range(self.instance.num_aisles))
+#            self.model.addConstr(demand <= supply, f"inventory_sufficiency_{item_id}")
+        # d) Restrição de Suficiência de Inventário (OTIMIZADA)
+        #    Agora, iteramos apenas sobre os itens que de fato existem em algum pedido.
+        #    Para cada item, construímos as somas de demanda e oferta
+        #    usando apenas os pedidos e corredores relevantes que o possuem.
+        
+        # O 'dossiê' dos pedidos que contêm cada item.
+        orders_by_item = self.instance.orders_by_item
+        # O 'dossiê' dos corredores que contêm cada item.
+        aisles_by_item = self.instance.item_locations
+
+        # Iteramos apenas sobre os itens que são demandados, usando nosso dossiê.
+        for item_id, relevant_orders in orders_by_item.items():
+            
+            # Demanda: A soma é feita apenas sobre os pedidos relevantes.
+            demand = gp.quicksum(self.instance.orders[o_id].items[item_id] * self.x[o_id] for o_id in relevant_orders)
+            
+            # Oferta: A soma é feita apenas sobre os corredores relevantes.
+            # Usamos .get() pois um item pode ser demandado mas não ter estoque em lugar nenhum.
+            relevant_aisles = aisles_by_item.get(item_id, [])
+            supply = gp.quicksum(self.instance.aisles[a_id].inventory[item_id] * self.y[a_id] for a_id in relevant_aisles)
+            
+            # A restrição permanece a mesma, mas é construída de forma infinitamente mais rápida.
             self.model.addConstr(demand <= supply, f"inventory_sufficiency_{item_id}")
             
         print("Modelo construído com sucesso.")
@@ -183,7 +206,7 @@ class WaveSolver:
         self.model.setParam('Heuristics', 0.1)
         
         # Usa os primeiros 300 segundos para tentar melhorar a solução do Warm Start.
-        self.model.setParam('ImproveStartTime', 60)
+        self.model.setParam('ImproveStartTime', 100)
 
         self.model.optimize()
 

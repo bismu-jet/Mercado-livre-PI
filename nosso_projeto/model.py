@@ -47,3 +47,14 @@ class Instance:
                 if item_id not in self.item_locations:
                     self.item_locations[item_id] = []
                 self.item_locations[item_id].append(aisle.id)
+
+    def build_orders_by_item(self):
+        """
+        Constrói o mapeamento reverso de itens para pedidos que os contêm.
+        """
+        self.orders_by_item.clear()
+        for order in self.orders:
+            for item_id in order.items:
+                if item_id not in self.orders_by_item:
+                    self.orders_by_item[item_id] = []
+                self.orders_by_item[item_id].append(order.id)
