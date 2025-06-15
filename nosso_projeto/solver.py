@@ -3,6 +3,7 @@
 
 import gurobipy as gp
 from gurobipy import GRB
+from typing import Dict, Tuple
 
 # Importa as entidades, mantendo o solver focado apenas na lógica de otimização.
 from model import Instance
@@ -11,16 +12,94 @@ class WaveSolver:
     """
     Encapsula toda a lógica de modelagem e resolução do problema
     de otimização de waves usando Gurobi.
+    Inclui uma heurística para gerar uma solução inicial (Warm Start).
     """
+
     def __init__(self, instance: Instance, time_limit_sec: int = 600):
+        """
+        Inicializa o solver com os dados da instância e configurações.
+        """
         self.instance = instance
         self.time_limit = time_limit_sec
         self.model = gp.Model("Optimal_Order_Selection")
         self.x = None
         self.y = None
 
+    def _generate_warm_start(self) -> Tuple[Dict, Dict]:
+        """
+        Gera uma solução inicial de alta qualidade usando uma heurística gulosa.
+        O objetivo é dar ao Gurobi um "Warm Start" para acelerar a otimização.
+
+        A heurística funciona da seguinte forma:
+        1. Calcula uma "pontuação de densidade" para cada pedido.
+        2. Ordena os pedidos pela maior pontuação (mais unidades em menos corredores).
+        3. Adiciona iterativamente os melhores pedidos a uma wave, desde que os
+           limites de tamanho (UB) não sejam violados.
+        4. Retorna uma solução inicial (dicionários para as variáveis x e y).
+        """
+        print("Executando heurística gulosa...")
+        
+        # 1. Calcular a pontuação de densidade para cada pedido
+        order_scores = []
+        for order in self.instance.orders:
+            # Encontra o conjunto de corredores únicos necessários para este pedido
+            required_aisles = set()
+            for item_id in order.items:
+                if item_id in self.instance.item_locations:
+                    required_aisles.update(self.instance.item_locations[item_id])
+            
+            num_required_aisles = len(required_aisles)
+            if num_required_aisles > 0:
+                # Pontuação: unidades por corredor. Adicionamos um pequeno epsilon
+                # para evitar divisão por zero e favorecer pedidos com mais unidades em caso de empate.
+                score = order.total_units / num_required_aisles
+                order_scores.append((score, order))
+
+        # 2. Ordenar pedidos pela pontuação, do maior para o menor
+        order_scores.sort(key=lambda item: item[0], reverse=True)
+
+        # 3. Construir a wave de forma gulosa
+        selected_orders_set = set()
+        current_units = 0
+        for score, order in order_scores:
+            if current_units + order.total_units <= self.instance.max_wave_size:
+                selected_orders_set.add(order.id)
+                current_units += order.total_units
+        
+        # 4. Verificar se a solução heurística é minimamente válida
+        if current_units < self.instance.min_wave_size:
+            print("Solução heurística não atingiu o tamanho mínimo da wave. Nenhum Warm Start será usado.")
+            return {}, {}
+
+        # 5. Preparar os dicionários de start para o Gurobi
+        start_x = {}
+        start_y = {}
+        heuristic_aisles = set()
+
+        for order in self.instance.orders:
+            if order.id in selected_orders_set:
+                start_x[order.id] = 1.0
+                # Acumula os corredores necessários para a solução heurística
+                for item_id in order.items:
+                    if item_id in self.instance.item_locations:
+                        heuristic_aisles.update(self.instance.item_locations[item_id])
+            else:
+                start_x[order.id] = 0.0
+
+        for aisle in self.instance.aisles:
+            if aisle.id in heuristic_aisles:
+                start_y[aisle.id] = 1.0
+            else:
+                start_y[aisle.id] = 0.0
+
+        return start_x, start_y
+
+
     def _build_model(self):
-        # (O conteúdo deste método permanece exatamente o mesmo de antes)
+        """
+        Constrói o modelo matemático do Gurobi (variáveis, restrições e objetivo).
+        """
+        # (O conteúdo deste método permanece inalterado)
         print("Iniciando a construção do modelo matemático...")
         self.x = self.model.addVars((order.id for order in self.instance.orders), vtype=GRB.BINARY, name="x")
         self.y = self.model.addVars((aisle.id for aisle in self.instance.aisles), vtype=GRB.BINARY, name="y")
@@ -56,6 +135,10 @@ class WaveSolver:
 
 
     def _write_solution_file(self, output_path: str):
+        """
+        Escreve a solução encontrada no formato especificado pelo desafio.
+        """
+        # (O conteúdo deste método permanece inalterado)
         print(f"Salvando solução em '{output_path}'...")
         selected_orders = [order.id for order in self.instance.orders if self.x[order.id].X > 0.5]
         visited_aisles = [aisle.id for aisle in self.instance.aisles if self.y[aisle.id].X > 0.5]
@@ -69,12 +152,42 @@ class WaveSolver:
         print("Arquivo de solução salvo com sucesso.")
 
     def solve(self, output_file_path: str = None):
-        # (O conteúdo deste método permanece exatamente o mesmo de antes)
+        """
+        Constrói o modelo, gera um warm start, otimiza e salva os resultados.
+        """
         self._build_model()
+        
+        # --- ETAPA DE WARM START (NOVA LÓGICA) ---
+        print("\nGerando uma solução inicial com heurística gulosa...")
+        start_x, start_y = self._generate_warm_start()
+        
+        if start_x:
+            print("Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).")
+            for o_id, val in start_x.items():
+                self.x[o_id].Start = val
+            for a_id, val in start_y.items():
+                self.y[a_id].Start = val
+        else:
+            print("Heurística não produziu uma solução inicial.")
+        # --- FIM DA ETAPA DE WARM START ---
+
         print(f"\nIniciando otimização com limite de tempo de {self.time_limit} segundos...")
         self.model.setParam('TimeLimit', self.time_limit)
+
+        print("Ajustando parâmetros do Gurobi para um ataque rápido...")
+        
+        # Foco em encontrar soluções viáveis de alta qualidade.
+        self.model.setParam('MIPFocus', 1)
+        
+        # Aloca 10% do tempo para heurísticas internas.
+        self.model.setParam('Heuristics', 0.1)
+        
+        # Usa os primeiros 300 segundos para tentar melhorar a solução do Warm Start.
+        self.model.setParam('ImproveStartTime', 60)
+
         self.model.optimize()
 
+        # (O bloco de análise e escrita de resultados permanece o mesmo)
         if self.model.Status == GRB.OPTIMAL or (self.model.Status == GRB.TIME_LIMIT and self.model.SolCount > 0):
             print("\n--- Solução Encontrada ---")
             selected_orders = [order.id for order in self.instance.orders if self.x[order.id].X > 0.5]
@@ -90,6 +203,7 @@ class WaveSolver:
             
             if output_file_path:
                 self._write_solution_file(output_file_path)
+
         elif self.model.Status == GRB.TIME_LIMIT:
             print("\nLimite de tempo atingido, mas nenhuma solução viável foi encontrada.")
         elif self.model.Status == GRB.INFEASIBLE:

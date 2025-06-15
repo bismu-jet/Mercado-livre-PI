@@ -33,6 +33,7 @@ class Instance:
     orders: List[Order] = field(default_factory=list)
     aisles: List[Aisle] = field(default_factory=list)
     item_locations: Dict[int, List[int]] = field(default_factory=dict)
+    orders_by_item: Dict[int, List[int]] = field(default_factory=dict) 
     min_wave_size: int = 0
     max_wave_size: int = 0
 

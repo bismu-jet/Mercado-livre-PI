@@ -39,9 +39,9 @@ if __name__ == '__main__':
     if len(sys.argv) < 3:
         print("Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]")
         print("Usando valores padrão para um teste rápido...")
-        input_f = './datasets/b/instance_0001.txt'
-        output_f = './out_answers/b/solucao_0001.txt'
-        time_sec = 60 # 1 minuto
+        input_f = './datasets/b/instance_0010.txt'
+        output_f = './out_answers/b/solucao_0010.txt'
+        time_sec = 300 # 5 minuto
     else:
         input_f = sys.argv[1]
         output_f = sys.argv[2]
