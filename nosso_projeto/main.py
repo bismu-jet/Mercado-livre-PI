@@ -4,7 +4,7 @@
 import sys
 import gurobipy as gp
 from data_parser import InstanceParser
-from solver import WaveSolver
+from solver_V3 import WaveSolver
 import logging
 
 class StreamToLogger:
@@ -70,9 +70,9 @@ def run_challenge(input_file: str, output_file: str, time_limit: int):
 
 if __name__ == '__main__':
     # Define os arquivos e o limite de tempo
-    datasheet = 'a'
-    #run_all = True
+    datasheet = 'b'
     run_all = True
+    #run_all = False
     instance_case = '01'
     time_sec_setado = 300
 

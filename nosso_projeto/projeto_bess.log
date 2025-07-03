@@ -1,1021 +1,753 @@
-2025-06-18 12:54:23,431 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:54:23,431 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:54:23,431 - INFO - ========================================================================================================================
-2025-06-18 12:54:23,431 - INFO - INSTANCIA 01
-2025-06-18 12:54:23,431 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:54:23,431 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0001.txt
-2025-06-18 12:54:23,448 - INFO - Cabeçalho lido: 61 pedidos, 155 itens, 116 corredores.
-2025-06-18 12:54:23,456 - INFO - 61 pedidos lidos.
-2025-06-18 12:54:23,456 - INFO - 116 corredores lidos.
-2025-06-18 12:54:23,456 - INFO - Limites da wave lidos: LB=30, UB=68.
-2025-06-18 12:54:23,456 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:54:23,456 - INFO - Parsing concluído.
-2025-06-18 12:54:23,456 - INFO - Set parameter Username
-2025-06-18 12:54:23,456 - INFO - Set parameter Username
-2025-06-18 12:54:23,456 - INFO - Set parameter LicenseID to value 2638716
-2025-06-18 12:54:23,456 - INFO - Set parameter LicenseID to value 2638716
-2025-06-18 12:54:23,456 - INFO - Academic license - for non-commercial use only - expires 2026-03-19
-2025-06-18 12:54:23,464 - INFO - Academic license - for non-commercial use only - expires 2026-03-19
-2025-06-18 12:54:23,464 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:54:23,464 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:54:23,464 - INFO - Adicionando restrições...
-2025-06-18 12:54:23,472 - INFO - Modelo construído com sucesso.
-2025-06-18 12:54:23,472 - INFO - 
-2025-06-18 12:54:23,472 - INFO - Gerando uma solução inicial com heurística gulosa...
-2025-06-18 12:54:23,472 - INFO - Executando heurística gulosa...
-2025-06-18 12:54:23,472 - INFO - Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).
-2025-06-18 12:54:23,480 - INFO - 
-2025-06-18 12:54:23,480 - INFO - Iniciando otimização com limite de tempo de 300 segundos...
-2025-06-18 12:54:23,480 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:23,480 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:23,480 - INFO - Ajustando parâmetros do Gurobi para um ataque rápido...
-2025-06-18 12:54:23,480 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:23,480 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:23,480 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:23,480 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:23,480 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:23,480 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:23,480 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:23,480 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:23,480 - INFO - 
-2025-06-18 12:54:23,480 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:23,480 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:23,480 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:23,488 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:23,488 - INFO - 
-2025-06-18 12:54:23,488 - INFO - Non-default parameters:
-2025-06-18 12:54:23,488 - INFO - Non-default parameters:
-2025-06-18 12:54:23,488 - INFO - TimeLimit  300
-2025-06-18 12:54:23,488 - INFO - TimeLimit  300
-2025-06-18 12:54:23,488 - INFO - Heuristics  0.1
-2025-06-18 12:54:23,488 - INFO - Heuristics  0.1
-2025-06-18 12:54:23,488 - INFO - MIPFocus  1
-2025-06-18 12:54:23,488 - INFO - MIPFocus  1
-2025-06-18 12:54:23,488 - INFO - ImproveStartTime  100
-2025-06-18 12:54:23,488 - INFO - ImproveStartTime  100
-2025-06-18 12:54:23,488 - INFO - 
-2025-06-18 12:54:23,488 - INFO - Optimize a model with 506 rows, 294 columns and 1742 nonzeros
-2025-06-18 12:54:23,488 - INFO - Optimize a model with 506 rows, 294 columns and 1742 nonzeros
-2025-06-18 12:54:23,488 - INFO - Model fingerprint: 0x58d532c7
-2025-06-18 12:54:23,488 - INFO - Model fingerprint: 0x58d532c7
-2025-06-18 12:54:23,488 - INFO - Variable types: 117 continuous, 177 integer (177 binary)
-2025-06-18 12:54:23,488 - INFO - Variable types: 117 continuous, 177 integer (177 binary)
-2025-06-18 12:54:23,488 - INFO - Coefficient statistics:
-2025-06-18 12:54:23,488 - INFO - Coefficient statistics:
-2025-06-18 12:54:23,488 - INFO -   Matrix range     [1e+00, 9e+02]
-2025-06-18 12:54:23,488 - INFO -   Matrix range     [1e+00, 9e+02]
-2025-06-18 12:54:23,488 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:23,488 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:23,488 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:23,496 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:23,496 - INFO -   RHS range        [3e+01, 7e+01]
-2025-06-18 12:54:23,496 - INFO -   RHS range        [3e+01, 7e+01]
-2025-06-18 12:54:23,496 - INFO - 
-2025-06-18 12:54:23,496 - INFO - User MIP start did not produce a new incumbent solution
-2025-06-18 12:54:23,496 - INFO - User MIP start did not produce a new incumbent solution
-2025-06-18 12:54:23,496 - INFO - User MIP start violates constraint inventory_sufficiency_57 by 3.000000000
-2025-06-18 12:54:23,496 - INFO - User MIP start violates constraint inventory_sufficiency_57 by 3.000000000
-2025-06-18 12:54:23,496 - INFO - 
-2025-06-18 12:54:23,496 - INFO - Found heuristic solution: objective -0.0000000
-2025-06-18 12:54:23,496 - INFO - Found heuristic solution: objective -0.0000000
-2025-06-18 12:54:23,504 - INFO - Presolve removed 30 rows and 0 columns
-2025-06-18 12:54:23,504 - INFO - Presolve removed 30 rows and 0 columns
-2025-06-18 12:54:23,504 - INFO - Presolve time: 0.01s
-2025-06-18 12:54:23,504 - INFO - Presolve time: 0.01s
-2025-06-18 12:54:23,504 - INFO - Presolved: 476 rows, 294 columns, 1497 nonzeros
-2025-06-18 12:54:23,504 - INFO - Presolved: 476 rows, 294 columns, 1497 nonzeros
-2025-06-18 12:54:23,512 - INFO - Variable types: 117 continuous, 177 integer (176 binary)
-2025-06-18 12:54:23,512 - INFO - Variable types: 117 continuous, 177 integer (176 binary)
-2025-06-18 12:54:23,512 - INFO - 
-2025-06-18 12:54:23,512 - INFO - Root relaxation: objective 6.403872e+01, 271 iterations, 0.00 seconds (0.00 work units)
-2025-06-18 12:54:23,512 - INFO - Root relaxation: objective 6.403872e+01, 271 iterations, 0.00 seconds (0.00 work units)
-2025-06-18 12:54:23,520 - INFO - 
-2025-06-18 12:54:23,520 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:23,520 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:23,520 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:23,528 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:23,528 - INFO - 
-2025-06-18 12:54:23,528 - INFO -      0     0   64.03872    0  145   -0.00000   64.03872      -     -    0s
-2025-06-18 12:54:23,528 - INFO -      0     0   64.03872    0  145   -0.00000   64.03872      -     -    0s
-2025-06-18 12:54:23,528 - INFO - H    0     0                       6.2000000   64.03872   933%     -    0s
-2025-06-18 12:54:23,528 - INFO - H    0     0                       6.2000000   64.03872   933%     -    0s
-2025-06-18 12:54:23,536 - INFO - H    0     0                       9.4000000   64.03872   581%     -    0s
-2025-06-18 12:54:23,536 - INFO - H    0     0                       9.4000000   64.03872   581%     -    0s
-2025-06-18 12:54:23,576 - INFO -      0     0   59.14886    0   81    9.40000   59.14886   529%     -    0s
-2025-06-18 12:54:23,576 - INFO -      0     0   59.14886    0   81    9.40000   59.14886   529%     -    0s
-2025-06-18 12:54:23,592 - INFO - H    0     0                      15.0000000   59.14886   294%     -    0s
-2025-06-18 12:54:23,592 - INFO - H    0     0                      15.0000000   59.14886   294%     -    0s
-2025-06-18 12:54:23,592 - INFO -      0     0   59.09002    0   80   15.00000   59.09002   294%     -    0s
-2025-06-18 12:54:23,592 - INFO -      0     0   59.09002    0   80   15.00000   59.09002   294%     -    0s
-2025-06-18 12:54:23,600 - INFO -      0     0   59.09002    0   80   15.00000   59.09002   294%     -    0s
-2025-06-18 12:54:23,600 - INFO -      0     0   59.09002    0   80   15.00000   59.09002   294%     -    0s
-2025-06-18 12:54:23,624 - INFO -      0     0   34.58751    0   26   15.00000   34.58751   131%     -    0s
-2025-06-18 12:54:23,624 - INFO -      0     0   34.58751    0   26   15.00000   34.58751   131%     -    0s
-2025-06-18 12:54:23,624 - INFO -      0     0   31.70110    0   24   15.00000   31.70110   111%     -    0s
-2025-06-18 12:54:23,624 - INFO -      0     0   31.70110    0   24   15.00000   31.70110   111%     -    0s
-2025-06-18 12:54:23,632 - INFO -      0     0   29.16787    0   15   15.00000   29.16787  94.5%     -    0s
-2025-06-18 12:54:23,632 - INFO -      0     0   29.16787    0   15   15.00000   29.16787  94.5%     -    0s
-2025-06-18 12:54:23,648 - INFO -      0     0          -    0        15.00000   15.00001  0.00%     -    0s
-2025-06-18 12:54:23,648 - INFO -      0     0          -    0        15.00000   15.00001  0.00%     -    0s
-2025-06-18 12:54:23,648 - INFO - 
-2025-06-18 12:54:23,648 - INFO - Cutting planes:
-2025-06-18 12:54:23,648 - INFO - Cutting planes:
-2025-06-18 12:54:23,648 - INFO -   Gomory: 1
-2025-06-18 12:54:23,648 - INFO -   Gomory: 1
-2025-06-18 12:54:23,648 - INFO -   Cover: 2
-2025-06-18 12:54:23,648 - INFO -   Cover: 2
-2025-06-18 12:54:23,648 - INFO -   Clique: 1
-2025-06-18 12:54:23,648 - INFO -   Clique: 1
-2025-06-18 12:54:23,648 - INFO -   Zero half: 1
-2025-06-18 12:54:23,648 - INFO -   Zero half: 1
-2025-06-18 12:54:23,648 - INFO -   RLT: 130
-2025-06-18 12:54:23,648 - INFO -   RLT: 130
-2025-06-18 12:54:23,656 - INFO -   Relax-and-lift: 2
-2025-06-18 12:54:23,656 - INFO -   Relax-and-lift: 2
-2025-06-18 12:54:23,656 - INFO -   BQP: 4
-2025-06-18 12:54:23,656 - INFO -   BQP: 4
-2025-06-18 12:54:23,656 - INFO - 
-2025-06-18 12:54:23,656 - INFO - Explored 1 nodes (629 simplex iterations) in 0.17 seconds (0.05 work units)
-2025-06-18 12:54:23,656 - INFO - Explored 1 nodes (629 simplex iterations) in 0.17 seconds (0.05 work units)
-2025-06-18 12:54:23,656 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:23,656 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:23,656 - INFO - 
-2025-06-18 12:54:23,656 - INFO - Solution count 4: 15 9.4 6.2 -0
-2025-06-18 12:54:23,656 - INFO - Solution count 4: 15 9.4 6.2 -0 
-2025-06-18 12:54:23,656 - INFO - 
-2025-06-18 12:54:23,656 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:23,656 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:23,656 - INFO - Best objective 1.500000000000e+01, best bound 1.500000911948e+01, gap 0.0001%
-2025-06-18 12:54:23,656 - INFO - Best objective 1.500000000000e+01, best bound 1.500000911948e+01, gap 0.0001%
-2025-06-18 12:54:23,656 - INFO - 
-2025-06-18 12:54:23,656 - INFO - --- Solução Encontrada ---
-2025-06-18 12:54:23,664 - INFO - Status da Solução: 2 (2=Ótima, 9=Limite de Tempo, etc.)
-2025-06-18 12:54:23,664 - INFO - Valor da Função Objetivo (Densidade): 15.0000
-2025-06-18 12:54:23,664 - INFO - -------------------------
-2025-06-18 12:54:23,664 - INFO - Total de Pedidos na Wave: 9
-2025-06-18 12:54:23,664 - INFO - Total de Unidades na Wave: 30
-2025-06-18 12:54:23,664 - INFO - Total de Corredores Visitados: 2
-2025-06-18 12:54:23,664 - INFO - Salvando solução em '../out_answers/a/solucao_0001.txt'...
-2025-06-18 12:54:23,664 - INFO - Arquivo de solução salvo com sucesso.
-2025-06-18 12:54:23,664 - INFO - 
-2025-06-18 12:54:23,664 - INFO - --- EXECUÇÃO FINALIZADA ---
-2025-06-18 12:54:23,672 - INFO - INSTANCIA 01 ^^^^^^^^
-2025-06-18 12:54:23,672 - INFO - ========================================================================================================================
-2025-06-18 12:54:23,672 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:54:23,672 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:54:23,672 - INFO - ========================================================================================================================
-2025-06-18 12:54:23,672 - INFO - INSTANCIA 02
-2025-06-18 12:54:23,672 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:54:23,672 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0002.txt
-2025-06-18 12:54:23,688 - INFO - Cabeçalho lido: 7 pedidos, 7 itens, 33 corredores.
-2025-06-18 12:54:23,688 - INFO - 7 pedidos lidos.
-2025-06-18 12:54:23,688 - INFO - 33 corredores lidos.
-2025-06-18 12:54:23,688 - INFO - Limites da wave lidos: LB=0, UB=2.
-2025-06-18 12:54:23,688 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:54:23,688 - INFO - Parsing concluído.
-2025-06-18 12:54:23,688 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:54:23,688 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:54:23,688 - INFO - Adicionando restrições...
-2025-06-18 12:54:23,696 - INFO - Modelo construído com sucesso.
-2025-06-18 12:54:23,696 - INFO - 
-2025-06-18 12:54:23,696 - INFO - Gerando uma solução inicial com heurística gulosa...
-2025-06-18 12:54:23,696 - INFO - Executando heurística gulosa...
-2025-06-18 12:54:23,696 - INFO - Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).
-2025-06-18 12:54:23,696 - INFO - 
-2025-06-18 12:54:23,696 - INFO - Iniciando otimização com limite de tempo de 300 segundos...
-2025-06-18 12:54:23,696 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:23,696 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:23,696 - INFO - Ajustando parâmetros do Gurobi para um ataque rápido...
-2025-06-18 12:54:23,696 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:23,696 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:23,696 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:23,704 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:23,704 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:23,704 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:23,704 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:23,704 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:23,704 - INFO - 
-2025-06-18 12:54:23,704 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:23,704 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:23,704 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:23,704 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:23,704 - INFO - 
-2025-06-18 12:54:23,704 - INFO - Non-default parameters:
-2025-06-18 12:54:23,704 - INFO - Non-default parameters:
-2025-06-18 12:54:23,704 - INFO - TimeLimit  300
-2025-06-18 12:54:23,704 - INFO - TimeLimit  300
-2025-06-18 12:54:23,704 - INFO - Heuristics  0.1
-2025-06-18 12:54:23,704 - INFO - Heuristics  0.1
-2025-06-18 12:54:23,712 - INFO - MIPFocus  1
-2025-06-18 12:54:23,712 - INFO - MIPFocus  1
-2025-06-18 12:54:23,712 - INFO - ImproveStartTime  100
-2025-06-18 12:54:23,712 - INFO - ImproveStartTime  100
-2025-06-18 12:54:23,712 - INFO - 
-2025-06-18 12:54:23,712 - INFO - Optimize a model with 109 rows, 74 columns and 328 nonzeros
-2025-06-18 12:54:23,712 - INFO - Optimize a model with 109 rows, 74 columns and 328 nonzeros
-2025-06-18 12:54:23,712 - INFO - Model fingerprint: 0x89294d57
-2025-06-18 12:54:23,712 - INFO - Model fingerprint: 0x89294d57
-2025-06-18 12:54:23,712 - INFO - Variable types: 34 continuous, 40 integer (40 binary)
-2025-06-18 12:54:23,720 - INFO - Variable types: 34 continuous, 40 integer (40 binary)
-2025-06-18 12:54:23,720 - INFO - Coefficient statistics:
-2025-06-18 12:54:23,720 - INFO - Coefficient statistics:
-2025-06-18 12:54:23,720 - INFO -   Matrix range     [1e+00, 1e+02]
-2025-06-18 12:54:23,720 - INFO -   Matrix range     [1e+00, 1e+02]
-2025-06-18 12:54:23,720 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:23,720 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:23,720 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:23,720 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:23,720 - INFO -   RHS range        [2e+00, 2e+00]
-2025-06-18 12:54:23,720 - INFO -   RHS range        [2e+00, 2e+00]
-2025-06-18 12:54:23,720 - INFO - 
-2025-06-18 12:54:23,728 - INFO - User MIP start produced solution with objective 1 (0.02s)
-2025-06-18 12:54:23,728 - INFO - User MIP start produced solution with objective 1 (0.02s)
-2025-06-18 12:54:23,728 - INFO - Loaded user MIP start with objective 1
-2025-06-18 12:54:23,728 - INFO - Loaded user MIP start with objective 1
-2025-06-18 12:54:23,728 - INFO - 
-2025-06-18 12:54:23,728 - INFO - Presolve removed 2 rows and 1 columns
-2025-06-18 12:54:23,728 - INFO - Presolve removed 2 rows and 1 columns
-2025-06-18 12:54:23,728 - INFO - Presolve time: 0.00s
-2025-06-18 12:54:23,728 - INFO - Presolve time: 0.00s
-2025-06-18 12:54:23,728 - INFO - Presolved: 107 rows, 73 columns, 315 nonzeros
-2025-06-18 12:54:23,728 - INFO - Presolved: 107 rows, 73 columns, 315 nonzeros
-2025-06-18 12:54:23,728 - INFO - Variable types: 34 continuous, 39 integer (39 binary)
-2025-06-18 12:54:23,736 - INFO - Variable types: 34 continuous, 39 integer (39 binary)
-2025-06-18 12:54:23,736 - INFO - 
-2025-06-18 12:54:23,736 - INFO - Root relaxation: objective 2.000000e+00, 0 iterations, 0.00 seconds (0.00 work units)
-2025-06-18 12:54:23,736 - INFO - Root relaxation: objective 2.000000e+00, 0 iterations, 0.00 seconds (0.00 work units)
-2025-06-18 12:54:23,736 - INFO - 
-2025-06-18 12:54:23,736 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:23,736 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:23,736 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:23,736 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:23,736 - INFO - 
-2025-06-18 12:54:23,736 - INFO - *    0     0               0       2.0000000    2.00000  0.00%     -    0s
-2025-06-18 12:54:23,736 - INFO - *    0     0               0       2.0000000    2.00000  0.00%     -    0s
-2025-06-18 12:54:23,744 - INFO - 
-2025-06-18 12:54:23,744 - INFO - Explored 1 nodes (0 simplex iterations) in 0.03 seconds (0.00 work units)
-2025-06-18 12:54:23,744 - INFO - Explored 1 nodes (0 simplex iterations) in 0.03 seconds (0.00 work units)
-2025-06-18 12:54:23,744 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:23,744 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:23,744 - INFO - 
-2025-06-18 12:54:23,744 - INFO - Solution count 2: 2 1
-2025-06-18 12:54:23,744 - INFO - Solution count 2: 2 1 
-2025-06-18 12:54:23,744 - INFO - 
-2025-06-18 12:54:23,744 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:23,744 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:23,744 - INFO - Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
-2025-06-18 12:54:23,744 - INFO - Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
-2025-06-18 12:54:23,744 - INFO - 
-2025-06-18 12:54:23,744 - INFO - --- Solução Encontrada ---
-2025-06-18 12:54:23,744 - INFO - Status da Solução: 2 (2=Ótima, 9=Limite de Tempo, etc.)
-2025-06-18 12:54:23,744 - INFO - Valor da Função Objetivo (Densidade): 2.0000
-2025-06-18 12:54:23,744 - INFO - -------------------------
-2025-06-18 12:54:23,744 - INFO - Total de Pedidos na Wave: 0
-2025-06-18 12:54:23,744 - INFO - Total de Unidades na Wave: 0
-2025-06-18 12:54:23,752 - INFO - Total de Corredores Visitados: 0
-2025-06-18 12:54:23,752 - INFO - Salvando solução em '../out_answers/a/solucao_0002.txt'...
-2025-06-18 12:54:23,752 - INFO - Arquivo de solução salvo com sucesso.
-2025-06-18 12:54:23,752 - INFO - 
-2025-06-18 12:54:23,752 - INFO - --- EXECUÇÃO FINALIZADA ---
-2025-06-18 12:54:23,752 - INFO - INSTANCIA 02 ^^^^^^^^
-2025-06-18 12:54:23,752 - INFO - ========================================================================================================================
-2025-06-18 12:54:23,752 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:54:23,752 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:54:23,752 - INFO - ========================================================================================================================
-2025-06-18 12:54:23,752 - INFO - INSTANCIA 03
-2025-06-18 12:54:23,752 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:54:23,760 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0003.txt
-2025-06-18 12:54:23,768 - INFO - Cabeçalho lido: 82 pedidos, 246 itens, 124 corredores.
-2025-06-18 12:54:23,768 - INFO - 82 pedidos lidos.
-2025-06-18 12:54:23,768 - INFO - 124 corredores lidos.
-2025-06-18 12:54:23,768 - INFO - Limites da wave lidos: LB=33, UB=106.
-2025-06-18 12:54:23,776 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:54:23,776 - INFO - Parsing concluído.
-2025-06-18 12:54:23,776 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:54:23,776 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:54:23,776 - INFO - Adicionando restrições...
-2025-06-18 12:54:23,792 - INFO - Modelo construído com sucesso.
-2025-06-18 12:54:23,792 - INFO - 
-2025-06-18 12:54:23,792 - INFO - Gerando uma solução inicial com heurística gulosa...
-2025-06-18 12:54:23,792 - INFO - Executando heurística gulosa...
-2025-06-18 12:54:23,792 - INFO - Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).
-2025-06-18 12:54:23,792 - INFO - 
-2025-06-18 12:54:23,792 - INFO - Iniciando otimização com limite de tempo de 300 segundos...
-2025-06-18 12:54:23,792 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:23,792 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:23,792 - INFO - Ajustando parâmetros do Gurobi para um ataque rápido...
-2025-06-18 12:54:23,792 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:23,792 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:23,792 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:23,792 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:23,792 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:23,792 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:23,800 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:23,800 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:23,800 - INFO - 
-2025-06-18 12:54:23,800 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:23,800 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:23,800 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:23,800 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:23,800 - INFO - 
-2025-06-18 12:54:23,800 - INFO - Non-default parameters:
-2025-06-18 12:54:23,800 - INFO - Non-default parameters:
-2025-06-18 12:54:23,800 - INFO - TimeLimit  300
-2025-06-18 12:54:23,800 - INFO - TimeLimit  300
-2025-06-18 12:54:23,800 - INFO - Heuristics  0.1
-2025-06-18 12:54:23,800 - INFO - Heuristics  0.1
-2025-06-18 12:54:23,800 - INFO - MIPFocus  1
-2025-06-18 12:54:23,800 - INFO - MIPFocus  1
-2025-06-18 12:54:23,800 - INFO - ImproveStartTime  100
-2025-06-18 12:54:23,800 - INFO - ImproveStartTime  100
-2025-06-18 12:54:23,808 - INFO - 
-2025-06-18 12:54:23,808 - INFO - Optimize a model with 621 rows, 331 columns and 2271 nonzeros
-2025-06-18 12:54:23,808 - INFO - Optimize a model with 621 rows, 331 columns and 2271 nonzeros
-2025-06-18 12:54:23,808 - INFO - Model fingerprint: 0xbc37b42f
-2025-06-18 12:54:23,808 - INFO - Model fingerprint: 0xbc37b42f
-2025-06-18 12:54:23,808 - INFO - Variable types: 125 continuous, 206 integer (206 binary)
-2025-06-18 12:54:23,808 - INFO - Variable types: 125 continuous, 206 integer (206 binary)
-2025-06-18 12:54:23,808 - INFO - Coefficient statistics:
-2025-06-18 12:54:23,808 - INFO - Coefficient statistics:
-2025-06-18 12:54:23,808 - INFO -   Matrix range     [1e+00, 1e+03]
-2025-06-18 12:54:23,808 - INFO -   Matrix range     [1e+00, 1e+03]
-2025-06-18 12:54:23,808 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:23,808 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:23,808 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:23,808 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:23,808 - INFO -   RHS range        [3e+01, 1e+02]
-2025-06-18 12:54:23,808 - INFO -   RHS range        [3e+01, 1e+02]
-2025-06-18 12:54:23,808 - INFO - 
-2025-06-18 12:54:23,808 - INFO - User MIP start produced solution with objective 3.21212 (0.00s)
-2025-06-18 12:54:23,808 - INFO - User MIP start produced solution with objective 3.21212 (0.00s)
-2025-06-18 12:54:23,816 - INFO - Loaded user MIP start with objective 3.21212
-2025-06-18 12:54:23,816 - INFO - Loaded user MIP start with objective 3.21212
-2025-06-18 12:54:23,816 - INFO - 
-2025-06-18 12:54:23,824 - INFO - Presolve removed 39 rows and 0 columns
-2025-06-18 12:54:23,824 - INFO - Presolve removed 39 rows and 0 columns
-2025-06-18 12:54:23,824 - INFO - Presolve time: 0.01s
-2025-06-18 12:54:23,824 - INFO - Presolve time: 0.01s
-2025-06-18 12:54:23,824 - INFO - Presolved: 582 rows, 331 columns, 1893 nonzeros
-2025-06-18 12:54:23,824 - INFO - Presolved: 582 rows, 331 columns, 1893 nonzeros
-2025-06-18 12:54:23,824 - INFO - Variable types: 125 continuous, 206 integer (205 binary)
-2025-06-18 12:54:23,824 - INFO - Variable types: 125 continuous, 206 integer (205 binary)
-2025-06-18 12:54:23,832 - INFO - 
-2025-06-18 12:54:23,832 - INFO - Root relaxation: objective 1.000635e+02, 343 iterations, 0.01 seconds (0.01 work units)
-2025-06-18 12:54:23,832 - INFO - Root relaxation: objective 1.000635e+02, 343 iterations, 0.01 seconds (0.01 work units)
-2025-06-18 12:54:23,848 - INFO - 
-2025-06-18 12:54:23,848 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:23,848 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:23,848 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:23,848 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:23,848 - INFO - 
-2025-06-18 12:54:23,848 - INFO -      0     0  100.06349    0  175    3.21212  100.06349  3015%     -    0s
-2025-06-18 12:54:23,848 - INFO -      0     0  100.06349    0  175    3.21212  100.06349  3015%     -    0s
-2025-06-18 12:54:23,856 - INFO - H    0     0                       6.6000000  100.06349  1416%     -    0s
-2025-06-18 12:54:23,856 - INFO - H    0     0                       6.6000000  100.06349  1416%     -    0s
-2025-06-18 12:54:23,856 - INFO - H    0     0                       7.0000000  100.06349  1329%     -    0s
-2025-06-18 12:54:23,856 - INFO - H    0     0                       7.0000000  100.06349  1329%     -    0s
-2025-06-18 12:54:23,960 - INFO -      0     0   94.10037    0  163    7.00000   94.10037  1244%     -    0s
-2025-06-18 12:54:23,960 - INFO -      0     0   94.10037    0  163    7.00000   94.10037  1244%     -    0s
-2025-06-18 12:54:23,968 - INFO -      0     0   92.63636    0  161    7.00000   92.63636  1223%     -    0s
-2025-06-18 12:54:23,968 - INFO -      0     0   92.63636    0  161    7.00000   92.63636  1223%     -    0s
-2025-06-18 12:54:24,017 - INFO - H    0     0                       8.0000000   84.88531   961%     -    0s
-2025-06-18 12:54:24,017 - INFO - H    0     0                       8.0000000   84.88531   961%     -    0s
-2025-06-18 12:54:24,025 - INFO -      0     0   83.21495    0  137    8.00000   83.21495   940%     -    0s
-2025-06-18 12:54:24,025 - INFO -      0     0   83.21495    0  137    8.00000   83.21495   940%     -    0s
-2025-06-18 12:54:24,041 - INFO - H    0     0                       9.2500000   83.21495   800%     -    0s
-2025-06-18 12:54:24,049 - INFO - H    0     0                       9.2500000   83.21495   800%     -    0s
-2025-06-18 12:54:24,049 - INFO -      0     0   80.31198    0  146    9.25000   80.31198   768%     -    0s
-2025-06-18 12:54:24,049 - INFO -      0     0   80.31198    0  146    9.25000   80.31198   768%     -    0s
-2025-06-18 12:54:24,057 - INFO -      0     0   79.64953    0  147    9.25000   79.64953   761%     -    0s
-2025-06-18 12:54:24,057 - INFO -      0     0   79.64953    0  147    9.25000   79.64953   761%     -    0s
-2025-06-18 12:54:24,168 - INFO - H    0     0                      10.5000000   79.64953   659%     -    0s
-2025-06-18 12:54:24,168 - INFO - H    0     0                      10.5000000   79.64953   659%     -    0s
-2025-06-18 12:54:24,168 - INFO - H    0     0                      11.6666667   79.64953   583%     -    0s
-2025-06-18 12:54:24,168 - INFO - H    0     0                      11.6666667   79.64953   583%     -    0s
-2025-06-18 12:54:24,217 - INFO -      0     0   69.47566    0  103   11.66667   69.47566   496%     -    0s
-2025-06-18 12:54:24,217 - INFO -      0     0   69.47566    0  103   11.66667   69.47566   496%     -    0s
-2025-06-18 12:54:24,233 - INFO - H    0     0                      12.0000000   69.47566   479%     -    0s
-2025-06-18 12:54:24,233 - INFO - H    0     0                      12.0000000   69.47566   479%     -    0s
-2025-06-18 12:54:24,241 - INFO -      0     0   68.41818    0  108   12.00000   68.41818   470%     -    0s
-2025-06-18 12:54:24,241 - INFO -      0     0   68.41818    0  108   12.00000   68.41818   470%     -    0s
-2025-06-18 12:54:24,249 - INFO -      0     0   68.09823    0  107   12.00000   68.09823   467%     -    0s
-2025-06-18 12:54:24,249 - INFO -      0     0   68.09823    0  107   12.00000   68.09823   467%     -    0s
-2025-06-18 12:54:24,257 - INFO -      0     0   67.91342    0  107   12.00000   67.91342   466%     -    0s
-2025-06-18 12:54:24,257 - INFO -      0     0   67.91342    0  107   12.00000   67.91342   466%     -    0s
-2025-06-18 12:54:24,368 - INFO -      0     0   33.81905    0   14   12.00000   33.81905   182%     -    0s
-2025-06-18 12:54:24,368 - INFO -      0     0   33.81905    0   14   12.00000   33.81905   182%     -    0s
-2025-06-18 12:54:24,384 - INFO - 
-2025-06-18 12:54:24,384 - INFO - Cutting planes:
-2025-06-18 12:54:24,384 - INFO - Cutting planes:
-2025-06-18 12:54:24,384 - INFO -   Gomory: 1
-2025-06-18 12:54:24,392 - INFO -   Gomory: 1
-2025-06-18 12:54:24,392 - INFO -   Cover: 2
-2025-06-18 12:54:24,392 - INFO -   Cover: 2
-2025-06-18 12:54:24,392 - INFO -   Implied bound: 31
-2025-06-18 12:54:24,392 - INFO -   Implied bound: 31
-2025-06-18 12:54:24,392 - INFO -   Flow cover: 7
-2025-06-18 12:54:24,392 - INFO -   Flow cover: 7
-2025-06-18 12:54:24,392 - INFO -   RLT: 175
-2025-06-18 12:54:24,392 - INFO -   RLT: 175
-2025-06-18 12:54:24,392 - INFO -   Relax-and-lift: 2
-2025-06-18 12:54:24,392 - INFO -   Relax-and-lift: 2
-2025-06-18 12:54:24,392 - INFO -   BQP: 13
-2025-06-18 12:54:24,392 - INFO -   BQP: 13
-2025-06-18 12:54:24,392 - INFO - 
-2025-06-18 12:54:24,392 - INFO - Explored 1 nodes (1348 simplex iterations) in 0.58 seconds (0.23 work units)
-2025-06-18 12:54:24,392 - INFO - Explored 1 nodes (1348 simplex iterations) in 0.58 seconds (0.23 work units)
-2025-06-18 12:54:24,392 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:24,392 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:24,392 - INFO - 
-2025-06-18 12:54:24,392 - INFO - Solution count 8: 12 11.6667 10.5 ... 3.21212
-2025-06-18 12:54:24,400 - INFO - Solution count 8: 12 11.6667 10.5 ... 3.21212
-2025-06-18 12:54:24,400 - INFO - 
-2025-06-18 12:54:24,400 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:24,400 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:24,400 - INFO - Best objective 1.200000000000e+01, best bound 1.200000000000e+01, gap 0.0000%
-2025-06-18 12:54:24,400 - INFO - Best objective 1.200000000000e+01, best bound 1.200000000000e+01, gap 0.0000%
-2025-06-18 12:54:24,400 - INFO - 
-2025-06-18 12:54:24,400 - INFO - --- Solução Encontrada ---
-2025-06-18 12:54:24,400 - INFO - Status da Solução: 2 (2=Ótima, 9=Limite de Tempo, etc.)
-2025-06-18 12:54:24,408 - INFO - Valor da Função Objetivo (Densidade): 12.0000
-2025-06-18 12:54:24,408 - INFO - -------------------------
-2025-06-18 12:54:24,408 - INFO - Total de Pedidos na Wave: 9
-2025-06-18 12:54:24,408 - INFO - Total de Unidades na Wave: 48
-2025-06-18 12:54:24,408 - INFO - Total de Corredores Visitados: 4
-2025-06-18 12:54:24,408 - INFO - Salvando solução em '../out_answers/a/solucao_0003.txt'...
-2025-06-18 12:54:24,408 - INFO - Arquivo de solução salvo com sucesso.
-2025-06-18 12:54:24,408 - INFO - 
-2025-06-18 12:54:24,408 - INFO - --- EXECUÇÃO FINALIZADA ---
-2025-06-18 12:54:24,408 - INFO - INSTANCIA 03 ^^^^^^^^
-2025-06-18 12:54:24,416 - INFO - ========================================================================================================================
-2025-06-18 12:54:24,416 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:54:24,416 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:54:24,416 - INFO - ========================================================================================================================
-2025-06-18 12:54:24,416 - INFO - INSTANCIA 04
-2025-06-18 12:54:24,416 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:54:24,416 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0004.txt
-2025-06-18 12:54:24,424 - INFO - Cabeçalho lido: 16 pedidos, 59 itens, 91 corredores.
-2025-06-18 12:54:24,424 - INFO - 16 pedidos lidos.
-2025-06-18 12:54:24,424 - INFO - 91 corredores lidos.
-2025-06-18 12:54:24,432 - INFO - Limites da wave lidos: LB=4, UB=40.
-2025-06-18 12:54:24,432 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:54:24,432 - INFO - Parsing concluído.
-2025-06-18 12:54:24,432 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:54:24,432 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:54:24,432 - INFO - Adicionando restrições...
-2025-06-18 12:54:24,440 - INFO - Modelo construído com sucesso.
-2025-06-18 12:54:24,440 - INFO - 
-2025-06-18 12:54:24,440 - INFO - Gerando uma solução inicial com heurística gulosa...
-2025-06-18 12:54:24,440 - INFO - Executando heurística gulosa...
-2025-06-18 12:54:24,440 - INFO - Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).
-2025-06-18 12:54:24,440 - INFO - 
-2025-06-18 12:54:24,440 - INFO - Iniciando otimização com limite de tempo de 300 segundos...
-2025-06-18 12:54:24,440 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:24,440 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:24,440 - INFO - Ajustando parâmetros do Gurobi para um ataque rápido...
-2025-06-18 12:54:24,448 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:24,448 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:24,448 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:24,448 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:24,448 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:24,448 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:24,448 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:24,448 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:24,448 - INFO - 
-2025-06-18 12:54:24,448 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:24,448 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:24,448 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:24,448 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:24,448 - INFO - 
-2025-06-18 12:54:24,448 - INFO - Non-default parameters:
-2025-06-18 12:54:24,448 - INFO - Non-default parameters:
-2025-06-18 12:54:24,448 - INFO - TimeLimit  300
-2025-06-18 12:54:24,448 - INFO - TimeLimit  300
-2025-06-18 12:54:24,456 - INFO - Heuristics  0.1
-2025-06-18 12:54:24,456 - INFO - Heuristics  0.1
-2025-06-18 12:54:24,456 - INFO - MIPFocus  1
-2025-06-18 12:54:24,456 - INFO - MIPFocus  1
-2025-06-18 12:54:24,456 - INFO - ImproveStartTime  100
-2025-06-18 12:54:24,456 - INFO - ImproveStartTime  100
-2025-06-18 12:54:24,456 - INFO - 
-2025-06-18 12:54:24,456 - INFO - Optimize a model with 335 rows, 199 columns and 988 nonzeros
-2025-06-18 12:54:24,456 - INFO - Optimize a model with 335 rows, 199 columns and 988 nonzeros
-2025-06-18 12:54:24,456 - INFO - Model fingerprint: 0x2fb682a5
-2025-06-18 12:54:24,456 - INFO - Model fingerprint: 0x2fb682a5
-2025-06-18 12:54:24,456 - INFO - Variable types: 92 continuous, 107 integer (107 binary)
-2025-06-18 12:54:24,456 - INFO - Variable types: 92 continuous, 107 integer (107 binary)
-2025-06-18 12:54:24,456 - INFO - Coefficient statistics:
-2025-06-18 12:54:24,456 - INFO - Coefficient statistics:
-2025-06-18 12:54:24,456 - INFO -   Matrix range     [1e+00, 9e+02]
-2025-06-18 12:54:24,456 - INFO -   Matrix range     [1e+00, 9e+02]
-2025-06-18 12:54:24,456 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:24,456 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:24,456 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:24,456 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:24,456 - INFO -   RHS range        [4e+00, 4e+01]
-2025-06-18 12:54:24,456 - INFO -   RHS range        [4e+00, 4e+01]
-2025-06-18 12:54:24,456 - INFO - 
-2025-06-18 12:54:24,464 - INFO - User MIP start produced solution with objective 1.05405 (0.01s)
-2025-06-18 12:54:24,464 - INFO - User MIP start produced solution with objective 1.05405 (0.01s)
-2025-06-18 12:54:24,464 - INFO - Loaded user MIP start with objective 1.05405
-2025-06-18 12:54:24,464 - INFO - Loaded user MIP start with objective 1.05405
-2025-06-18 12:54:24,464 - INFO - 
-2025-06-18 12:54:24,464 - INFO - Presolve removed 4 rows and 0 columns
-2025-06-18 12:54:24,472 - INFO - Presolve removed 4 rows and 0 columns
-2025-06-18 12:54:24,472 - INFO - Presolve time: 0.00s
-2025-06-18 12:54:24,472 - INFO - Presolve time: 0.00s
-2025-06-18 12:54:24,472 - INFO - Presolved: 331 rows, 199 columns, 971 nonzeros
-2025-06-18 12:54:24,472 - INFO - Presolved: 331 rows, 199 columns, 971 nonzeros
-2025-06-18 12:54:24,472 - INFO - Variable types: 92 continuous, 107 integer (107 binary)
-2025-06-18 12:54:24,472 - INFO - Variable types: 92 continuous, 107 integer (107 binary)
-2025-06-18 12:54:24,472 - INFO - 
-2025-06-18 12:54:24,472 - INFO - Root relaxation: objective 3.816464e+01, 149 iterations, 0.00 seconds (0.00 work units)
-2025-06-18 12:54:24,472 - INFO - Root relaxation: objective 3.816464e+01, 149 iterations, 0.00 seconds (0.00 work units)
-2025-06-18 12:54:24,480 - INFO - 
-2025-06-18 12:54:24,480 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:24,480 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:24,480 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:24,480 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:24,480 - INFO - 
-2025-06-18 12:54:24,480 - INFO -      0     0   38.16464    0   66    1.05405   38.16464  3521%     -    0s
-2025-06-18 12:54:24,480 - INFO -      0     0   38.16464    0   66    1.05405   38.16464  3521%     -    0s
-2025-06-18 12:54:24,488 - INFO - H    0     0                       2.0000000   38.16464  1808%     -    0s
-2025-06-18 12:54:24,488 - INFO - H    0     0                       2.0000000   38.16464  1808%     -    0s
-2025-06-18 12:54:24,496 - INFO - H    0     0                       3.0000000   38.16464  1172%     -    0s
-2025-06-18 12:54:24,496 - INFO - H    0     0                       3.0000000   38.16464  1172%     -    0s
-2025-06-18 12:54:24,512 - INFO - H    0     0                       3.5000000   37.45277   970%     -    0s
-2025-06-18 12:54:24,512 - INFO - H    0     0                       3.5000000   37.45277   970%     -    0s
-2025-06-18 12:54:24,512 - INFO -      0     0   37.01321    0   62    3.50000   37.01321   958%     -    0s
-2025-06-18 12:54:24,512 - INFO -      0     0   37.01321    0   62    3.50000   37.01321   958%     -    0s
-2025-06-18 12:54:24,520 - INFO -      0     0   36.76931    0   64    3.50000   36.76931   951%     -    0s
-2025-06-18 12:54:24,520 - INFO -      0     0   36.76931    0   64    3.50000   36.76931   951%     -    0s
-2025-06-18 12:54:24,544 - INFO -      0     0   25.20000    0   12    3.50000   25.20000   620%     -    0s
-2025-06-18 12:54:24,544 - INFO -      0     0   25.20000    0   12    3.50000   25.20000   620%     -    0s
-2025-06-18 12:54:24,544 - INFO -      0     0   21.50000    0    6    3.50000   21.50000   514%     -    0s
-2025-06-18 12:54:24,544 - INFO -      0     0   21.50000    0    6    3.50000   21.50000   514%     -    0s
-2025-06-18 12:54:24,544 - INFO -      0     0   18.01292    0    9    3.50000   18.01292   415%     -    0s
-2025-06-18 12:54:24,552 - INFO -      0     0   18.01292    0    9    3.50000   18.01292   415%     -    0s
-2025-06-18 12:54:24,552 - INFO -      0     0     cutoff    0         3.50000    3.50000  0.00%     -    0s
-2025-06-18 12:54:24,552 - INFO -      0     0     cutoff    0         3.50000    3.50000  0.00%     -    0s
-2025-06-18 12:54:24,552 - INFO - 
-2025-06-18 12:54:24,560 - INFO - Cutting planes:
-2025-06-18 12:54:24,560 - INFO - Cutting planes:
-2025-06-18 12:54:24,560 - INFO -   Gomory: 1
-2025-06-18 12:54:24,560 - INFO -   Gomory: 1
-2025-06-18 12:54:24,560 - INFO -   Cover: 1
-2025-06-18 12:54:24,560 - INFO -   Cover: 1
-2025-06-18 12:54:24,560 - INFO -   Implied bound: 21
-2025-06-18 12:54:24,560 - INFO -   Implied bound: 21
-2025-06-18 12:54:24,560 - INFO -   Mod-K: 1
-2025-06-18 12:54:24,560 - INFO -   Mod-K: 1
-2025-06-18 12:54:24,560 - INFO -   RLT: 78
-2025-06-18 12:54:24,560 - INFO -   RLT: 78
-2025-06-18 12:54:24,560 - INFO - 
-2025-06-18 12:54:24,560 - INFO - Explored 1 nodes (417 simplex iterations) in 0.10 seconds (0.02 work units)
-2025-06-18 12:54:24,560 - INFO - Explored 1 nodes (417 simplex iterations) in 0.10 seconds (0.02 work units)
-2025-06-18 12:54:24,560 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:24,560 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:54:24,560 - INFO - 
-2025-06-18 12:54:24,560 - INFO - Solution count 4: 3.5 3 2 1.05405
-2025-06-18 12:54:24,560 - INFO - Solution count 4: 3.5 3 2 1.05405 
-2025-06-18 12:54:24,560 - INFO - 
-2025-06-18 12:54:24,560 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:24,560 - INFO - Optimal solution found (tolerance 1.00e-04)
-2025-06-18 12:54:24,568 - INFO - Best objective 3.500000000000e+00, best bound 3.500000000000e+00, gap 0.0000%
-2025-06-18 12:54:24,568 - INFO - Best objective 3.500000000000e+00, best bound 3.500000000000e+00, gap 0.0000%
-2025-06-18 12:54:24,568 - INFO - 
-2025-06-18 12:54:24,568 - INFO - --- Solução Encontrada ---
-2025-06-18 12:54:24,568 - INFO - Status da Solução: 2 (2=Ótima, 9=Limite de Tempo, etc.)
-2025-06-18 12:54:24,568 - INFO - Valor da Função Objetivo (Densidade): 3.5000
-2025-06-18 12:54:24,568 - INFO - -------------------------
-2025-06-18 12:54:24,568 - INFO - Total de Pedidos na Wave: 1
-2025-06-18 12:54:24,568 - INFO - Total de Unidades na Wave: 7
-2025-06-18 12:54:24,568 - INFO - Total de Corredores Visitados: 2
-2025-06-18 12:54:24,568 - INFO - Salvando solução em '../out_answers/a/solucao_0004.txt'...
-2025-06-18 12:54:24,568 - INFO - Arquivo de solução salvo com sucesso.
-2025-06-18 12:54:24,568 - INFO - 
-2025-06-18 12:54:24,576 - INFO - --- EXECUÇÃO FINALIZADA ---
-2025-06-18 12:54:24,576 - INFO - INSTANCIA 04 ^^^^^^^^
-2025-06-18 12:54:24,576 - INFO - ========================================================================================================================
-2025-06-18 12:54:24,576 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:54:24,576 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:54:24,576 - INFO - ========================================================================================================================
-2025-06-18 12:54:24,608 - INFO - INSTANCIA 05
-2025-06-18 12:54:24,608 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:54:24,608 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0005.txt
-2025-06-18 12:54:24,643 - INFO - Cabeçalho lido: 2625 pedidos, 6407 itens, 161 corredores.
-2025-06-18 12:54:24,651 - INFO - 2625 pedidos lidos.
-2025-06-18 12:54:24,659 - INFO - 161 corredores lidos.
-2025-06-18 12:54:24,659 - INFO - Limites da wave lidos: LB=1322, UB=4395.
-2025-06-18 12:54:24,667 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:54:24,667 - INFO - Parsing concluído.
-2025-06-18 12:54:24,667 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:54:24,675 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:54:24,675 - INFO - Adicionando restrições...
-2025-06-18 12:54:24,833 - INFO - Modelo construído com sucesso.
-2025-06-18 12:54:24,833 - INFO - 
-2025-06-18 12:54:24,833 - INFO - Gerando uma solução inicial com heurística gulosa...
-2025-06-18 12:54:24,833 - INFO - Executando heurística gulosa...
-2025-06-18 12:54:24,841 - INFO - Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).
-2025-06-18 12:54:24,849 - INFO - 
-2025-06-18 12:54:24,849 - INFO - Iniciando otimização com limite de tempo de 300 segundos...
-2025-06-18 12:54:24,849 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:24,849 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:54:24,849 - INFO - Ajustando parâmetros do Gurobi para um ataque rápido...
-2025-06-18 12:54:24,849 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:24,849 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:54:24,857 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:24,857 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:54:24,857 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:24,857 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:54:24,857 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:24,857 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:54:24,865 - INFO - 
-2025-06-18 12:54:24,865 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:24,865 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:54:24,865 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:24,865 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:54:24,865 - INFO - 
-2025-06-18 12:54:24,865 - INFO - Non-default parameters:
-2025-06-18 12:54:24,865 - INFO - Non-default parameters:
-2025-06-18 12:54:24,865 - INFO - TimeLimit  300
-2025-06-18 12:54:24,865 - INFO - TimeLimit  300
-2025-06-18 12:54:24,865 - INFO - Heuristics  0.1
-2025-06-18 12:54:24,865 - INFO - Heuristics  0.1
-2025-06-18 12:54:24,873 - INFO - MIPFocus  1
-2025-06-18 12:54:24,873 - INFO - MIPFocus  1
-2025-06-18 12:54:24,873 - INFO - ImproveStartTime  100
-2025-06-18 12:54:24,873 - INFO - ImproveStartTime  100
-2025-06-18 12:54:24,873 - INFO - 
-2025-06-18 12:54:24,873 - INFO - Optimize a model with 6893 rows, 2948 columns and 35940 nonzeros
-2025-06-18 12:54:24,873 - INFO - Optimize a model with 6893 rows, 2948 columns and 35940 nonzeros
-2025-06-18 12:54:24,873 - INFO - Model fingerprint: 0xd4363526
-2025-06-18 12:54:24,873 - INFO - Model fingerprint: 0xd4363526
-2025-06-18 12:54:24,873 - INFO - Variable types: 162 continuous, 2786 integer (2786 binary)
-2025-06-18 12:54:24,873 - INFO - Variable types: 162 continuous, 2786 integer (2786 binary)
-2025-06-18 12:54:24,881 - INFO - Coefficient statistics:
-2025-06-18 12:54:24,881 - INFO - Coefficient statistics:
-2025-06-18 12:54:24,881 - INFO -   Matrix range     [1e+00, 4e+03]
-2025-06-18 12:54:24,881 - INFO -   Matrix range     [1e+00, 4e+03]
-2025-06-18 12:54:24,881 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:24,881 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:54:24,881 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:24,881 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:54:24,881 - INFO -   RHS range        [1e+03, 4e+03]
-2025-06-18 12:54:24,881 - INFO -   RHS range        [1e+03, 4e+03]
-2025-06-18 12:54:24,881 - INFO - 
-2025-06-18 12:54:24,889 - INFO - User MIP start did not produce a new incumbent solution
-2025-06-18 12:54:24,889 - INFO - User MIP start did not produce a new incumbent solution
-2025-06-18 12:54:24,897 - INFO - User MIP start violates constraint inventory_sufficiency_1733 by 6.000000000
-2025-06-18 12:54:24,897 - INFO - User MIP start violates constraint inventory_sufficiency_1733 by 6.000000000
-2025-06-18 12:54:24,897 - INFO - 
-2025-06-18 12:54:24,905 - INFO - Found heuristic solution: objective -0.0000000
-2025-06-18 12:54:24,905 - INFO - Found heuristic solution: objective -0.0000000
-2025-06-18 12:54:25,089 - INFO - Presolve removed 566 rows and 59 columns
-2025-06-18 12:54:25,089 - INFO - Presolve removed 566 rows and 59 columns
-2025-06-18 12:54:25,089 - INFO - Presolve time: 0.18s
-2025-06-18 12:54:25,089 - INFO - Presolve time: 0.18s
-2025-06-18 12:54:25,089 - INFO - Presolved: 6327 rows, 2889 columns, 32751 nonzeros
-2025-06-18 12:54:25,089 - INFO - Presolved: 6327 rows, 2889 columns, 32751 nonzeros
-2025-06-18 12:54:25,105 - INFO - Variable types: 162 continuous, 2727 integer (2712 binary)
-2025-06-18 12:54:25,105 - INFO - Variable types: 162 continuous, 2727 integer (2712 binary)
-2025-06-18 12:54:26,198 - INFO - 
-2025-06-18 12:54:26,198 - INFO - Root relaxation: objective 4.156242e+03, 5023 iterations, 1.09 seconds (1.34 work units)
-2025-06-18 12:54:26,198 - INFO - Root relaxation: objective 4.156242e+03, 5023 iterations, 1.09 seconds (1.34 work units)
-2025-06-18 12:54:26,366 - INFO - 
-2025-06-18 12:54:26,366 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:26,366 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:54:26,374 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:26,374 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:54:26,374 - INFO - 
-2025-06-18 12:54:26,374 - INFO -      0     0 4156.24173    0 2431   -0.00000 4156.24173      -     -    1s
-2025-06-18 12:54:26,374 - INFO -      0     0 4156.24173    0 2431   -0.00000 4156.24173      -     -    1s
-2025-06-18 12:54:26,414 - INFO - H    0     0                     120.2727273 4156.24173  3356%     -    1s
-2025-06-18 12:54:26,414 - INFO - H    0     0                     120.2727273 4156.24173  3356%     -    1s
-2025-06-18 12:54:28,267 - INFO - H    0     0                     120.5454545 4156.24173  3348%     -    3s
-2025-06-18 12:54:28,267 - INFO - H    0     0                     120.5454545 4156.24173  3348%     -    3s
-2025-06-18 12:54:28,267 - INFO - H    0     0                     121.1818182 4156.24173  3330%     -    3s
-2025-06-18 12:54:28,267 - INFO - H    0     0                     121.1818182 4156.24173  3330%     -    3s
-2025-06-18 12:54:31,334 - INFO - H    0     0                     121.5454545 3975.42326  3171%     -    6s
-2025-06-18 12:54:31,334 - INFO - H    0     0                     121.5454545 3975.42326  3171%     -    6s
-2025-06-18 12:54:31,390 - INFO -      0     0 3975.42326    0 2525  121.54545 3975.42326  3171%     -    6s
-2025-06-18 12:54:31,390 - INFO -      0     0 3975.42326    0 2525  121.54545 3975.42326  3171%     -    6s
-2025-06-18 12:54:32,569 - INFO -      0     0 3948.55365    0 2518  121.54545 3948.55365  3149%     -    7s
-2025-06-18 12:54:32,569 - INFO -      0     0 3948.55365    0 2518  121.54545 3948.55365  3149%     -    7s
-2025-06-18 12:54:32,971 - INFO - H    0     0                     121.8181818 3948.11426  3141%     -    8s
-2025-06-18 12:54:32,971 - INFO - H    0     0                     121.8181818 3948.11426  3141%     -    8s
-2025-06-18 12:54:33,004 - INFO -      0     0 3947.67336    0 2525  121.81818 3947.67336  3141%     -    8s
-2025-06-18 12:54:33,004 - INFO -      0     0 3947.67336    0 2525  121.81818 3947.67336  3141%     -    8s
-2025-06-18 12:54:33,202 - INFO -      0     0 3947.41711    0 2524  121.81818 3947.41711  3140%     -    8s
-2025-06-18 12:54:33,202 - INFO -      0     0 3947.41711    0 2524  121.81818 3947.41711  3140%     -    8s
-2025-06-18 12:54:33,306 - INFO -      0     0 3947.34613    0 2530  121.81818 3947.34613  3140%     -    8s
-2025-06-18 12:54:33,306 - INFO -      0     0 3947.34613    0 2530  121.81818 3947.34613  3140%     -    8s
-2025-06-18 12:54:33,370 - INFO -      0     0 3947.32151    0 2531  121.81818 3947.32151  3140%     -    8s
-2025-06-18 12:54:33,370 - INFO -      0     0 3947.32151    0 2531  121.81818 3947.32151  3140%     -    8s
-2025-06-18 12:54:33,418 - INFO -      0     0 3935.36849    0 2532  121.81818 3935.36849  3131%     -    8s
-2025-06-18 12:54:33,426 - INFO -      0     0 3935.36849    0 2532  121.81818 3935.36849  3131%     -    8s
-2025-06-18 12:54:34,437 - INFO - H    0     0                     122.3636364 3935.36849  3116%     -    9s
-2025-06-18 12:54:34,437 - INFO - H    0     0                     122.3636364 3935.36849  3116%     -    9s
-2025-06-18 12:54:35,728 - INFO - H    0     0                     127.6363636 3714.13329  2810%     -   10s
-2025-06-18 12:54:35,728 - INFO - H    0     0                     127.6363636 3714.13329  2810%     -   10s
-2025-06-18 12:54:35,896 - INFO -      0     0 3437.32671    0 2578  127.63636 3437.32671  2593%     -   11s
-2025-06-18 12:54:35,896 - INFO -      0     0 3437.32671    0 2578  127.63636 3437.32671  2593%     -   11s
-2025-06-18 12:54:36,384 - INFO - H    0     0                     128.5454545 3437.32671  2574%     -   11s
-2025-06-18 12:54:36,384 - INFO - H    0     0                     128.5454545 3437.32671  2574%     -   11s
-2025-06-18 12:54:36,648 - INFO -      0     0 3382.40942    0 2584  128.54545 3382.40942  2531%     -   11s
-2025-06-18 12:54:36,648 - INFO -      0     0 3382.40942    0 2584  128.54545 3382.40942  2531%     -   11s
-2025-06-18 12:54:36,916 - INFO -      0     0 3357.60928    0 2585  128.54545 3357.60928  2512%     -   12s
-2025-06-18 12:54:36,924 - INFO -      0     0 3357.60928    0 2585  128.54545 3357.60928  2512%     -   12s
-2025-06-18 12:54:37,069 - INFO -      0     0 3352.15904    0 2592  128.54545 3352.15904  2508%     -   12s
-2025-06-18 12:54:37,069 - INFO -      0     0 3352.15904    0 2592  128.54545 3352.15904  2508%     -   12s
-2025-06-18 12:54:37,149 - INFO -      0     0 3338.61081    0 2594  128.54545 3338.61081  2497%     -   12s
-2025-06-18 12:54:37,149 - INFO -      0     0 3338.61081    0 2594  128.54545 3338.61081  2497%     -   12s
-2025-06-18 12:54:37,213 - INFO -      0     0 3337.84057    0 2592  128.54545 3337.84057  2497%     -   12s
-2025-06-18 12:54:37,213 - INFO -      0     0 3337.84057    0 2592  128.54545 3337.84057  2497%     -   12s
-2025-06-18 12:54:40,047 - INFO - H    0     0                     132.2000000 3284.92353  2385%     -   15s
-2025-06-18 12:54:40,047 - INFO - H    0     0                     132.2000000 3284.92353  2385%     -   15s
-2025-06-18 12:54:40,047 - INFO - H    0     0                     133.2000000 3284.92353  2366%     -   15s
-2025-06-18 12:54:40,047 - INFO - H    0     0                     133.2000000 3284.92353  2366%     -   15s
-2025-06-18 12:54:40,055 - INFO - H    0     0                     133.8000000 3284.92353  2355%     -   15s
-2025-06-18 12:54:40,055 - INFO - H    0     0                     133.8000000 3284.92353  2355%     -   15s
-2025-06-18 12:54:40,055 - INFO - H    0     0                     134.1000000 3284.92353  2350%     -   15s
-2025-06-18 12:54:40,055 - INFO - H    0     0                     134.1000000 3284.92353  2350%     -   15s
-2025-06-18 12:54:40,055 - INFO - H    0     0                     136.2000000 3284.92353  2312%     -   15s
-2025-06-18 12:54:40,055 - INFO - H    0     0                     136.2000000 3284.92353  2312%     -   15s
-2025-06-18 12:54:40,063 - INFO - H    0     0                     136.4000000 3284.92353  2308%     -   15s
-2025-06-18 12:54:40,063 - INFO - H    0     0                     136.4000000 3284.92353  2308%     -   15s
-2025-06-18 12:54:40,103 - INFO -      0     0 3151.30622    0 2589  136.40000 3151.30622  2210%     -   15s
-2025-06-18 12:54:40,103 - INFO -      0     0 3151.30622    0 2589  136.40000 3151.30622  2210%     -   15s
-2025-06-18 12:54:40,490 - INFO - H    0     0                     147.0000000 3151.30622  2044%     -   15s
-2025-06-18 12:54:40,490 - INFO - H    0     0                     147.0000000 3151.30622  2044%     -   15s
-2025-06-18 12:54:41,745 - INFO -      0     0 3076.25350    0 2524  147.00000 3076.25350  1993%     -   16s
-2025-06-18 12:54:41,745 - INFO -      0     0 3076.25350    0 2524  147.00000 3076.25350  1993%     -   16s
-2025-06-18 12:54:42,401 - INFO -      0     0 3039.24848    0 2536  147.00000 3039.24848  1968%     -   17s
-2025-06-18 12:54:42,401 - INFO -      0     0 3039.24848    0 2536  147.00000 3039.24848  1968%     -   17s
-2025-06-18 12:54:42,839 - INFO -      0     0 3039.24848    0 2542  147.00000 3039.24848  1968%     -   17s
-2025-06-18 12:54:42,839 - INFO -      0     0 3039.24848    0 2542  147.00000 3039.24848  1968%     -   17s
-2025-06-18 12:54:43,085 - INFO -      0     0 3014.93314    0 2537  147.00000 3014.93314  1951%     -   18s
-2025-06-18 12:54:43,085 - INFO -      0     0 3014.93314    0 2537  147.00000 3014.93314  1951%     -   18s
-2025-06-18 12:54:43,333 - INFO -      0     0 3007.71150    0 2546  147.00000 3007.71150  1946%     -   18s
-2025-06-18 12:54:43,333 - INFO -      0     0 3007.71150    0 2546  147.00000 3007.71150  1946%     -   18s
-2025-06-18 12:54:43,477 - INFO -      0     0 3006.40253    0 2539  147.00000 3006.40253  1945%     -   18s
-2025-06-18 12:54:43,477 - INFO -      0     0 3006.40253    0 2539  147.00000 3006.40253  1945%     -   18s
-2025-06-18 12:54:43,582 - INFO -      0     0 3005.07809    0 2546  147.00000 3005.07809  1944%     -   18s
-2025-06-18 12:54:43,582 - INFO -      0     0 3005.07809    0 2546  147.00000 3005.07809  1944%     -   18s
-2025-06-18 12:54:48,821 - INFO -      0     0 2919.61567    0 2540  147.00000 2919.61567  1886%     -   23s
-2025-06-18 12:54:48,821 - INFO -      0     0 2919.61567    0 2540  147.00000 2919.61567  1886%     -   23s
-2025-06-18 12:54:50,359 - INFO -      0     0 2854.03866    0 2505  147.00000 2854.03866  1842%     -   25s
-2025-06-18 12:54:50,359 - INFO -      0     0 2854.03866    0 2505  147.00000 2854.03866  1842%     -   25s
-2025-06-18 12:54:51,061 - INFO -      0     0 2845.58541    0 2530  147.00000 2845.58541  1836%     -   26s
-2025-06-18 12:54:51,061 - INFO -      0     0 2845.58541    0 2530  147.00000 2845.58541  1836%     -   26s
-2025-06-18 12:54:51,429 - INFO -      0     0 2834.29295    0 2526  147.00000 2834.29295  1828%     -   26s
-2025-06-18 12:54:51,429 - INFO -      0     0 2834.29295    0 2526  147.00000 2834.29295  1828%     -   26s
-2025-06-18 12:54:51,791 - INFO -      0     0 2822.74542    0 2525  147.00000 2822.74542  1820%     -   26s
-2025-06-18 12:54:51,791 - INFO -      0     0 2822.74542    0 2525  147.00000 2822.74542  1820%     -   26s
-2025-06-18 12:54:51,935 - INFO -      0     0 2816.64113    0 2535  147.00000 2816.64113  1816%     -   27s
-2025-06-18 12:54:51,935 - INFO -      0     0 2816.64113    0 2535  147.00000 2816.64113  1816%     -   27s
-2025-06-18 12:54:52,032 - INFO -      0     0 2810.87478    0 2524  147.00000 2810.87478  1812%     -   27s
-2025-06-18 12:54:52,032 - INFO -      0     0 2810.87478    0 2524  147.00000 2810.87478  1812%     -   27s
-2025-06-18 12:54:53,206 - INFO - H    0     0                     155.1000000 2810.87478  1712%     -   28s
-2025-06-18 12:54:53,207 - INFO - H    0     0                     155.1000000 2810.87478  1712%     -   28s
-2025-06-18 12:54:54,720 - INFO -      0     0 2785.61036    0 2479  155.10000 2785.61036  1696%     -   29s
-2025-06-18 12:54:54,721 - INFO -      0     0 2785.61036    0 2479  155.10000 2785.61036  1696%     -   29s
-2025-06-18 12:54:57,504 - INFO - H    0     0                     166.6666667 2785.61036  1571%     -   32s
-2025-06-18 12:54:57,505 - INFO - H    0     0                     166.6666667 2785.61036  1571%     -   32s
-2025-06-18 12:54:58,698 - INFO - H    0     0                     172.7500000 2785.61036  1513%     -   33s
-2025-06-18 12:54:58,699 - INFO - H    0     0                     172.7500000 2785.61036  1513%     -   33s
-2025-06-18 12:54:58,913 - INFO - H    0     0                     174.6250000 2785.61036  1495%     -   34s
-2025-06-18 12:54:58,914 - INFO - H    0     0                     174.6250000 2785.61036  1495%     -   34s
-2025-06-18 12:55:02,032 - INFO - H    0     0                     176.3750000 2785.61036  1479%     -   37s
-2025-06-18 12:55:02,034 - INFO - H    0     0                     176.3750000 2785.61036  1479%     -   37s
-2025-06-18 12:55:06,746 - INFO - H    0     0                     177.1250000 2785.61036  1473%     -   41s
-2025-06-18 12:55:06,753 - INFO - H    0     0                     177.1250000 2785.61036  1473%     -   41s
-2025-06-18 12:55:14,176 - INFO - H    0     0                     177.6250000 2785.61036  1468%     -   49s
-2025-06-18 12:55:14,176 - INFO - H    0     0                     177.6250000 2785.61036  1468%     -   49s
-2025-06-18 12:55:27,201 - INFO - H    0     0                     177.8750000 2785.61036  1466%     -   62s
-2025-06-18 12:55:27,204 - INFO - H    0     0                     177.8750000 2785.61036  1466%     -   62s
-2025-06-18 12:55:27,601 - INFO -      0     2 2785.61036    0 2474  177.87500 2785.61036  1466%     -   62s
-2025-06-18 12:55:27,614 - INFO -      0     2 2785.61036    0 2474  177.87500 2785.61036  1466%     -   62s
-2025-06-18 12:55:30,415 - INFO -      3     8 2785.61036    2 2234  177.87500 2785.61036  1466%  1862   65s
-2025-06-18 12:55:30,416 - INFO -      3     8 2785.61036    2 2234  177.87500 2785.61036  1466%  1862   65s
-2025-06-18 12:55:35,670 - INFO -     15    26 2785.61036    5 1890  177.87500 2785.61036  1466%  1509   70s
-2025-06-18 12:55:35,670 - INFO -     15    26 2785.61036    5 1890  177.87500 2785.61036  1466%  1509   70s
-2025-06-18 12:55:40,695 - INFO -     42    52  227.66106   11 1328  177.87500 2785.61036  1466%  1153   75s
-2025-06-18 12:55:40,696 - INFO -     42    52  227.66106   11 1328  177.87500 2785.61036  1466%  1153   75s
-2025-06-18 12:55:45,275 - INFO -    104    91  189.38071   17 1345  177.87500 2785.61036  1466%   805   80s
-2025-06-18 12:55:45,278 - INFO -    104    91  189.38071   17 1345  177.87500 2785.61036  1466%   805   80s
-2025-06-18 12:55:51,138 - INFO -    152   110  404.09910    6 1891  177.87500 2785.61036  1466%   738   86s
-2025-06-18 12:55:51,139 - INFO -    152   110  404.09910    6 1891  177.87500 2785.61036  1466%   738   86s
-2025-06-18 12:55:54,909 - INFO -    186   141  260.10935   11 1689  177.87500 2785.61036  1466%   752   90s
-2025-06-18 12:55:54,909 - INFO -    186   141  260.10935   11 1689  177.87500 2785.61036  1466%   752   90s
-2025-06-18 12:56:01,988 - INFO -    208   138  246.54627   15 1564  177.87500 2785.61036  1466%   731   97s
-2025-06-18 12:56:01,992 - INFO -    208   138  246.54627   15 1564  177.87500 2785.61036  1466%   731   97s
-2025-06-18 12:56:05,152 - INFO -    228   145  243.55175   17 1521  177.87500 2458.28295  1282%   734  100s
-2025-06-18 12:56:05,153 - INFO -    228   145  243.55175   17 1521  177.87500 2458.28295  1282%   734  100s
-2025-06-18 12:56:05,155 - INFO - 
-2025-06-18 12:56:05,159 - INFO - Resetting heuristic parameters to focus on improving solution
-2025-06-18 12:56:05,159 - INFO - Resetting heuristic parameters to focus on improving solution
-2025-06-18 12:56:05,159 - INFO - (using Heuristics=0.5 and RINS=10)...
-2025-06-18 12:56:05,159 - INFO - (using Heuristics=0.5 and RINS=10)...
-2025-06-18 12:56:05,160 - INFO - 
-2025-06-18 12:56:07,739 - INFO -    240   146  215.91318   18 1496  177.87500 2458.28295  1282%   717  102s
-2025-06-18 12:56:07,741 - INFO -    240   146  215.91318   18 1496  177.87500 2458.28295  1282%   717  102s
-2025-06-18 12:56:10,951 - INFO -    247   152  218.99905   16 1587  177.87500 2458.28295  1282%   735  106s
-2025-06-18 12:56:10,952 - INFO -    247   152  218.99905   16 1587  177.87500 2458.28295  1282%   735  106s
-2025-06-18 12:56:16,307 - INFO -    269   157  201.38171   21 1426  177.87500 2458.28295  1282%   722  111s
-2025-06-18 12:56:16,308 - INFO -    269   157  201.38171   21 1426  177.87500 2458.28295  1282%   722  111s
-2025-06-18 12:56:19,378 - INFO - H  280   164                     177.8750000 2002.59664  1026%   728  114s
-2025-06-18 12:56:19,379 - INFO - H  280   164                     177.8750000 2002.59664  1026%   728  114s
-2025-06-18 12:56:23,736 - INFO -    283   169  200.14694   22 1346  177.87500 1588.86853   793%   739  118s
-2025-06-18 12:56:23,736 - INFO -    283   169  200.14694   22 1346  177.87500 1588.86853   793%   739  118s
-2025-06-18 12:56:28,005 - INFO -    298   169  180.83860   23 1212  177.87500 1121.98177   531%   742  123s
-2025-06-18 12:56:28,006 - INFO -    298   169  180.83860   23 1212  177.87500 1121.98177   531%   742  123s
-2025-06-18 12:56:32,457 - INFO -    306   169 infeasible   23       177.87500  919.74454   417%   740  127s
-2025-06-18 12:56:32,457 - INFO -    306   169 infeasible   23       177.87500  919.74454   417%   740  127s
-2025-06-18 12:56:37,272 - INFO -    324   173  188.30293   24 1380  177.87500  853.62201   380%   723  132s
-2025-06-18 12:56:37,273 - INFO -    324   173  188.30293   24 1380  177.87500  853.62201   380%   723  132s
-2025-06-18 12:56:41,066 - INFO -    328   178  196.68741   25 1188  177.87500  853.62201   380%   725  136s
-2025-06-18 12:56:41,066 - INFO -    328   178  196.68741   25 1188  177.87500  853.62201   380%   725  136s
-2025-06-18 12:56:46,287 - INFO -    335   182  195.26569   26 1086  177.87500  853.62201   380%   728  141s
-2025-06-18 12:56:46,288 - INFO -    335   182  195.26569   26 1086  177.87500  853.62201   380%   728  141s
-2025-06-18 12:56:52,376 - INFO -    339   186  180.98350   27 1180  177.87500  853.62201   380%   727  147s
-2025-06-18 12:56:52,377 - INFO -    339   186  180.98350   27 1180  177.87500  853.62201   380%   727  147s
-2025-06-18 12:56:59,358 - INFO -    347   198  184.86699   27 1045  177.87500  853.62201   380%   723  154s
-2025-06-18 12:56:59,359 - INFO -    347   198  184.86699   27 1045  177.87500  853.62201   380%   723  154s
-2025-06-18 12:56:59,360 - INFO - H  353   198                     177.8750007  853.62201   380%   718  154s
-2025-06-18 12:56:59,360 - INFO - H  353   198                     177.8750007  853.62201   380%   718  154s
-2025-06-18 12:57:03,873 - INFO -    361   202  183.19175   29 1182  177.87500  853.62201   380%   721  159s
-2025-06-18 12:57:03,874 - INFO -    361   202  183.19175   29 1182  177.87500  853.62201   380%   721  159s
-2025-06-18 12:57:03,883 - INFO - 
-2025-06-18 12:57:03,884 - INFO - Cutting planes:
-2025-06-18 12:57:03,884 - INFO - Cutting planes:
-2025-06-18 12:57:03,885 - INFO -   Cover: 296
-2025-06-18 12:57:03,885 - INFO -   Cover: 296
-2025-06-18 12:57:03,885 - INFO -   Implied bound: 59
-2025-06-18 12:57:03,886 - INFO -   Implied bound: 59
-2025-06-18 12:57:03,886 - INFO -   Clique: 35
-2025-06-18 12:57:03,886 - INFO -   Clique: 35
-2025-06-18 12:57:03,887 - INFO -   MIR: 25
-2025-06-18 12:57:03,887 - INFO -   MIR: 25
-2025-06-18 12:57:03,887 - INFO -   StrongCG: 2
-2025-06-18 12:57:03,888 - INFO -   StrongCG: 2
-2025-06-18 12:57:03,888 - INFO -   Flow cover: 146
-2025-06-18 12:57:03,888 - INFO -   Flow cover: 146
-2025-06-18 12:57:03,889 - INFO -   GUB cover: 2
-2025-06-18 12:57:03,889 - INFO -   GUB cover: 2
-2025-06-18 12:57:03,889 - INFO -   Zero half: 1
-2025-06-18 12:57:03,890 - INFO -   Zero half: 1
-2025-06-18 12:57:03,890 - INFO -   RLT: 646
-2025-06-18 12:57:03,890 - INFO -   RLT: 646
-2025-06-18 12:57:03,891 - INFO -   Relax-and-lift: 122
-2025-06-18 12:57:03,891 - INFO -   Relax-and-lift: 122
-2025-06-18 12:57:03,891 - INFO -   BQP: 44
-2025-06-18 12:57:03,892 - INFO -   BQP: 44
-2025-06-18 12:57:03,893 - INFO - 
-2025-06-18 12:57:03,894 - INFO - Explored 365 nodes (287441 simplex iterations) in 159.02 seconds (214.02 work units)
-2025-06-18 12:57:03,894 - INFO - Explored 365 nodes (287441 simplex iterations) in 159.02 seconds (214.02 work units)
-2025-06-18 12:57:03,895 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:57:03,895 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:57:03,895 - INFO - 
-2025-06-18 12:57:03,896 - INFO - Solution count 10: 177.875 177.875 177.625 ... 147
-2025-06-18 12:57:03,896 - INFO - Solution count 10: 177.875 177.875 177.625 ... 147
-2025-06-18 12:57:03,897 - INFO - 
-2025-06-18 12:57:03,897 - INFO - Solve interrupted
-2025-06-18 12:57:03,897 - INFO - Solve interrupted
-2025-06-18 12:57:03,899 - INFO - Best objective 1.778750007369e+02, best bound 8.536220086914e+02, gap 379.8999%
-2025-06-18 12:57:03,900 - INFO - Best objective 1.778750007369e+02, best bound 8.536220086914e+02, gap 379.8999%
-2025-06-18 12:57:03,901 - INFO - 
-2025-06-18 12:57:03,901 - INFO - O processo de otimização terminou com o status: 11
-2025-06-18 12:57:03,902 - INFO - 
-2025-06-18 12:57:03,903 - INFO - --- EXECUÇÃO FINALIZADA ---
-2025-06-18 12:57:03,918 - INFO - INSTANCIA 05 ^^^^^^^^
-2025-06-18 12:57:03,919 - INFO - ========================================================================================================================
-2025-06-18 12:57:03,919 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:57:03,920 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:57:03,920 - INFO - ========================================================================================================================
-2025-06-18 12:57:03,920 - INFO - INSTANCIA 06
-2025-06-18 12:57:03,921 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:57:03,921 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0006.txt
-2025-06-18 12:57:03,948 - INFO - Cabeçalho lido: 10341 pedidos, 7089 itens, 184 corredores.
-2025-06-18 12:57:03,970 - INFO - 10341 pedidos lidos.
-2025-06-18 12:57:03,983 - INFO - 184 corredores lidos.
-2025-06-18 12:57:03,984 - INFO - Limites da wave lidos: LB=452, UB=3892.
-2025-06-18 12:57:03,997 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:57:03,998 - INFO - Parsing concluído.
-2025-06-18 12:57:04,000 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:57:04,039 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:57:04,040 - INFO - Adicionando restrições...
-2025-06-18 12:57:04,236 - INFO - Modelo construído com sucesso.
-2025-06-18 12:57:04,237 - INFO - 
-2025-06-18 12:57:04,237 - INFO - Gerando uma solução inicial com heurística gulosa...
-2025-06-18 12:57:04,238 - INFO - Executando heurística gulosa...
-2025-06-18 12:57:04,252 - INFO - Solução inicial encontrada. Fornecendo ao Gurobi (Warm Start).
-2025-06-18 12:57:04,272 - INFO - 
-2025-06-18 12:57:04,273 - INFO - Iniciando otimização com limite de tempo de 300 segundos...
-2025-06-18 12:57:04,273 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:57:04,273 - INFO - Set parameter TimeLimit to value 300
-2025-06-18 12:57:04,274 - INFO - Ajustando parâmetros do Gurobi para um ataque rápido...
-2025-06-18 12:57:04,274 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:57:04,274 - INFO - Set parameter MIPFocus to value 1
-2025-06-18 12:57:04,275 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:57:04,275 - INFO - Set parameter Heuristics to value 0.1
-2025-06-18 12:57:04,275 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:57:04,275 - INFO - Set parameter ImproveStartTime to value 100
-2025-06-18 12:57:04,281 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:57:04,281 - INFO - Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-2025-06-18 12:57:04,282 - INFO - 
-2025-06-18 12:57:04,282 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:57:04,283 - INFO - CPU model: Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
-2025-06-18 12:57:04,283 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:57:04,284 - INFO - Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-2025-06-18 12:57:04,284 - INFO - 
-2025-06-18 12:57:04,285 - INFO - Non-default parameters:
-2025-06-18 12:57:04,285 - INFO - Non-default parameters:
-2025-06-18 12:57:04,285 - INFO - TimeLimit  300
-2025-06-18 12:57:04,286 - INFO - TimeLimit  300
-2025-06-18 12:57:04,286 - INFO - Heuristics  0.1
-2025-06-18 12:57:04,286 - INFO - Heuristics  0.1
-2025-06-18 12:57:04,287 - INFO - MIPFocus  1
-2025-06-18 12:57:04,287 - INFO - MIPFocus  1
-2025-06-18 12:57:04,287 - INFO - ImproveStartTime  100
-2025-06-18 12:57:04,287 - INFO - ImproveStartTime  100
-2025-06-18 12:57:04,288 - INFO - 
-2025-06-18 12:57:04,288 - INFO - Optimize a model with 7644 rows, 10710 columns and 65151 nonzeros
-2025-06-18 12:57:04,288 - INFO - Optimize a model with 7644 rows, 10710 columns and 65151 nonzeros
-2025-06-18 12:57:04,289 - INFO - Model fingerprint: 0xb32eec3b
-2025-06-18 12:57:04,289 - INFO - Model fingerprint: 0xb32eec3b
-2025-06-18 12:57:04,289 - INFO - Variable types: 185 continuous, 10525 integer (10525 binary)
-2025-06-18 12:57:04,290 - INFO - Variable types: 185 continuous, 10525 integer (10525 binary)
-2025-06-18 12:57:04,290 - INFO - Coefficient statistics:
-2025-06-18 12:57:04,290 - INFO - Coefficient statistics:
-2025-06-18 12:57:04,290 - INFO -   Matrix range     [1e+00, 4e+03]
-2025-06-18 12:57:04,291 - INFO -   Matrix range     [1e+00, 4e+03]
-2025-06-18 12:57:04,291 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:57:04,291 - INFO -   Objective range  [1e+00, 1e+00]
-2025-06-18 12:57:04,291 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:57:04,291 - INFO -   Bounds range     [1e+00, 1e+00]
-2025-06-18 12:57:04,292 - INFO -   RHS range        [5e+02, 4e+03]
-2025-06-18 12:57:04,292 - INFO -   RHS range        [5e+02, 4e+03]
-2025-06-18 12:57:04,292 - INFO - 
-2025-06-18 12:57:04,303 - INFO - User MIP start did not produce a new incumbent solution
-2025-06-18 12:57:04,304 - INFO - User MIP start did not produce a new incumbent solution
-2025-06-18 12:57:04,304 - INFO - User MIP start violates constraint inventory_sufficiency_1665 by 3.000000000
-2025-06-18 12:57:04,304 - INFO - User MIP start violates constraint inventory_sufficiency_1665 by 3.000000000
-2025-06-18 12:57:04,304 - INFO - 
-2025-06-18 12:57:04,309 - INFO - Found heuristic solution: objective -0.0000000
-2025-06-18 12:57:04,309 - INFO - Found heuristic solution: objective -0.0000000
-2025-06-18 12:57:04,478 - INFO - Presolve removed 48 rows and 3169 columns
-2025-06-18 12:57:04,479 - INFO - Presolve removed 48 rows and 3169 columns
-2025-06-18 12:57:04,479 - INFO - Presolve time: 0.17s
-2025-06-18 12:57:04,480 - INFO - Presolve time: 0.17s
-2025-06-18 12:57:04,481 - INFO - Presolved: 7596 rows, 7541 columns, 37788 nonzeros
-2025-06-18 12:57:04,481 - INFO - Presolved: 7596 rows, 7541 columns, 37788 nonzeros
-2025-06-18 12:57:04,511 - INFO - Variable types: 185 continuous, 7356 integer (6053 binary)
-2025-06-18 12:57:04,511 - INFO - Variable types: 185 continuous, 7356 integer (6053 binary)
-2025-06-18 12:57:04,530 - INFO - 
-2025-06-18 12:57:04,530 - INFO - Root relaxation: interrupted, 266 iterations, 0.02 seconds (0.02 work units)
-2025-06-18 12:57:04,531 - INFO - Root relaxation: interrupted, 266 iterations, 0.02 seconds (0.02 work units)
-2025-06-18 12:57:04,532 - INFO - 
-2025-06-18 12:57:04,532 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:57:04,532 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
-2025-06-18 12:57:04,533 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:57:04,533 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-2025-06-18 12:57:04,534 - INFO - 
-2025-06-18 12:57:04,534 - INFO -      0     0          -    0        -0.00000 3892.00000      -     -    0s
-2025-06-18 12:57:04,534 - INFO -      0     0          -    0        -0.00000 3892.00000      -     -    0s
-2025-06-18 12:57:04,536 - INFO - 
-2025-06-18 12:57:04,537 - INFO - Explored 1 nodes (266 simplex iterations) in 0.25 seconds (0.19 work units)
-2025-06-18 12:57:04,537 - INFO - Explored 1 nodes (266 simplex iterations) in 0.25 seconds (0.19 work units)
-2025-06-18 12:57:04,537 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:57:04,538 - INFO - Thread count was 8 (of 8 available processors)
-2025-06-18 12:57:04,538 - INFO - 
-2025-06-18 12:57:04,538 - INFO - Solution count 1: -0
-2025-06-18 12:57:04,538 - INFO - Solution count 1: -0 
-2025-06-18 12:57:04,539 - INFO - 
-2025-06-18 12:57:04,539 - INFO - Solve interrupted
-2025-06-18 12:57:04,539 - INFO - Solve interrupted
-2025-06-18 12:57:04,540 - INFO - Best objective -0.000000000000e+00, best bound 3.892000000000e+03, gap -
-2025-06-18 12:57:04,540 - INFO - Best objective -0.000000000000e+00, best bound 3.892000000000e+03, gap -
-2025-06-18 12:57:04,540 - INFO - 
-2025-06-18 12:57:04,540 - INFO - O processo de otimização terminou com o status: 11
-2025-06-18 12:57:04,541 - INFO - 
-2025-06-18 12:57:04,541 - INFO - --- EXECUÇÃO FINALIZADA ---
-2025-06-18 12:57:04,552 - INFO - INSTANCIA 06 ^^^^^^^^
-2025-06-18 12:57:04,552 - INFO - ========================================================================================================================
-2025-06-18 12:57:04,552 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
-2025-06-18 12:57:04,553 - INFO - Usando valores padrão para um teste rápido...
-2025-06-18 12:57:04,553 - INFO - ========================================================================================================================
-2025-06-18 12:57:04,553 - INFO - INSTANCIA 07
-2025-06-18 12:57:04,553 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
-2025-06-18 12:57:04,554 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0007.txt
-2025-06-18 12:57:04,575 - INFO - Cabeçalho lido: 8320 pedidos, 5747 itens, 180 corredores.
-2025-06-18 12:57:04,592 - INFO - 8320 pedidos lidos.
-2025-06-18 12:57:04,604 - INFO - 180 corredores lidos.
-2025-06-18 12:57:04,605 - INFO - Limites da wave lidos: LB=1306, UB=3847.
-2025-06-18 12:57:04,611 - INFO - Mapeamento item -> corredor construído.
-2025-06-18 12:57:04,612 - INFO - Parsing concluído.
-2025-06-18 12:57:04,613 - INFO - Iniciando a construção do modelo matemático...
-2025-06-18 12:57:04,645 - INFO - Função objetivo definida: Maximizar z.
-2025-06-18 12:57:04,646 - INFO - Adicionando restrições...
-2025-06-18 12:57:04,726 - INFO - 
-2025-06-18 12:57:04,727 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:19:00,183 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:19:00,184 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:19:00,184 - INFO - ========================================================================================================================
+2025-07-02 23:19:00,184 - INFO - INSTANCIA 01
+2025-07-02 23:19:00,185 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:19:00,185 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0001.txt
+2025-07-02 23:19:00,188 - INFO - Cabeçalho lido: 11321 pedidos, 7675 itens, 185 corredores.
+2025-07-02 23:19:00,212 - INFO - 11321 pedidos lidos.
+2025-07-02 23:19:00,225 - INFO - 185 corredores lidos.
+2025-07-02 23:19:00,225 - INFO - Limites da wave lidos: LB=1206, UB=3968.
+2025-07-02 23:19:00,237 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:19:00,237 - INFO - Parsing concluído.
+2025-07-02 23:19:00,238 - INFO - 
+2025-07-02 23:19:00,238 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:19:00,238 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:19:00,260 - INFO - Heurística gerou solução INVIÁVEL para item 72. Descartando.
+2025-07-02 23:19:00,262 - INFO - 
+2025-07-02 23:19:00,262 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:19:00,264 - INFO - Set parameter Username
+2025-07-02 23:19:00,265 - INFO - Set parameter Username
+2025-07-02 23:19:00,265 - INFO - Set parameter LicenseID to value 2650553
+2025-07-02 23:19:00,265 - INFO - Set parameter LicenseID to value 2650553
+2025-07-02 23:19:00,268 - INFO - Academic license - for non-commercial use only - expires 2026-04-12
+2025-07-02 23:19:00,268 - INFO - Academic license - for non-commercial use only - expires 2026-04-12
+2025-07-02 23:19:00,545 - INFO - Solução melhorada encontrada. Novo Ratio = 21.448649
+2025-07-02 23:19:00,545 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:19:00,546 - INFO - 
+2025-07-02 23:19:00,546 - INFO - --- Iteração 2 (Ratio Atual = 21.448649, Limite de Tempo = 30.0s) ---
+2025-07-02 23:19:30,826 - INFO - Solução melhorada encontrada. Novo Ratio = 440.888889
+2025-07-02 23:19:30,827 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:19:30,827 - INFO - 
+2025-07-02 23:19:30,827 - INFO - --- Iteração 3 (Ratio Atual = 440.888889, Limite de Tempo = 30.0s) ---
+2025-07-02 23:19:41,624 - INFO - Solução melhorada encontrada. Novo Ratio = 547.250000
+2025-07-02 23:19:41,624 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:19:41,624 - INFO - 
+2025-07-02 23:19:41,625 - INFO - --- Iteração 4 (Ratio Atual = 547.250000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:19:42,922 - INFO - Solução melhorada encontrada. Novo Ratio = 631.500000
+2025-07-02 23:19:42,922 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:19:42,922 - INFO - 
+2025-07-02 23:19:42,923 - INFO - --- Iteração 5 (Ratio Atual = 631.500000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:19:44,055 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-02 23:19:44,055 - INFO - 
+2025-07-02 23:19:44,056 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:19:44,056 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:19:44,056 - INFO - Valor da Função Objetivo REAL (Densidade): 631.5000
+2025-07-02 23:19:44,057 - INFO - Total de Pedidos na Wave: 1039
+2025-07-02 23:19:44,057 - INFO - Total de Unidades na Wave: 1263
+2025-07-02 23:19:44,057 - INFO - Total de Corredores Visitados: 2
+2025-07-02 23:19:44,057 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0001.txt'...
+2025-07-02 23:19:44,059 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:19:44,059 - INFO - 
+2025-07-02 23:19:44,060 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:19:44,063 - INFO - INSTANCIA 01 ^^^^^^^^
+2025-07-02 23:19:44,063 - INFO - ========================================================================================================================
+2025-07-02 23:19:44,064 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:19:44,064 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:19:44,064 - INFO - ========================================================================================================================
+2025-07-02 23:19:44,065 - INFO - INSTANCIA 02
+2025-07-02 23:19:44,065 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:19:44,065 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0002.txt
+2025-07-02 23:19:44,068 - INFO - Cabeçalho lido: 2162 pedidos, 5922 itens, 165 corredores.
+2025-07-02 23:19:44,074 - INFO - 2162 pedidos lidos.
+2025-07-02 23:19:44,085 - INFO - 165 corredores lidos.
+2025-07-02 23:19:44,085 - INFO - Limites da wave lidos: LB=626, UB=3405.
+2025-07-02 23:19:44,091 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:19:44,091 - INFO - Parsing concluído.
+2025-07-02 23:19:44,092 - INFO - 
+2025-07-02 23:19:44,092 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:19:44,092 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:19:44,102 - INFO - Heurística gerou solução INVIÁVEL para item 4189. Descartando.
+2025-07-02 23:19:44,103 - INFO - 
+2025-07-02 23:19:44,103 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:19:44,262 - INFO - Solução melhorada encontrada. Novo Ratio = 20.636364
+2025-07-02 23:19:44,262 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:19:44,263 - INFO - 
+2025-07-02 23:19:44,263 - INFO - --- Iteração 2 (Ratio Atual = 20.636364, Limite de Tempo = 30.0s) ---
+2025-07-02 23:20:14,418 - INFO - Solução melhorada encontrada. Novo Ratio = 154.772727
+2025-07-02 23:20:14,419 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:20:14,419 - INFO - 
+2025-07-02 23:20:14,419 - INFO - --- Iteração 3 (Ratio Atual = 154.772727, Limite de Tempo = 30.0s) ---
+2025-07-02 23:20:37,045 - INFO - Solução melhorada encontrada. Novo Ratio = 180.636364
+2025-07-02 23:20:37,045 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:20:37,045 - INFO - 
+2025-07-02 23:20:37,045 - INFO - --- Iteração 4 (Ratio Atual = 180.636364, Limite de Tempo = 30.0s) ---
+2025-07-02 23:20:53,344 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:20:53,344 - INFO - 
+2025-07-02 23:20:53,344 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:20:53,345 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:20:53,345 - INFO - Valor da Função Objetivo REAL (Densidade): 180.6364
+2025-07-02 23:20:53,345 - INFO - Total de Pedidos na Wave: 190
+2025-07-02 23:20:53,345 - INFO - Total de Unidades na Wave: 1987
+2025-07-02 23:20:53,346 - INFO - Total de Corredores Visitados: 11
+2025-07-02 23:20:53,346 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0002.txt'...
+2025-07-02 23:20:53,347 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:20:53,347 - INFO - 
+2025-07-02 23:20:53,347 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:20:53,349 - INFO - INSTANCIA 02 ^^^^^^^^
+2025-07-02 23:20:53,349 - INFO - ========================================================================================================================
+2025-07-02 23:20:53,349 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:20:53,349 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:20:53,350 - INFO - ========================================================================================================================
+2025-07-02 23:20:53,350 - INFO - INSTANCIA 03
+2025-07-02 23:20:53,350 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:20:53,350 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0003.txt
+2025-07-02 23:20:53,353 - INFO - Cabeçalho lido: 2070 pedidos, 5617 itens, 164 corredores.
+2025-07-02 23:20:53,359 - INFO - 2070 pedidos lidos.
+2025-07-02 23:20:53,369 - INFO - 164 corredores lidos.
+2025-07-02 23:20:53,369 - INFO - Limites da wave lidos: LB=585, UB=2150.
+2025-07-02 23:20:53,375 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:20:53,375 - INFO - Parsing concluído.
+2025-07-02 23:20:53,375 - INFO - 
+2025-07-02 23:20:53,376 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:20:53,376 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:20:53,384 - INFO - Heurística gerou solução INVIÁVEL para item 4139. Descartando.
+2025-07-02 23:20:53,384 - INFO - 
+2025-07-02 23:20:53,384 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:20:53,534 - INFO - Solução melhorada encontrada. Novo Ratio = 13.109756
+2025-07-02 23:20:53,535 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:20:53,535 - INFO - 
+2025-07-02 23:20:53,535 - INFO - --- Iteração 2 (Ratio Atual = 13.109756, Limite de Tempo = 30.0s) ---
+2025-07-02 23:21:23,677 - INFO - Solução melhorada encontrada. Novo Ratio = 134.375000
+2025-07-02 23:21:23,677 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:21:23,677 - INFO - 
+2025-07-02 23:21:23,677 - INFO - --- Iteração 3 (Ratio Atual = 134.375000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:21:53,821 - INFO - Solução melhorada encontrada. Novo Ratio = 144.250000
+2025-07-02 23:21:53,821 - INFO - 
+2025-07-02 23:21:53,822 - INFO - --- Iteração 4 (Ratio Atual = 144.250000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:22:08,966 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:22:08,966 - INFO - 
+2025-07-02 23:22:08,966 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:22:08,966 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:22:08,967 - INFO - Valor da Função Objetivo REAL (Densidade): 144.2500
+2025-07-02 23:22:08,967 - INFO - Total de Pedidos na Wave: 130
+2025-07-02 23:22:08,967 - INFO - Total de Unidades na Wave: 1154
+2025-07-02 23:22:08,967 - INFO - Total de Corredores Visitados: 8
+2025-07-02 23:22:08,968 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0003.txt'...
+2025-07-02 23:22:08,969 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:22:08,969 - INFO - 
+2025-07-02 23:22:08,969 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:22:08,970 - INFO - INSTANCIA 03 ^^^^^^^^
+2025-07-02 23:22:08,970 - INFO - ========================================================================================================================
+2025-07-02 23:22:08,971 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:22:08,971 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:22:08,971 - INFO - ========================================================================================================================
+2025-07-02 23:22:08,971 - INFO - INSTANCIA 04
+2025-07-02 23:22:08,972 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:22:08,972 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0004.txt
+2025-07-02 23:22:08,974 - INFO - Cabeçalho lido: 2448 pedidos, 6271 itens, 163 corredores.
+2025-07-02 23:22:08,981 - INFO - 2448 pedidos lidos.
+2025-07-02 23:22:08,991 - INFO - 163 corredores lidos.
+2025-07-02 23:22:08,991 - INFO - Limites da wave lidos: LB=701, UB=2802.
+2025-07-02 23:22:08,997 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:22:08,997 - INFO - Parsing concluído.
+2025-07-02 23:22:08,998 - INFO - 
+2025-07-02 23:22:08,998 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:22:08,998 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:22:09,009 - INFO - Heurística gerou solução INVIÁVEL para item 4139. Descartando.
+2025-07-02 23:22:09,009 - INFO - 
+2025-07-02 23:22:09,009 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:22:09,177 - INFO - Solução melhorada encontrada. Novo Ratio = 17.190184
+2025-07-02 23:22:09,178 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:22:09,178 - INFO - 
+2025-07-02 23:22:09,178 - INFO - --- Iteração 2 (Ratio Atual = 17.190184, Limite de Tempo = 30.0s) ---
+2025-07-02 23:22:39,343 - INFO - Solução melhorada encontrada. Novo Ratio = 147.473684
+2025-07-02 23:22:39,344 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:22:39,344 - INFO - 
+2025-07-02 23:22:39,344 - INFO - --- Iteração 3 (Ratio Atual = 147.473684, Limite de Tempo = 30.0s) ---
+2025-07-02 23:23:09,497 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:23:09,497 - INFO - 
+2025-07-02 23:23:09,498 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:23:09,498 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:23:09,499 - INFO - Valor da Função Objetivo REAL (Densidade): 147.4737
+2025-07-02 23:23:09,499 - INFO - Total de Pedidos na Wave: 448
+2025-07-02 23:23:09,499 - INFO - Total de Unidades na Wave: 2802
+2025-07-02 23:23:09,499 - INFO - Total de Corredores Visitados: 19
+2025-07-02 23:23:09,500 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0004.txt'...
+2025-07-02 23:23:09,501 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:23:09,501 - INFO - 
+2025-07-02 23:23:09,502 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:23:09,503 - INFO - INSTANCIA 04 ^^^^^^^^
+2025-07-02 23:23:09,503 - INFO - ========================================================================================================================
+2025-07-02 23:23:09,504 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:23:09,504 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:23:09,504 - INFO - ========================================================================================================================
+2025-07-02 23:23:09,504 - INFO - INSTANCIA 05
+2025-07-02 23:23:09,505 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:23:09,505 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0005.txt
+2025-07-02 23:23:09,508 - INFO - Cabeçalho lido: 6468 pedidos, 4959 itens, 179 corredores.
+2025-07-02 23:23:09,519 - INFO - 6468 pedidos lidos.
+2025-07-02 23:23:09,529 - INFO - 179 corredores lidos.
+2025-07-02 23:23:09,529 - INFO - Limites da wave lidos: LB=996, UB=2869.
+2025-07-02 23:23:09,536 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:23:09,536 - INFO - Parsing concluído.
+2025-07-02 23:23:09,537 - INFO - 
+2025-07-02 23:23:09,537 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:23:09,537 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:23:09,548 - INFO - Heurística gerou solução INVIÁVEL para item 4110. Descartando.
+2025-07-02 23:23:09,548 - INFO - 
+2025-07-02 23:23:09,549 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:23:09,705 - INFO - Solução melhorada encontrada. Novo Ratio = 16.027933
+2025-07-02 23:23:09,705 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:23:09,705 - INFO - 
+2025-07-02 23:23:09,706 - INFO - --- Iteração 2 (Ratio Atual = 16.027933, Limite de Tempo = 30.0s) ---
+2025-07-02 23:23:39,915 - INFO - Solução melhorada encontrada. Novo Ratio = 259.636364
+2025-07-02 23:23:39,916 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:23:39,916 - INFO - 
+2025-07-02 23:23:39,916 - INFO - --- Iteração 3 (Ratio Atual = 259.636364, Limite de Tempo = 30.0s) ---
+2025-07-02 23:23:43,002 - INFO - Solução melhorada encontrada. Novo Ratio = 349.750000
+2025-07-02 23:23:43,003 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:23:43,003 - INFO - 
+2025-07-02 23:23:43,003 - INFO - --- Iteração 4 (Ratio Atual = 349.750000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:23:44,413 - INFO - Solução melhorada encontrada. Novo Ratio = 368.000000
+2025-07-02 23:23:44,413 - INFO - 
+2025-07-02 23:23:44,413 - INFO - --- Iteração 5 (Ratio Atual = 368.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:23:46,336 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-02 23:23:46,336 - INFO - 
+2025-07-02 23:23:46,336 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:23:46,337 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:23:46,337 - INFO - Valor da Função Objetivo REAL (Densidade): 368.0000
+2025-07-02 23:23:46,337 - INFO - Total de Pedidos na Wave: 789
+2025-07-02 23:23:46,338 - INFO - Total de Unidades na Wave: 1104
+2025-07-02 23:23:46,338 - INFO - Total de Corredores Visitados: 3
+2025-07-02 23:23:46,338 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0005.txt'...
+2025-07-02 23:23:46,340 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:23:46,340 - INFO - 
+2025-07-02 23:23:46,341 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:23:46,342 - INFO - INSTANCIA 05 ^^^^^^^^
+2025-07-02 23:23:46,342 - INFO - ========================================================================================================================
+2025-07-02 23:23:46,343 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:23:46,343 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:23:46,343 - INFO - ========================================================================================================================
+2025-07-02 23:23:46,344 - INFO - INSTANCIA 06
+2025-07-02 23:23:46,344 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:23:46,344 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0006.txt
+2025-07-02 23:23:46,346 - INFO - Cabeçalho lido: 1857 pedidos, 4982 itens, 165 corredores.
+2025-07-02 23:23:46,352 - INFO - 1857 pedidos lidos.
+2025-07-02 23:23:46,361 - INFO - 165 corredores lidos.
+2025-07-02 23:23:46,361 - INFO - Limites da wave lidos: LB=496, UB=3558.
+2025-07-02 23:23:46,370 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:23:46,370 - INFO - Parsing concluído.
+2025-07-02 23:23:46,371 - INFO - 
+2025-07-02 23:23:46,371 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:23:46,372 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:23:46,381 - INFO - Heurística gerou solução INVIÁVEL para item 109. Descartando.
+2025-07-02 23:23:46,382 - INFO - 
+2025-07-02 23:23:46,382 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:23:46,510 - INFO - Solução melhorada encontrada. Novo Ratio = 21.563636
+2025-07-02 23:23:46,511 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:23:46,511 - INFO - 
+2025-07-02 23:23:46,511 - INFO - --- Iteração 2 (Ratio Atual = 21.563636, Limite de Tempo = 30.0s) ---
+2025-07-02 23:24:16,638 - INFO - Solução melhorada encontrada. Novo Ratio = 80.863636
+2025-07-02 23:24:16,638 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:24:16,639 - INFO - 
+2025-07-02 23:24:16,639 - INFO - --- Iteração 3 (Ratio Atual = 80.863636, Limite de Tempo = 30.0s) ---
+2025-07-02 23:24:46,772 - INFO - Solução melhorada encontrada. Novo Ratio = 83.500000
+2025-07-02 23:24:46,773 - INFO - 
+2025-07-02 23:24:46,773 - INFO - --- Iteração 4 (Ratio Atual = 83.500000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:25:01,907 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:25:01,907 - INFO - 
+2025-07-02 23:25:01,907 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:25:01,908 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:25:01,908 - INFO - Valor da Função Objetivo REAL (Densidade): 83.5000
+2025-07-02 23:25:01,908 - INFO - Total de Pedidos na Wave: 603
+2025-07-02 23:25:01,908 - INFO - Total de Unidades na Wave: 3173
+2025-07-02 23:25:01,909 - INFO - Total de Corredores Visitados: 38
+2025-07-02 23:25:01,909 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0006.txt'...
+2025-07-02 23:25:01,910 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:25:01,911 - INFO - 
+2025-07-02 23:25:01,911 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:25:01,912 - INFO - INSTANCIA 06 ^^^^^^^^
+2025-07-02 23:25:01,912 - INFO - ========================================================================================================================
+2025-07-02 23:25:01,913 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:25:01,913 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:25:01,913 - INFO - ========================================================================================================================
+2025-07-02 23:25:01,913 - INFO - INSTANCIA 07
+2025-07-02 23:25:01,914 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:25:01,914 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0007.txt
+2025-07-02 23:25:01,915 - INFO - Cabeçalho lido: 1841 pedidos, 1621 itens, 165 corredores.
+2025-07-02 23:25:01,919 - INFO - 1841 pedidos lidos.
+2025-07-02 23:25:01,923 - INFO - 165 corredores lidos.
+2025-07-02 23:25:01,923 - INFO - Limites da wave lidos: LB=91, UB=833.
+2025-07-02 23:25:01,925 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:25:01,925 - INFO - Parsing concluído.
+2025-07-02 23:25:01,926 - INFO - 
+2025-07-02 23:25:01,926 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:25:01,926 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:25:01,932 - INFO - Heurística gerou solução INVIÁVEL para item 213. Descartando.
+2025-07-02 23:25:01,933 - INFO - 
+2025-07-02 23:25:01,933 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:25:01,982 - INFO - Solução melhorada encontrada. Novo Ratio = 5.048485
+2025-07-02 23:25:01,983 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:25:01,983 - INFO - 
+2025-07-02 23:25:01,983 - INFO - --- Iteração 2 (Ratio Atual = 5.048485, Limite de Tempo = 30.0s) ---
+2025-07-02 23:25:32,059 - INFO - Solução melhorada encontrada. Novo Ratio = 69.416667
+2025-07-02 23:25:32,060 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:25:32,060 - INFO - 
+2025-07-02 23:25:32,060 - INFO - --- Iteração 3 (Ratio Atual = 69.416667, Limite de Tempo = 30.0s) ---
+2025-07-02 23:25:32,425 - INFO - Solução melhorada encontrada. Novo Ratio = 89.000000
+2025-07-02 23:25:32,425 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:25:32,425 - INFO - 
+2025-07-02 23:25:32,426 - INFO - --- Iteração 4 (Ratio Atual = 89.000000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:25:32,577 - INFO - Solução melhorada encontrada. Novo Ratio = 103.500000
+2025-07-02 23:25:32,577 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:25:32,577 - INFO - 
+2025-07-02 23:25:32,578 - INFO - --- Iteração 5 (Ratio Atual = 103.500000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:25:32,700 - INFO - Solução melhorada encontrada. Novo Ratio = 108.000000
+2025-07-02 23:25:32,700 - INFO - 
+2025-07-02 23:25:32,700 - INFO - --- Iteração 6 (Ratio Atual = 108.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:25:32,823 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-02 23:25:32,823 - INFO - 
+2025-07-02 23:25:32,824 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:25:32,824 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:25:32,824 - INFO - Valor da Função Objetivo REAL (Densidade): 108.0000
+2025-07-02 23:25:32,825 - INFO - Total de Pedidos na Wave: 73
+2025-07-02 23:25:32,825 - INFO - Total de Unidades na Wave: 108
+2025-07-02 23:25:32,825 - INFO - Total de Corredores Visitados: 1
+2025-07-02 23:25:32,825 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0007.txt'...
+2025-07-02 23:25:32,827 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:25:32,827 - INFO - 
+2025-07-02 23:25:32,827 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:25:32,828 - INFO - INSTANCIA 07 ^^^^^^^^
+2025-07-02 23:25:32,828 - INFO - ========================================================================================================================
+2025-07-02 23:25:32,828 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:25:32,828 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:25:32,829 - INFO - ========================================================================================================================
+2025-07-02 23:25:32,829 - INFO - INSTANCIA 08
+2025-07-02 23:25:32,829 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:25:32,830 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0008.txt
+2025-07-02 23:25:32,833 - INFO - Cabeçalho lido: 12334 pedidos, 10365 itens, 398 corredores.
+2025-07-02 23:25:32,857 - INFO - 12334 pedidos lidos.
+2025-07-02 23:25:32,881 - INFO - 398 corredores lidos.
+2025-07-02 23:25:32,881 - INFO - Limites da wave lidos: LB=2235, UB=6120.
+2025-07-02 23:25:32,896 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:25:32,896 - INFO - Parsing concluído.
+2025-07-02 23:25:32,897 - INFO - 
+2025-07-02 23:25:32,897 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:25:32,897 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:25:32,967 - INFO - Heurística gerou solução INVIÁVEL para item 83. Descartando.
+2025-07-02 23:25:32,968 - INFO - 
+2025-07-02 23:25:32,969 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:25:33,307 - INFO - Solução melhorada encontrada. Novo Ratio = 15.376884
+2025-07-02 23:25:33,307 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:25:33,308 - INFO - 
+2025-07-02 23:25:33,308 - INFO - --- Iteração 2 (Ratio Atual = 15.376884, Limite de Tempo = 30.0s) ---
+2025-07-02 23:26:03,654 - INFO - Solução melhorada encontrada. Novo Ratio = 122.400000
+2025-07-02 23:26:03,654 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:26:03,654 - INFO - 
+2025-07-02 23:26:03,655 - INFO - --- Iteração 3 (Ratio Atual = 122.400000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:26:33,994 - INFO - Solução melhorada encontrada. Novo Ratio = 183.409091
+2025-07-02 23:26:33,995 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:26:33,995 - INFO - 
+2025-07-02 23:26:33,995 - INFO - --- Iteração 4 (Ratio Atual = 183.409091, Limite de Tempo = 30.0s) ---
+2025-07-02 23:27:04,319 - INFO - Solução melhorada encontrada. Novo Ratio = 227.100000
+2025-07-02 23:27:04,320 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:27:04,320 - INFO - 
+2025-07-02 23:27:04,320 - INFO - --- Iteração 5 (Ratio Atual = 227.100000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:27:34,666 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:27:34,666 - INFO - 
+2025-07-02 23:27:34,666 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:27:34,667 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:27:34,667 - INFO - Valor da Função Objetivo REAL (Densidade): 227.1000
+2025-07-02 23:27:34,668 - INFO - Total de Pedidos na Wave: 1941
+2025-07-02 23:27:34,668 - INFO - Total de Unidades na Wave: 2271
+2025-07-02 23:27:34,668 - INFO - Total de Corredores Visitados: 10
+2025-07-02 23:27:34,669 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0008.txt'...
+2025-07-02 23:27:34,671 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:27:34,671 - INFO - 
+2025-07-02 23:27:34,672 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:27:34,676 - INFO - INSTANCIA 08 ^^^^^^^^
+2025-07-02 23:27:34,676 - INFO - ========================================================================================================================
+2025-07-02 23:27:34,676 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:27:34,677 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:27:34,677 - INFO - ========================================================================================================================
+2025-07-02 23:27:34,678 - INFO - INSTANCIA 09
+2025-07-02 23:27:34,678 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:27:34,678 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0009.txt
+2025-07-02 23:27:34,680 - INFO - Cabeçalho lido: 5581 pedidos, 4990 itens, 417 corredores.
+2025-07-02 23:27:34,690 - INFO - 5581 pedidos lidos.
+2025-07-02 23:27:34,699 - INFO - 417 corredores lidos.
+2025-07-02 23:27:34,700 - INFO - Limites da wave lidos: LB=1123, UB=3205.
+2025-07-02 23:27:34,705 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:27:34,705 - INFO - Parsing concluído.
+2025-07-02 23:27:34,705 - INFO - 
+2025-07-02 23:27:34,706 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:27:34,706 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:27:34,732 - INFO - Heurística gerou solução INVIÁVEL para item 77. Descartando.
+2025-07-02 23:27:34,733 - INFO - 
+2025-07-02 23:27:34,733 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:27:34,883 - INFO - Solução melhorada encontrada. Novo Ratio = 7.685851
+2025-07-02 23:27:34,883 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:27:34,883 - INFO - 
+2025-07-02 23:27:34,883 - INFO - --- Iteração 2 (Ratio Atual = 7.685851, Limite de Tempo = 30.0s) ---
+2025-07-02 23:28:05,046 - INFO - Solução melhorada encontrada. Novo Ratio = 55.241379
+2025-07-02 23:28:05,047 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:28:05,047 - INFO - 
+2025-07-02 23:28:05,047 - INFO - --- Iteração 3 (Ratio Atual = 55.241379, Limite de Tempo = 30.0s) ---
+2025-07-02 23:28:35,204 - INFO - Solução melhorada encontrada. Novo Ratio = 75.047619
+2025-07-02 23:28:35,205 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:28:35,205 - INFO - 
+2025-07-02 23:28:35,205 - INFO - --- Iteração 4 (Ratio Atual = 75.047619, Limite de Tempo = 30.0s) ---
+2025-07-02 23:28:52,259 - INFO - Solução melhorada encontrada. Novo Ratio = 82.500000
+2025-07-02 23:28:52,260 - INFO - 
+2025-07-02 23:28:52,260 - INFO - --- Iteração 5 (Ratio Atual = 82.500000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:29:07,421 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:29:07,422 - INFO - 
+2025-07-02 23:29:07,422 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:29:07,422 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:29:07,423 - INFO - Valor da Função Objetivo REAL (Densidade): 82.5000
+2025-07-02 23:29:07,423 - INFO - Total de Pedidos na Wave: 912
+2025-07-02 23:29:07,423 - INFO - Total de Unidades na Wave: 1155
+2025-07-02 23:29:07,424 - INFO - Total de Corredores Visitados: 14
+2025-07-02 23:29:07,424 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0009.txt'...
+2025-07-02 23:29:07,426 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:29:07,426 - INFO - 
+2025-07-02 23:29:07,426 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:29:07,428 - INFO - INSTANCIA 09 ^^^^^^^^
+2025-07-02 23:29:07,428 - INFO - ========================================================================================================================
+2025-07-02 23:29:07,429 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:29:07,429 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:29:07,429 - INFO - ========================================================================================================================
+2025-07-02 23:29:07,430 - INFO - INSTANCIA 10
+2025-07-02 23:29:07,430 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:29:07,430 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0010.txt
+2025-07-02 23:29:07,436 - INFO - Cabeçalho lido: 14952 pedidos, 13510 itens, 482 corredores.
+2025-07-02 23:29:07,468 - INFO - 14952 pedidos lidos.
+2025-07-02 23:29:07,551 - INFO - 482 corredores lidos.
+2025-07-02 23:29:07,551 - INFO - Limites da wave lidos: LB=1228, UB=9361.
+2025-07-02 23:29:07,585 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:29:07,585 - INFO - Parsing concluído.
+2025-07-02 23:29:07,586 - INFO - 
+2025-07-02 23:29:07,586 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:29:07,587 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:29:07,658 - INFO - Heurística gerou solução INVIÁVEL para item 68. Descartando.
+2025-07-02 23:29:07,660 - INFO - 
+2025-07-02 23:29:07,660 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:29:08,136 - INFO - Solução melhorada encontrada. Novo Ratio = 19.421162
+2025-07-02 23:29:08,137 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:29:08,137 - INFO - 
+2025-07-02 23:29:08,137 - INFO - --- Iteração 2 (Ratio Atual = 19.421162, Limite de Tempo = 30.0s) ---
+2025-07-02 23:29:38,635 - INFO - Solução melhorada encontrada. Novo Ratio = 135.666667
+2025-07-02 23:29:38,635 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:29:38,635 - INFO - 
+2025-07-02 23:29:38,636 - INFO - --- Iteração 3 (Ratio Atual = 135.666667, Limite de Tempo = 30.0s) ---
+2025-07-02 23:30:09,142 - INFO - Solução melhorada encontrada. Novo Ratio = 173.279070
+2025-07-02 23:30:09,143 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:30:09,143 - INFO - 
+2025-07-02 23:30:09,143 - INFO - --- Iteração 4 (Ratio Atual = 173.279070, Limite de Tempo = 30.0s) ---
+2025-07-02 23:30:39,621 - INFO - Solução melhorada encontrada. Novo Ratio = 213.357143
+2025-07-02 23:30:39,621 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:30:39,622 - INFO - 
+2025-07-02 23:30:39,622 - INFO - --- Iteração 5 (Ratio Atual = 213.357143, Limite de Tempo = 30.0s) ---
+2025-07-02 23:31:10,089 - INFO - Solução melhorada encontrada. Novo Ratio = 245.650000
+2025-07-02 23:31:10,089 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:31:10,089 - INFO - 
+2025-07-02 23:31:10,090 - INFO - --- Iteração 6 (Ratio Atual = 245.650000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:31:40,609 - INFO - Solução melhorada encontrada. Novo Ratio = 306.818182
+2025-07-02 23:31:40,610 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:31:40,610 - INFO - 
+2025-07-02 23:31:40,610 - INFO - --- Iteração 7 (Ratio Atual = 306.818182, Limite de Tempo = 30.0s) ---
+2025-07-02 23:32:11,086 - INFO - Solução melhorada encontrada. Novo Ratio = 416.000000
+2025-07-02 23:32:11,086 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:32:11,086 - INFO - 
+2025-07-02 23:32:11,087 - INFO - --- Iteração 8 (Ratio Atual = 416.000000, Limite de Tempo = 30.0s) ---
+2025-07-02 23:32:24,347 - INFO - Solução melhorada encontrada. Novo Ratio = 444.000000
+2025-07-02 23:32:24,347 - INFO - 
+2025-07-02 23:32:24,347 - INFO - --- Iteração 9 (Ratio Atual = 444.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:32:38,892 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-02 23:32:38,893 - INFO - 
+2025-07-02 23:32:38,893 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:32:38,893 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:32:38,893 - INFO - Valor da Função Objetivo REAL (Densidade): 444.0000
+2025-07-02 23:32:38,894 - INFO - Total de Pedidos na Wave: 1133
+2025-07-02 23:32:38,894 - INFO - Total de Unidades na Wave: 1332
+2025-07-02 23:32:38,894 - INFO - Total de Corredores Visitados: 3
+2025-07-02 23:32:38,895 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0010.txt'...
+2025-07-02 23:32:38,896 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:32:38,897 - INFO - 
+2025-07-02 23:32:38,897 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:32:38,902 - INFO - INSTANCIA 10 ^^^^^^^^
+2025-07-02 23:32:38,903 - INFO - ========================================================================================================================
+2025-07-02 23:32:38,903 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:32:38,903 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:32:38,904 - INFO - ========================================================================================================================
+2025-07-02 23:32:38,904 - INFO - INSTANCIA 11
+2025-07-02 23:32:38,904 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:32:38,905 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0011.txt
+2025-07-02 23:32:38,922 - INFO - Cabeçalho lido: 45112 pedidos, 37820 itens, 482 corredores.
+2025-07-02 23:32:39,014 - INFO - 45112 pedidos lidos.
+2025-07-02 23:32:39,119 - INFO - 482 corredores lidos.
+2025-07-02 23:32:39,119 - INFO - Limites da wave lidos: LB=8541, UB=19101.
+2025-07-02 23:32:39,190 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:32:39,191 - INFO - Parsing concluído.
+2025-07-02 23:32:39,192 - INFO - 
+2025-07-02 23:32:39,192 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:32:39,193 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:32:39,392 - INFO - Heurística gerou solução INVIÁVEL para item 55. Descartando.
+2025-07-02 23:32:39,398 - INFO - 
+2025-07-02 23:32:39,399 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:32:40,850 - INFO - Solução melhorada encontrada. Novo Ratio = 39.628631
+2025-07-02 23:32:40,850 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:32:40,850 - INFO - 
+2025-07-02 23:32:40,851 - INFO - --- Iteração 2 (Ratio Atual = 39.628631, Limite de Tempo = 30.0s) ---
+2025-07-02 23:33:12,154 - INFO - Solução melhorada encontrada. Novo Ratio = 40.427966
+2025-07-02 23:33:12,154 - INFO - 
+2025-07-02 23:33:12,155 - INFO - --- Iteração 3 (Ratio Atual = 40.427966, Limite de Tempo = 15.0s) ---
+2025-07-02 23:33:28,506 - INFO - Solução melhorada encontrada. Novo Ratio = 40.468220
+2025-07-02 23:33:28,506 - INFO - 
+2025-07-02 23:33:28,507 - INFO - --- Iteração 4 (Ratio Atual = 40.468220, Limite de Tempo = 15.0s) ---
+2025-07-02 23:33:44,839 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:33:44,839 - INFO - 
+2025-07-02 23:33:44,839 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:33:44,840 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:33:44,840 - INFO - Valor da Função Objetivo REAL (Densidade): 40.4682
+2025-07-02 23:33:44,840 - INFO - Total de Pedidos na Wave: 19101
+2025-07-02 23:33:44,841 - INFO - Total de Unidades na Wave: 19101
+2025-07-02 23:33:44,841 - INFO - Total de Corredores Visitados: 472
+2025-07-02 23:33:44,841 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0011.txt'...
+2025-07-02 23:33:44,857 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:33:44,858 - INFO - 
+2025-07-02 23:33:44,858 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:33:44,872 - INFO - INSTANCIA 11 ^^^^^^^^
+2025-07-02 23:33:44,872 - INFO - ========================================================================================================================
+2025-07-02 23:33:44,872 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:33:44,873 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:33:44,873 - INFO - ========================================================================================================================
+2025-07-02 23:33:44,873 - INFO - INSTANCIA 12
+2025-07-02 23:33:44,873 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:33:44,874 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0012.txt
+2025-07-02 23:33:44,885 - INFO - Cabeçalho lido: 28263 pedidos, 24432 itens, 483 corredores.
+2025-07-02 23:33:44,934 - INFO - 28263 pedidos lidos.
+2025-07-02 23:33:45,015 - INFO - 483 corredores lidos.
+2025-07-02 23:33:45,015 - INFO - Limites da wave lidos: LB=6085, UB=12808.
+2025-07-02 23:33:45,079 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:33:45,079 - INFO - Parsing concluído.
+2025-07-02 23:33:45,080 - INFO - 
+2025-07-02 23:33:45,081 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:33:45,081 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:33:46,995 - INFO - Heurística gerou solução INVIÁVEL para item 2502. Descartando.
+2025-07-02 23:33:46,998 - INFO - 
+2025-07-02 23:33:46,998 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:33:47,912 - INFO - Solução melhorada encontrada. Novo Ratio = 26.517598
+2025-07-02 23:33:47,912 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:33:47,912 - INFO - 
+2025-07-02 23:33:47,913 - INFO - --- Iteração 2 (Ratio Atual = 26.517598, Limite de Tempo = 30.0s) ---
+2025-07-02 23:34:18,760 - INFO - Solução melhorada encontrada. Novo Ratio = 197.046154
+2025-07-02 23:34:18,761 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:34:18,761 - INFO - 
+2025-07-02 23:34:18,762 - INFO - --- Iteração 3 (Ratio Atual = 197.046154, Limite de Tempo = 30.0s) ---
+2025-07-02 23:34:49,680 - INFO - Solução melhorada encontrada. Novo Ratio = 228.714286
+2025-07-02 23:34:49,680 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:34:49,681 - INFO - 
+2025-07-02 23:34:49,681 - INFO - --- Iteração 4 (Ratio Atual = 228.714286, Limite de Tempo = 30.0s) ---
+2025-07-02 23:35:20,594 - INFO - Solução melhorada encontrada. Novo Ratio = 272.510638
+2025-07-02 23:35:20,594 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:35:20,595 - INFO - 
+2025-07-02 23:35:20,595 - INFO - --- Iteração 5 (Ratio Atual = 272.510638, Limite de Tempo = 30.0s) ---
+2025-07-02 23:35:51,499 - INFO - Solução melhorada encontrada. Novo Ratio = 339.378378
+2025-07-02 23:35:51,499 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:35:51,500 - INFO - 
+2025-07-02 23:35:51,500 - INFO - --- Iteração 6 (Ratio Atual = 339.378378, Limite de Tempo = 30.0s) ---
+2025-07-02 23:36:22,389 - INFO - Solução melhorada encontrada. Novo Ratio = 397.653846
+2025-07-02 23:36:22,390 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:36:22,390 - INFO - 
+2025-07-02 23:36:22,390 - INFO - --- Iteração 7 (Ratio Atual = 397.653846, Limite de Tempo = 30.0s) ---
+2025-07-02 23:36:53,228 - INFO - Solução melhorada encontrada. Novo Ratio = 435.809524
+2025-07-02 23:36:53,228 - INFO - 
+2025-07-02 23:36:53,228 - INFO - --- Iteração 8 (Ratio Atual = 435.809524, Limite de Tempo = 15.0s) ---
+2025-07-02 23:37:09,074 - INFO - Solução melhorada encontrada. Novo Ratio = 468.235294
+2025-07-02 23:37:09,075 - INFO - 
+2025-07-02 23:37:09,075 - INFO - --- Iteração 9 (Ratio Atual = 468.235294, Limite de Tempo = 15.0s) ---
+2025-07-02 23:37:25,469 - INFO - Solução melhorada encontrada. Novo Ratio = 480.000000
+2025-07-02 23:37:25,469 - INFO - 
+2025-07-02 23:37:25,469 - INFO - --- Iteração 10 (Ratio Atual = 480.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:37:41,932 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:37:41,932 - INFO - 
+2025-07-02 23:37:41,932 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:37:41,933 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:37:41,933 - INFO - Valor da Função Objetivo REAL (Densidade): 480.0000
+2025-07-02 23:37:41,933 - INFO - Total de Pedidos na Wave: 7113
+2025-07-02 23:37:41,934 - INFO - Total de Unidades na Wave: 7680
+2025-07-02 23:37:41,934 - INFO - Total de Corredores Visitados: 16
+2025-07-02 23:37:41,934 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0012.txt'...
+2025-07-02 23:37:41,940 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:37:41,941 - INFO - 
+2025-07-02 23:37:41,941 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:37:41,951 - INFO - INSTANCIA 12 ^^^^^^^^
+2025-07-02 23:37:41,951 - INFO - ========================================================================================================================
+2025-07-02 23:37:41,952 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:37:41,952 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:37:41,952 - INFO - ========================================================================================================================
+2025-07-02 23:37:41,953 - INFO - INSTANCIA 13
+2025-07-02 23:37:41,953 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:37:41,953 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0013.txt
+2025-07-02 23:37:41,967 - INFO - Cabeçalho lido: 38214 pedidos, 32604 itens, 483 corredores.
+2025-07-02 23:37:42,037 - INFO - 38214 pedidos lidos.
+2025-07-02 23:37:42,127 - INFO - 483 corredores lidos.
+2025-07-02 23:37:42,127 - INFO - Limites da wave lidos: LB=6610, UB=19417.
+2025-07-02 23:37:42,194 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:37:42,194 - INFO - Parsing concluído.
+2025-07-02 23:37:42,195 - INFO - 
+2025-07-02 23:37:42,196 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:37:42,196 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:37:42,405 - INFO - Heurística gerou solução INVIÁVEL para item 147. Descartando.
+2025-07-02 23:37:42,409 - INFO - 
+2025-07-02 23:37:42,409 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:37:43,634 - INFO - Solução melhorada encontrada. Novo Ratio = 40.200828
+2025-07-02 23:37:43,634 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:37:43,635 - INFO - 
+2025-07-02 23:37:43,635 - INFO - --- Iteração 2 (Ratio Atual = 40.200828, Limite de Tempo = 30.0s) ---
+2025-07-02 23:38:14,819 - INFO - Solução melhorada encontrada. Novo Ratio = 201.637363
+2025-07-02 23:38:14,820 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:38:14,820 - INFO - 
+2025-07-02 23:38:14,820 - INFO - --- Iteração 3 (Ratio Atual = 201.637363, Limite de Tempo = 30.0s) ---
+2025-07-02 23:38:45,944 - INFO - Solução melhorada encontrada. Novo Ratio = 252.168831
+2025-07-02 23:38:45,945 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:38:45,945 - INFO - 
+2025-07-02 23:38:45,946 - INFO - --- Iteração 4 (Ratio Atual = 252.168831, Limite de Tempo = 30.0s) ---
+2025-07-02 23:39:17,122 - INFO - Solução melhorada encontrada. Novo Ratio = 294.196970
+2025-07-02 23:39:17,122 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:39:17,123 - INFO - 
+2025-07-02 23:39:17,123 - INFO - --- Iteração 5 (Ratio Atual = 294.196970, Limite de Tempo = 30.0s) ---
+2025-07-02 23:39:48,253 - INFO - Solução melhorada encontrada. Novo Ratio = 353.036364
+2025-07-02 23:39:48,253 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:39:48,253 - INFO - 
+2025-07-02 23:39:48,253 - INFO - --- Iteração 6 (Ratio Atual = 353.036364, Limite de Tempo = 30.0s) ---
+2025-07-02 23:40:19,404 - INFO - Solução melhorada encontrada. Novo Ratio = 405.531915
+2025-07-02 23:40:19,405 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:40:19,405 - INFO - 
+2025-07-02 23:40:19,405 - INFO - --- Iteração 7 (Ratio Atual = 405.531915, Limite de Tempo = 30.0s) ---
+2025-07-02 23:40:50,534 - INFO - Solução melhorada encontrada. Novo Ratio = 434.300000
+2025-07-02 23:40:50,535 - INFO - 
+2025-07-02 23:40:50,535 - INFO - --- Iteração 8 (Ratio Atual = 434.300000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:41:06,705 - INFO - Solução melhorada encontrada. Novo Ratio = 467.757576
+2025-07-02 23:41:06,705 - INFO - 
+2025-07-02 23:41:06,706 - INFO - --- Iteração 9 (Ratio Atual = 467.757576, Limite de Tempo = 15.0s) ---
+2025-07-02 23:41:22,901 - INFO - Solução melhorada encontrada. Novo Ratio = 513.807692
+2025-07-02 23:41:22,902 - INFO - 
+2025-07-02 23:41:22,902 - INFO - --- Iteração 10 (Ratio Atual = 513.807692, Limite de Tempo = 15.0s) ---
+2025-07-02 23:41:39,023 - INFO - Solução melhorada encontrada. Novo Ratio = 557.761905
+2025-07-02 23:41:39,023 - INFO - 
+2025-07-02 23:41:39,024 - INFO - --- Iteração 11 (Ratio Atual = 557.761905, Limite de Tempo = 15.0s) ---
+2025-07-02 23:41:55,396 - INFO - Solução melhorada encontrada. Novo Ratio = 593.764706
+2025-07-02 23:41:55,397 - INFO - 
+2025-07-02 23:41:55,397 - INFO - --- Iteração 12 (Ratio Atual = 593.764706, Limite de Tempo = 15.0s) ---
+2025-07-02 23:42:11,532 - INFO - Solução melhorada encontrada. Novo Ratio = 664.923077
+2025-07-02 23:42:11,532 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:42:11,533 - INFO - 
+2025-07-02 23:42:11,533 - INFO - --- Iteração 13 (Ratio Atual = 664.923077, Limite de Tempo = 30.0s) ---
+2025-07-02 23:42:42,867 - INFO - Solução melhorada encontrada. Novo Ratio = 685.000000
+2025-07-02 23:42:42,867 - INFO - Tempo limite global iminente. Finalizando.
+2025-07-02 23:42:42,868 - INFO - 
+2025-07-02 23:42:42,868 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:42:42,869 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:42:42,869 - INFO - Valor da Função Objetivo REAL (Densidade): 685.0000
+2025-07-02 23:42:42,869 - INFO - Total de Pedidos na Wave: 6808
+2025-07-02 23:42:42,869 - INFO - Total de Unidades na Wave: 8220
+2025-07-02 23:42:42,870 - INFO - Total de Corredores Visitados: 12
+2025-07-02 23:42:42,870 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0013.txt'...
+2025-07-02 23:42:42,876 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:42:42,876 - INFO - 
+2025-07-02 23:42:42,877 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:42:42,888 - INFO - INSTANCIA 13 ^^^^^^^^
+2025-07-02 23:42:42,889 - INFO - ========================================================================================================================
+2025-07-02 23:42:42,889 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:42:42,889 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:42:42,890 - INFO - ========================================================================================================================
+2025-07-02 23:42:42,890 - INFO - INSTANCIA 14
+2025-07-02 23:42:42,890 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:42:42,891 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0014.txt
+2025-07-02 23:42:42,904 - INFO - Cabeçalho lido: 38202 pedidos, 32238 itens, 483 corredores.
+2025-07-02 23:42:42,985 - INFO - 38202 pedidos lidos.
+2025-07-02 23:42:43,072 - INFO - 483 corredores lidos.
+2025-07-02 23:42:43,073 - INFO - Limites da wave lidos: LB=4795, UB=20406.
+2025-07-02 23:42:43,149 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:42:43,149 - INFO - Parsing concluído.
+2025-07-02 23:42:43,150 - INFO - 
+2025-07-02 23:42:43,151 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:42:43,151 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:42:43,709 - INFO - Heurística gerou solução INVIÁVEL para item 512. Descartando.
+2025-07-02 23:42:43,713 - INFO - 
+2025-07-02 23:42:43,713 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:42:44,944 - INFO - Solução melhorada encontrada. Novo Ratio = 42.248447
+2025-07-02 23:42:45,118 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:42:45,119 - INFO - 
+2025-07-02 23:42:45,119 - INFO - --- Iteração 2 (Ratio Atual = 42.248447, Limite de Tempo = 30.0s) ---
+2025-07-02 23:43:16,369 - INFO - Solução melhorada encontrada. Novo Ratio = 42.817227
+2025-07-02 23:43:16,369 - INFO - 
+2025-07-02 23:43:16,370 - INFO - --- Iteração 3 (Ratio Atual = 42.817227, Limite de Tempo = 15.0s) ---
+2025-07-02 23:43:32,448 - INFO - Solução melhorada encontrada. Novo Ratio = 42.869748
+2025-07-02 23:43:32,449 - INFO - 
+2025-07-02 23:43:32,449 - INFO - --- Iteração 4 (Ratio Atual = 42.869748, Limite de Tempo = 15.0s) ---
+2025-07-02 23:43:48,535 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:43:48,535 - INFO - 
+2025-07-02 23:43:48,536 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:43:48,536 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:43:48,536 - INFO - Valor da Função Objetivo REAL (Densidade): 42.8697
+2025-07-02 23:43:48,537 - INFO - Total de Pedidos na Wave: 20406
+2025-07-02 23:43:48,537 - INFO - Total de Unidades na Wave: 20406
+2025-07-02 23:43:48,537 - INFO - Total de Corredores Visitados: 476
+2025-07-02 23:43:48,537 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0014.txt'...
+2025-07-02 23:43:48,553 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:43:48,553 - INFO - 
+2025-07-02 23:43:48,554 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:43:48,565 - INFO - INSTANCIA 14 ^^^^^^^^
+2025-07-02 23:43:48,566 - INFO - ========================================================================================================================
+2025-07-02 23:43:48,566 - INFO - Uso: python main.py <arquivo_de_entrada> <arquivo_de_saida> [limite_de_tempo_seg]
+2025-07-02 23:43:48,566 - INFO - Usando valores padrão para um teste rápido...
+2025-07-02 23:43:48,566 - INFO - ========================================================================================================================
+2025-07-02 23:43:48,567 - INFO - INSTANCIA 15
+2025-07-02 23:43:48,567 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-02 23:43:48,567 - INFO - Iniciando o parsing do arquivo: ../datasets/b/instance_0015.txt
+2025-07-02 23:43:48,571 - INFO - Cabeçalho lido: 11541 pedidos, 9905 itens, 398 corredores.
+2025-07-02 23:43:48,592 - INFO - 11541 pedidos lidos.
+2025-07-02 23:43:48,612 - INFO - 398 corredores lidos.
+2025-07-02 23:43:48,613 - INFO - Limites da wave lidos: LB=2323, UB=7207.
+2025-07-02 23:43:48,625 - INFO - Mapeamento item -> corredor construído.
+2025-07-02 23:43:48,626 - INFO - Parsing concluído.
+2025-07-02 23:43:48,627 - INFO - 
+2025-07-02 23:43:48,627 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-02 23:43:48,627 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-02 23:43:48,665 - INFO - Heurística gerou solução INVIÁVEL para item 8201. Descartando.
+2025-07-02 23:43:48,666 - INFO - 
+2025-07-02 23:43:48,666 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-02 23:43:48,971 - INFO - Solução melhorada encontrada. Novo Ratio = 18.108040
+2025-07-02 23:43:48,972 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:43:48,972 - INFO - 
+2025-07-02 23:43:48,973 - INFO - --- Iteração 2 (Ratio Atual = 18.108040, Limite de Tempo = 30.0s) ---
+2025-07-02 23:44:19,307 - INFO - Solução melhorada encontrada. Novo Ratio = 98.726027
+2025-07-02 23:44:19,308 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:44:19,308 - INFO - 
+2025-07-02 23:44:19,308 - INFO - --- Iteração 3 (Ratio Atual = 98.726027, Limite de Tempo = 30.0s) ---
+2025-07-02 23:44:49,629 - INFO - Solução melhorada encontrada. Novo Ratio = 130.636364
+2025-07-02 23:44:49,630 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:44:49,630 - INFO - 
+2025-07-02 23:44:49,630 - INFO - --- Iteração 4 (Ratio Atual = 130.636364, Limite de Tempo = 30.0s) ---
+2025-07-02 23:45:19,928 - INFO - Solução melhorada encontrada. Novo Ratio = 166.142857
+2025-07-02 23:45:19,929 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-02 23:45:19,929 - INFO - 
+2025-07-02 23:45:19,929 - INFO - --- Iteração 5 (Ratio Atual = 166.142857, Limite de Tempo = 30.0s) ---
+2025-07-02 23:45:50,269 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-02 23:45:50,270 - INFO - 
+2025-07-02 23:45:50,270 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-02 23:45:50,270 - INFO - Melhor Solução Encontrada:
+2025-07-02 23:45:50,270 - INFO - Valor da Função Objetivo REAL (Densidade): 166.1429
+2025-07-02 23:45:50,270 - INFO - Total de Pedidos na Wave: 1841
+2025-07-02 23:45:50,271 - INFO - Total de Unidades na Wave: 2326
+2025-07-02 23:45:50,271 - INFO - Total de Corredores Visitados: 14
+2025-07-02 23:45:50,271 - INFO - Salvando a melhor solução encontrada em '../out_answers/b/solucao_0015.txt'...
+2025-07-02 23:45:50,273 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-02 23:45:50,273 - INFO - 
+2025-07-02 23:45:50,274 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-02 23:45:50,276 - INFO - INSTANCIA 15 ^^^^^^^^
+2025-07-02 23:45:50,276 - INFO - ========================================================================================================================
