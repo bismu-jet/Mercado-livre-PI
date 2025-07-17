@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# ARQUIVO: model.py
-
 from dataclasses import dataclass, field
 from typing import Dict, List
 

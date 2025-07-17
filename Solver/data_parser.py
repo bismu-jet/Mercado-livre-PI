@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# ARQUIVO: data_parser.py
-
-# Importa as entidades definidas no nosso novo módulo de modelo.
 from model import Instance, Order, Aisle
 
 class InstanceParser:

@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-# ARQUIVO: solver_v8_dinkelbach_momentum.py
-# DESCRIÇÃO: Versão final com gestão de tempo adaptativa ("Momentum")
-#            para alocar mais tempo às iterações difíceis e críticas.
-
 import gurobipy as gp
 from gurobipy import GRB
 from typing import Dict, Tuple, List

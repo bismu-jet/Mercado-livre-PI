@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# ARQUIVO: solver.py
-
 import gurobipy as gp
 from gurobipy import GRB
 from typing import Dict, Tuple

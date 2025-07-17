@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# ARQUIVO: main.py
-
 import sys
 import gurobipy as gp
 from data_parser import InstanceParser
