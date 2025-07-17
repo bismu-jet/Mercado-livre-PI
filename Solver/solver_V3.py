@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# ARQUIVO: solver_v7_dinkelbach_final.py
-# DESCRIÇÃO: Versão final com gestão de tempo por iteração para garantir
-#            progresso constante e evitar travamentos.
+# ARQUIVO: solver_v8_dinkelbach_momentum.py
+# DESCRIÇÃO: Versão final com gestão de tempo adaptativa ("Momentum")
+#            para alocar mais tempo às iterações difíceis e críticas.
 
 import gurobipy as gp
 from gurobipy import GRB
@@ -13,8 +13,8 @@ from model import Instance
 
 class WaveSolver:
     """
-    Encapsula a lógica de resolução usando o Algoritmo de Dinkelbach com
-    gestão de tempo por iteração, a abordagem mais robusta para este problema.
+    Implementa o Algoritmo de Dinkelbach com gestão de tempo adaptativa
+    ("Momentum") para resolver o problema de forma robusta e eficiente.
     """
 
     def __init__(self, instance: Instance, time_limit_sec: int = 600):
@@ -81,17 +81,12 @@ class WaveSolver:
         selected_orders = list(selected_orders_set)
         visited_aisles = list(heuristic_aisles_set)
 
-        self.best_solution = {
-            "orders": selected_orders,
-            "aisles": visited_aisles,
-            "objective": initial_ratio,
-            "total_units": current_units
-        }
+        self.best_solution = { "orders": selected_orders, "aisles": visited_aisles, "objective": initial_ratio, "total_units": current_units }
         return initial_ratio, selected_orders, visited_aisles
 
     def _solve_subproblem(self, ratio_R: float, time_limit_iter: float, warm_start_orders: List[int], warm_start_aisles: List[int]):
         """
-        Resolve o subproblema linear para um dado ratio R, com limite de tempo e warm start.
+        Resolve o subproblema linear para um dado ratio R, retornando também o status do Gurobi.
         """
         sub_model = gp.Model(f"subproblem_R_{ratio_R:.4f}")
         sub_model.setParam('OutputFlag', 0)
@@ -125,16 +120,15 @@ class WaveSolver:
 
         sub_model.setParam('TimeLimit', time_limit_iter)
         sub_model.setParam('MIPFocus', 1)
-        sub_model.setParam('Heuristics', 0.2)
         
         sub_model.optimize()
 
         if sub_model.SolCount > 0:
             selected_orders = [o.id for o in self.instance.orders if x[o.id].X > 0.5]
             visited_aisles = [a.id for a in self.instance.aisles if y[a.id].X > 0.5]
-            return sub_model.ObjVal, selected_orders, visited_aisles
+            return sub_model.ObjVal, selected_orders, visited_aisles, sub_model.Status
         
-        return -float('inf'), [], []
+        return -float('inf'), [], [], sub_model.Status
 
 
     def _write_solution_file(self, output_path: str):
@@ -151,68 +145,70 @@ class WaveSolver:
 
     def solve(self, output_file_path: str = None):
         start_time = time.time()
-        print("\n--- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO DE TEMPO) ---")
+        print("\n--- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---")
 
         current_R, last_orders, last_aisles = self._generate_initial_solution()
         
-        MAX_ITERATIONS = 25
+        MAX_ITERATIONS = 30
         CONVERGENCE_TOL = 1e-6
         
-        # --- GESTÃO DE TEMPO POR ITERAÇÃO (LÓGICA FINAL) ---
-        # Aloca um tempo fixo para a primeira, e mais fácil, iteração.
-        time_for_first_iteration = 30 
-        # Divide o tempo restante entre as outras iterações.
-        remaining_time_for_others = self.time_limit - time_for_first_iteration
-        time_per_iteration = max(15, remaining_time_for_others / (MAX_ITERATIONS -1)) if MAX_ITERATIONS > 1 else remaining_time_for_others
-        print(f"Estratégia de tempo: {time_for_first_iteration}s para a 1ª iteração, até {time_per_iteration:.1f}s para as seguintes.")
-
+        # --- LÓGICA DE GESTÃO DE TEMPO 'MOMENTUM' ---
+        base_iter_time = 15.0  # Orçamento de tempo base por iteração
+        momentum_bonus_factor = 2.0 # Multiplicador de tempo se houver grande melhora
+        significant_improvement_threshold = 1.10 # Melhora de 10%
+        has_momentum = False # Flag para dar o bônus de tempo
 
         for i in range(MAX_ITERATIONS):
             elapsed_time = time.time() - start_time
-            if elapsed_time >= self.time_limit - 5: # Deixa uma margem de segurança
-                print("Tempo limite global atingido. Finalizando.")
+            remaining_global_time = self.time_limit - elapsed_time
+            
+            if remaining_global_time <= 5: # Margem de segurança
+                print("Tempo limite global iminente. Finalizando.")
                 break
 
-            iter_time_limit = time_for_first_iteration if i == 0 else time_per_iteration
+            iter_time_limit = base_iter_time
+            if has_momentum:
+                iter_time_limit *= momentum_bonus_factor
             
+            # Garante que o tempo da iteração não exceda o tempo global restante
+            iter_time_limit = min(iter_time_limit, remaining_global_time)
+
             print(f"\n--- Iteração {i+1} (Ratio Atual = {current_R:.6f}, Limite de Tempo = {iter_time_limit:.1f}s) ---")
             
-            F_R, new_orders, new_aisles = self._solve_subproblem(current_R, iter_time_limit, last_orders, last_aisles)
+            F_R, new_orders, new_aisles, status = self._solve_subproblem(current_R, iter_time_limit, last_orders, last_aisles)
 
-            if F_R <= CONVERGENCE_TOL:
-                print(f"Convergência atingida. F(R) = {F_R:.6f} <= {CONVERGENCE_TOL}.")
+            if F_R <= CONVERGENCE_TOL and status == GRB.OPTIMAL:
+                print(f"Convergência PROVADA. F(R) = {F_R:.6f} <= {CONVERGENCE_TOL}. Status: Ótimo.")
                 break
             
+            if not new_aisles:
+                print("Subproblema não encontrou solução viável. Finalizando.")
+                break
+
             total_units = sum(self.instance.orders[o_id].total_units for o_id in new_orders)
-            num_aisles = len(new_aisles)
-
-            if num_aisles == 0:
-                print("Subproblema retornou uma solução com zero corredores. Interrompendo.")
-                break
+            new_R = total_units / len(new_aisles)
             
-            new_R = total_units / num_aisles
-            
-            # Apenas atualiza se a nova solução for estritamente melhor
             if new_R > current_R + CONVERGENCE_TOL:
-                 print(f"Solução melhorada encontrada. Novo Ratio = {new_R:.6f}")
-                 self.best_solution = {
-                    "orders": new_orders,
-                    "aisles": new_aisles,
-                    "objective": new_R,
-                    "total_units": total_units
-                 }
-                 current_R = new_R
-                 last_orders, last_aisles = new_orders, new_aisles
+                print(f"Solução melhorada encontrada. Novo Ratio = {new_R:.6f}")
+                
+                if new_R >= current_R * significant_improvement_threshold:
+                    print("Melhora significativa! Ganhando 'Momentum' para a próxima iteração.")
+                    has_momentum = True
+                else:
+                    has_momentum = False
+
+                self.best_solution = { "orders": new_orders, "aisles": new_aisles, "objective": new_R, "total_units": total_units }
+                current_R = new_R
+                last_orders, last_aisles = new_orders, new_aisles
             else:
-                print("Nenhuma melhoria significativa encontrada nesta iteração. Finalizando.")
-                break
+                print("Nenhuma melhoria significativa encontrada. Finalizando.")
+                break # Estagnação
         
         print("\n--- Processo de Otimização Finalizado ---")
         sol = self.best_solution
         if sol["objective"] > 0:
             print(f"Melhor Solução Encontrada:")
             print(f"Valor da Função Objetivo REAL (Densidade): {sol['objective']:.4f}")
-            print("-" * 25)
             print(f"Total de Pedidos na Wave: {len(sol['orders'])}")
             print(f"Total de Unidades na Wave: {sol['total_units']}")
             print(f"Total de Corredores Visitados: {len(sol['aisles'])}")

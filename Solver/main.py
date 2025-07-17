@@ -23,20 +23,17 @@ class StreamToLogger:
     def flush(self):
         pass
 
-# 2. Configura o logger principal
 logging.basicConfig(
-    level=logging.INFO, # Nível mínimo de mensagem a ser capturada (INFO, WARNING, ERROR)
-    format='%(asctime)s - %(levelname)s - %(message)s', # Formato da mensagem
-    filename='projeto_bess.log', # Nome do arquivo de log
-    filemode='w' # 'w' para sobrescrever o arquivo a cada execução, 'a' para adicionar ao final
+    level=logging.INFO, 
+    format='%(asctime)s - %(levelname)s - %(message)s', 
+    filename='projeto_bess.log', 
+    filemode='w'
 )
 
-# 3. Adiciona um handler para também mostrar o log no console (opcional, mas recomendado)
 console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
 logging.getLogger().addHandler(console_handler)
 
-# 4. Redireciona o stdout (saída do print) para o nosso logger
 stdout_logger = logging.getLogger('STDOUT')
 sys.stdout = StreamToLogger(stdout_logger, logging.INFO)
 
@@ -50,13 +47,8 @@ def run_challenge(input_file: str, output_file: str, time_limit: int):
     """
     print("--- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---")
     try:
-        # Etapa 1: Carregar os dados
         instance_data = InstanceParser.parse(input_file)
-
-        # Etapa 2: Inicializar o solver com os dados
         solver = WaveSolver(instance_data, time_limit_sec=time_limit)
-
-        # Etapa 3: Resolver o problema e salvar a solução
         solver.solve(output_file_path=output_file)
 
     except (FileNotFoundError, ValueError) as e:
@@ -69,10 +61,8 @@ def run_challenge(input_file: str, output_file: str, time_limit: int):
         print("\n--- EXECUÇÃO FINALIZADA ---")
 
 if __name__ == '__main__':
-    # Define os arquivos e o limite de tempo
     datasheet = 'b'
     run_all = True
-    #run_all = False
     instance_case = '01'
     time_sec_setado = 300
 
@@ -95,7 +85,7 @@ if __name__ == '__main__':
             else:
                 input_f = sys.argv[1]
                 output_f = sys.argv[2]
-                time_sec = int(sys.argv[3]) if len(sys.argv) > 3 else 600 # Padrão de 10 minutos
+                time_sec = int(sys.argv[3]) if len(sys.argv) > 3 else 600 
             print("=="*60)
             print(f'INSTANCIA {instance_case}')
             run_challenge(input_file=input_f, output_file=output_f, time_limit=time_sec)
@@ -108,11 +98,11 @@ if __name__ == '__main__':
             print("Usando valores padrão para um teste rápido...")
             input_f = f'../datasets/{datasheet}/instance_00{instance_case}.txt'
             output_f = f'../out_answers/{datasheet}/solucao_00{instance_case}.txt'
-            time_sec = time_sec_setado # 5 minuto
+            time_sec = time_sec_setado
         else:
             input_f = sys.argv[1]
             output_f = sys.argv[2]
-            time_sec = int(sys.argv[3]) if len(sys.argv) > 3 else 600 # Padrão de 10 minutos
+            time_sec = int(sys.argv[3]) if len(sys.argv) > 3 else 600 
 
         print("=="*60)
         print(f'INSTANCIA {instance_case}')

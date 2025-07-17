@@ -21,14 +21,12 @@ class InstanceParser:
         with open(file_path, 'r') as f:
             lines = f.readlines()
 
-        # 1. Cabeçalho
         header = list(map(int, lines[0].strip().split()))
         instance.num_orders, instance.num_items, instance.num_aisles = header
         print(f"Cabeçalho lido: {instance.num_orders} pedidos, {instance.num_items} itens, {instance.num_aisles} corredores.")
 
         current_line_index = 1
         
-        # 2. Pedidos
         for order_id in range(instance.num_orders):
             parts = list(map(int, lines[current_line_index].strip().split()))
             items_data = parts[1:]
@@ -38,7 +36,6 @@ class InstanceParser:
             current_line_index += 1
         print(f"{len(instance.orders)} pedidos lidos.")
         
-        # 3. Corredores
         for aisle_id in range(instance.num_aisles):
             if current_line_index >= len(lines) or not lines[current_line_index].strip():
                 break
@@ -51,14 +48,12 @@ class InstanceParser:
             current_line_index += 1
         print(f"{len(instance.aisles)} corredores lidos.")
 
-        # 4. Limites da Wave
         if current_line_index < len(lines):
             limits = list(map(int, lines[current_line_index].strip().split()))
             if len(limits) == 2:
                 instance.min_wave_size, instance.max_wave_size = limits
                 print(f"Limites da wave lidos: LB={instance.min_wave_size}, UB={instance.max_wave_size}.")
 
-        # 5. Pós-processamento
         instance.build_item_locations()
         instance.build_orders_by_item()
         print("Mapeamento item -> corredor construído.")

@@ -1,0 +1,881 @@
+2025-07-17 09:49:24,347 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,347 - INFO - INSTANCIA 01
+2025-07-17 09:49:24,347 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:49:24,348 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0001.txt
+2025-07-17 09:49:24,350 - INFO - Cabeçalho lido: 61 pedidos, 155 itens, 116 corredores.
+2025-07-17 09:49:24,350 - INFO - 61 pedidos lidos.
+2025-07-17 09:49:24,351 - INFO - 116 corredores lidos.
+2025-07-17 09:49:24,352 - INFO - Limites da wave lidos: LB=30, UB=68.
+2025-07-17 09:49:24,352 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:49:24,353 - INFO - Parsing concluído.
+2025-07-17 09:49:24,353 - INFO - 
+2025-07-17 09:49:24,353 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:49:24,353 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:49:24,354 - INFO - Heurística gerou solução INVIÁVEL para item 57. Descartando.
+2025-07-17 09:49:24,354 - INFO - 
+2025-07-17 09:49:24,354 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:49:24,356 - INFO - Set parameter Username
+2025-07-17 09:49:24,357 - INFO - Set parameter Username
+2025-07-17 09:49:24,357 - INFO - Set parameter LicenseID to value 2638716
+2025-07-17 09:49:24,357 - INFO - Set parameter LicenseID to value 2638716
+2025-07-17 09:49:24,359 - INFO - Academic license - for non-commercial use only - expires 2026-03-19
+2025-07-17 09:49:24,359 - INFO - Academic license - for non-commercial use only - expires 2026-03-19
+2025-07-17 09:49:24,366 - INFO - Solução melhorada encontrada. Novo Ratio = 0.586207
+2025-07-17 09:49:24,366 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,367 - INFO - 
+2025-07-17 09:49:24,367 - INFO - --- Iteração 2 (Ratio Atual = 0.586207, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,400 - INFO - Solução melhorada encontrada. Novo Ratio = 11.333333
+2025-07-17 09:49:24,400 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,400 - INFO - 
+2025-07-17 09:49:24,401 - INFO - --- Iteração 3 (Ratio Atual = 11.333333, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,414 - INFO - Solução melhorada encontrada. Novo Ratio = 15.000000
+2025-07-17 09:49:24,415 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,415 - INFO - 
+2025-07-17 09:49:24,415 - INFO - --- Iteração 4 (Ratio Atual = 15.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,431 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:49:24,431 - INFO - 
+2025-07-17 09:49:24,431 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:49:24,432 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:49:24,432 - INFO - Valor da Função Objetivo REAL (Densidade): 15.0000
+2025-07-17 09:49:24,432 - INFO - Total de Pedidos na Wave: 12
+2025-07-17 09:49:24,432 - INFO - Total de Unidades na Wave: 45
+2025-07-17 09:49:24,433 - INFO - Total de Corredores Visitados: 3
+2025-07-17 09:49:24,433 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0001.txt'...
+2025-07-17 09:49:24,433 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:49:24,434 - INFO - 
+2025-07-17 09:49:24,434 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:49:24,434 - INFO - INSTANCIA 01 ^^^^^^^^
+2025-07-17 09:49:24,434 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,434 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,435 - INFO - INSTANCIA 02
+2025-07-17 09:49:24,435 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:49:24,435 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0002.txt
+2025-07-17 09:49:24,436 - INFO - Cabeçalho lido: 7 pedidos, 7 itens, 33 corredores.
+2025-07-17 09:49:24,436 - INFO - 7 pedidos lidos.
+2025-07-17 09:49:24,436 - INFO - 33 corredores lidos.
+2025-07-17 09:49:24,437 - INFO - Limites da wave lidos: LB=0, UB=2.
+2025-07-17 09:49:24,437 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:49:24,437 - INFO - Parsing concluído.
+2025-07-17 09:49:24,437 - INFO - 
+2025-07-17 09:49:24,437 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:49:24,437 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:49:24,438 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 1.0000
+2025-07-17 09:49:24,438 - INFO - 
+2025-07-17 09:49:24,438 - INFO - --- Iteração 1 (Ratio Atual = 1.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:49:24,439 - INFO - Solução melhorada encontrada. Novo Ratio = 2.000000
+2025-07-17 09:49:24,440 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,440 - INFO - 
+2025-07-17 09:49:24,440 - INFO - --- Iteração 2 (Ratio Atual = 2.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,443 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:49:24,443 - INFO - 
+2025-07-17 09:49:24,443 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:49:24,444 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:49:24,444 - INFO - Valor da Função Objetivo REAL (Densidade): 2.0000
+2025-07-17 09:49:24,444 - INFO - Total de Pedidos na Wave: 1
+2025-07-17 09:49:24,444 - INFO - Total de Unidades na Wave: 2
+2025-07-17 09:49:24,444 - INFO - Total de Corredores Visitados: 1
+2025-07-17 09:49:24,445 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0002.txt'...
+2025-07-17 09:49:24,445 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:49:24,445 - INFO - 
+2025-07-17 09:49:24,446 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:49:24,446 - INFO - INSTANCIA 02 ^^^^^^^^
+2025-07-17 09:49:24,446 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,446 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,446 - INFO - INSTANCIA 03
+2025-07-17 09:49:24,446 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:49:24,446 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0003.txt
+2025-07-17 09:49:24,447 - INFO - Cabeçalho lido: 82 pedidos, 246 itens, 124 corredores.
+2025-07-17 09:49:24,448 - INFO - 82 pedidos lidos.
+2025-07-17 09:49:24,448 - INFO - 124 corredores lidos.
+2025-07-17 09:49:24,448 - INFO - Limites da wave lidos: LB=33, UB=106.
+2025-07-17 09:49:24,449 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:49:24,449 - INFO - Parsing concluído.
+2025-07-17 09:49:24,449 - INFO - 
+2025-07-17 09:49:24,449 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:49:24,449 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:49:24,450 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 3.2121
+2025-07-17 09:49:24,450 - INFO - 
+2025-07-17 09:49:24,450 - INFO - --- Iteração 1 (Ratio Atual = 3.212121, Limite de Tempo = 15.0s) ---
+2025-07-17 09:49:24,538 - INFO - Solução melhorada encontrada. Novo Ratio = 9.636364
+2025-07-17 09:49:24,538 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,539 - INFO - 
+2025-07-17 09:49:24,539 - INFO - --- Iteração 2 (Ratio Atual = 9.636364, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,554 - INFO - Solução melhorada encontrada. Novo Ratio = 12.000000
+2025-07-17 09:49:24,554 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,554 - INFO - 
+2025-07-17 09:49:24,555 - INFO - --- Iteração 3 (Ratio Atual = 12.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,572 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:49:24,573 - INFO - 
+2025-07-17 09:49:24,573 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:49:24,573 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:49:24,573 - INFO - Valor da Função Objetivo REAL (Densidade): 12.0000
+2025-07-17 09:49:24,573 - INFO - Total de Pedidos na Wave: 9
+2025-07-17 09:49:24,574 - INFO - Total de Unidades na Wave: 48
+2025-07-17 09:49:24,574 - INFO - Total de Corredores Visitados: 4
+2025-07-17 09:49:24,574 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0003.txt'...
+2025-07-17 09:49:24,575 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:49:24,576 - INFO - 
+2025-07-17 09:49:24,576 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:49:24,576 - INFO - INSTANCIA 03 ^^^^^^^^
+2025-07-17 09:49:24,576 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,577 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,577 - INFO - INSTANCIA 04
+2025-07-17 09:49:24,577 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:49:24,577 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0004.txt
+2025-07-17 09:49:24,578 - INFO - Cabeçalho lido: 16 pedidos, 59 itens, 91 corredores.
+2025-07-17 09:49:24,579 - INFO - 16 pedidos lidos.
+2025-07-17 09:49:24,579 - INFO - 91 corredores lidos.
+2025-07-17 09:49:24,579 - INFO - Limites da wave lidos: LB=4, UB=40.
+2025-07-17 09:49:24,579 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:49:24,579 - INFO - Parsing concluído.
+2025-07-17 09:49:24,580 - INFO - 
+2025-07-17 09:49:24,580 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:49:24,580 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:49:24,580 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 1.0541
+2025-07-17 09:49:24,580 - INFO - 
+2025-07-17 09:49:24,580 - INFO - --- Iteração 1 (Ratio Atual = 1.054054, Limite de Tempo = 15.0s) ---
+2025-07-17 09:49:24,589 - INFO - Solução melhorada encontrada. Novo Ratio = 2.666667
+2025-07-17 09:49:24,589 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,590 - INFO - 
+2025-07-17 09:49:24,590 - INFO - --- Iteração 2 (Ratio Atual = 2.666667, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,597 - INFO - Solução melhorada encontrada. Novo Ratio = 3.250000
+2025-07-17 09:49:24,598 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,598 - INFO - 
+2025-07-17 09:49:24,598 - INFO - --- Iteração 3 (Ratio Atual = 3.250000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:24,603 - INFO - Solução melhorada encontrada. Novo Ratio = 3.500000
+2025-07-17 09:49:24,604 - INFO - 
+2025-07-17 09:49:24,604 - INFO - --- Iteração 4 (Ratio Atual = 3.500000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:49:24,610 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:49:24,610 - INFO - 
+2025-07-17 09:49:24,610 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:49:24,610 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:49:24,611 - INFO - Valor da Função Objetivo REAL (Densidade): 3.5000
+2025-07-17 09:49:24,611 - INFO - Total de Pedidos na Wave: 1
+2025-07-17 09:49:24,611 - INFO - Total de Unidades na Wave: 7
+2025-07-17 09:49:24,611 - INFO - Total de Corredores Visitados: 2
+2025-07-17 09:49:24,611 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0004.txt'...
+2025-07-17 09:49:24,612 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:49:24,612 - INFO - 
+2025-07-17 09:49:24,612 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:49:24,612 - INFO - INSTANCIA 04 ^^^^^^^^
+2025-07-17 09:49:24,612 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,612 - INFO - ========================================================================================================================
+2025-07-17 09:49:24,613 - INFO - INSTANCIA 05
+2025-07-17 09:49:24,613 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:49:24,613 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0005.txt
+2025-07-17 09:49:24,628 - INFO - Cabeçalho lido: 2625 pedidos, 6407 itens, 161 corredores.
+2025-07-17 09:49:24,635 - INFO - 2625 pedidos lidos.
+2025-07-17 09:49:24,646 - INFO - 161 corredores lidos.
+2025-07-17 09:49:24,646 - INFO - Limites da wave lidos: LB=1322, UB=4395.
+2025-07-17 09:49:24,652 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:49:24,652 - INFO - Parsing concluído.
+2025-07-17 09:49:24,653 - INFO - 
+2025-07-17 09:49:24,653 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:49:24,653 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:49:24,664 - INFO - Heurística gerou solução INVIÁVEL para item 278. Descartando.
+2025-07-17 09:49:24,665 - INFO - 
+2025-07-17 09:49:24,665 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:49:24,809 - INFO - Solução melhorada encontrada. Novo Ratio = 27.298137
+2025-07-17 09:49:24,810 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:24,810 - INFO - 
+2025-07-17 09:49:24,810 - INFO - --- Iteração 2 (Ratio Atual = 27.298137, Limite de Tempo = 30.0s) ---
+2025-07-17 09:49:54,956 - INFO - Solução melhorada encontrada. Novo Ratio = 151.551724
+2025-07-17 09:49:54,956 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:49:54,956 - INFO - 
+2025-07-17 09:49:54,957 - INFO - --- Iteração 3 (Ratio Atual = 151.551724, Limite de Tempo = 30.0s) ---
+2025-07-17 09:50:25,126 - INFO - Solução melhorada encontrada. Novo Ratio = 161.450000
+2025-07-17 09:50:25,127 - INFO - 
+2025-07-17 09:50:25,127 - INFO - --- Iteração 4 (Ratio Atual = 161.450000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:50:40,304 - INFO - Solução melhorada encontrada. Novo Ratio = 175.125000
+2025-07-17 09:50:40,305 - INFO - 
+2025-07-17 09:50:40,305 - INFO - --- Iteração 5 (Ratio Atual = 175.125000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:50:55,477 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-17 09:50:55,478 - INFO - 
+2025-07-17 09:50:55,478 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:50:55,478 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:50:55,479 - INFO - Valor da Função Objetivo REAL (Densidade): 175.1250
+2025-07-17 09:50:55,479 - INFO - Total de Pedidos na Wave: 360
+2025-07-17 09:50:55,479 - INFO - Total de Unidades na Wave: 1401
+2025-07-17 09:50:55,479 - INFO - Total de Corredores Visitados: 8
+2025-07-17 09:50:55,480 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0005.txt'...
+2025-07-17 09:50:55,481 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:50:55,481 - INFO - 
+2025-07-17 09:50:55,481 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:50:55,483 - INFO - INSTANCIA 05 ^^^^^^^^
+2025-07-17 09:50:55,483 - INFO - ========================================================================================================================
+2025-07-17 09:50:55,483 - INFO - ========================================================================================================================
+2025-07-17 09:50:55,483 - INFO - INSTANCIA 06
+2025-07-17 09:50:55,484 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:50:55,484 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0006.txt
+2025-07-17 09:50:55,504 - INFO - Cabeçalho lido: 10341 pedidos, 7089 itens, 184 corredores.
+2025-07-17 09:50:55,522 - INFO - 10341 pedidos lidos.
+2025-07-17 09:50:55,532 - INFO - 184 corredores lidos.
+2025-07-17 09:50:55,532 - INFO - Limites da wave lidos: LB=452, UB=3892.
+2025-07-17 09:50:55,538 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:50:55,539 - INFO - Parsing concluído.
+2025-07-17 09:50:55,539 - INFO - 
+2025-07-17 09:50:55,539 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:50:55,540 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:50:55,555 - INFO - Heurística gerou solução INVIÁVEL para item 54. Descartando.
+2025-07-17 09:50:55,556 - INFO - 
+2025-07-17 09:50:55,556 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:50:55,754 - INFO - Solução melhorada encontrada. Novo Ratio = 21.152174
+2025-07-17 09:50:55,754 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:50:55,755 - INFO - 
+2025-07-17 09:50:55,755 - INFO - --- Iteração 2 (Ratio Atual = 21.152174, Limite de Tempo = 30.0s) ---
+2025-07-17 09:51:25,974 - INFO - Solução melhorada encontrada. Novo Ratio = 389.200000
+2025-07-17 09:51:25,974 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:51:25,974 - INFO - 
+2025-07-17 09:51:25,974 - INFO - --- Iteração 3 (Ratio Atual = 389.200000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:51:37,461 - INFO - Solução melhorada encontrada. Novo Ratio = 496.600000
+2025-07-17 09:51:37,461 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:51:37,461 - INFO - 
+2025-07-17 09:51:37,461 - INFO - --- Iteração 4 (Ratio Atual = 496.600000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:51:39,937 - INFO - Solução melhorada encontrada. Novo Ratio = 601.500000
+2025-07-17 09:51:39,938 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:51:39,938 - INFO - 
+2025-07-17 09:51:39,938 - INFO - --- Iteração 5 (Ratio Atual = 601.500000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:51:40,615 - INFO - Solução melhorada encontrada. Novo Ratio = 691.000000
+2025-07-17 09:51:40,617 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:51:40,617 - INFO - 
+2025-07-17 09:51:40,617 - INFO - --- Iteração 6 (Ratio Atual = 691.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:51:41,179 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:51:41,180 - INFO - 
+2025-07-17 09:51:41,180 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:51:41,180 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:51:41,180 - INFO - Valor da Função Objetivo REAL (Densidade): 691.0000
+2025-07-17 09:51:41,180 - INFO - Total de Pedidos na Wave: 503
+2025-07-17 09:51:41,181 - INFO - Total de Unidades na Wave: 691
+2025-07-17 09:51:41,181 - INFO - Total de Corredores Visitados: 1
+2025-07-17 09:51:41,181 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0006.txt'...
+2025-07-17 09:51:41,182 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:51:41,182 - INFO - 
+2025-07-17 09:51:41,182 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:51:41,184 - INFO - INSTANCIA 06 ^^^^^^^^
+2025-07-17 09:51:41,185 - INFO - ========================================================================================================================
+2025-07-17 09:51:41,185 - INFO - ========================================================================================================================
+2025-07-17 09:51:41,185 - INFO - INSTANCIA 07
+2025-07-17 09:51:41,185 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:51:41,185 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0007.txt
+2025-07-17 09:51:41,205 - INFO - Cabeçalho lido: 8320 pedidos, 5747 itens, 180 corredores.
+2025-07-17 09:51:41,220 - INFO - 8320 pedidos lidos.
+2025-07-17 09:51:41,229 - INFO - 180 corredores lidos.
+2025-07-17 09:51:41,230 - INFO - Limites da wave lidos: LB=1306, UB=3847.
+2025-07-17 09:51:41,236 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:51:41,236 - INFO - Parsing concluído.
+2025-07-17 09:51:41,237 - INFO - 
+2025-07-17 09:51:41,237 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:51:41,237 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:51:41,255 - INFO - Heurística gerou solução INVIÁVEL para item 91. Descartando.
+2025-07-17 09:51:41,256 - INFO - 
+2025-07-17 09:51:41,256 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:51:41,423 - INFO - Solução melhorada encontrada. Novo Ratio = 21.372222
+2025-07-17 09:51:41,423 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:51:41,424 - INFO - 
+2025-07-17 09:51:41,424 - INFO - --- Iteração 2 (Ratio Atual = 21.372222, Limite de Tempo = 30.0s) ---
+2025-07-17 09:52:11,614 - INFO - Solução melhorada encontrada. Novo Ratio = 274.785714
+2025-07-17 09:52:11,615 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:52:11,615 - INFO - 
+2025-07-17 09:52:11,615 - INFO - --- Iteração 3 (Ratio Atual = 274.785714, Limite de Tempo = 30.0s) ---
+2025-07-17 09:52:22,271 - INFO - Solução melhorada encontrada. Novo Ratio = 360.166667
+2025-07-17 09:52:22,271 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:52:22,272 - INFO - 
+2025-07-17 09:52:22,272 - INFO - --- Iteração 4 (Ratio Atual = 360.166667, Limite de Tempo = 30.0s) ---
+2025-07-17 09:52:26,376 - INFO - Solução melhorada encontrada. Novo Ratio = 392.250000
+2025-07-17 09:52:26,377 - INFO - 
+2025-07-17 09:52:26,377 - INFO - --- Iteração 5 (Ratio Atual = 392.250000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:52:30,528 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:52:30,529 - INFO - 
+2025-07-17 09:52:30,529 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:52:30,529 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:52:30,529 - INFO - Valor da Função Objetivo REAL (Densidade): 392.2500
+2025-07-17 09:52:30,529 - INFO - Total de Pedidos na Wave: 1212
+2025-07-17 09:52:30,530 - INFO - Total de Unidades na Wave: 1569
+2025-07-17 09:52:30,530 - INFO - Total de Corredores Visitados: 4
+2025-07-17 09:52:30,530 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0007.txt'...
+2025-07-17 09:52:30,532 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:52:30,532 - INFO - 
+2025-07-17 09:52:30,532 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:52:30,534 - INFO - INSTANCIA 07 ^^^^^^^^
+2025-07-17 09:52:30,534 - INFO - ========================================================================================================================
+2025-07-17 09:52:30,534 - INFO - ========================================================================================================================
+2025-07-17 09:52:30,534 - INFO - INSTANCIA 08
+2025-07-17 09:52:30,535 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:52:30,535 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0008.txt
+2025-07-17 09:52:30,547 - INFO - Cabeçalho lido: 2185 pedidos, 5831 itens, 168 corredores.
+2025-07-17 09:52:30,554 - INFO - 2185 pedidos lidos.
+2025-07-17 09:52:30,564 - INFO - 168 corredores lidos.
+2025-07-17 09:52:30,564 - INFO - Limites da wave lidos: LB=1304, UB=2840.
+2025-07-17 09:52:30,570 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:52:30,570 - INFO - Parsing concluído.
+2025-07-17 09:52:30,571 - INFO - 
+2025-07-17 09:52:30,571 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:52:30,571 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:52:30,577 - INFO - Heurística gerou solução INVIÁVEL para item 4115. Descartando.
+2025-07-17 09:52:30,578 - INFO - 
+2025-07-17 09:52:30,578 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:52:30,721 - INFO - Solução melhorada encontrada. Novo Ratio = 16.904762
+2025-07-17 09:52:30,722 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:52:30,722 - INFO - 
+2025-07-17 09:52:30,722 - INFO - --- Iteração 2 (Ratio Atual = 16.904762, Limite de Tempo = 30.0s) ---
+2025-07-17 09:53:00,857 - INFO - Solução melhorada encontrada. Novo Ratio = 157.777778
+2025-07-17 09:53:00,858 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:53:00,858 - INFO - 
+2025-07-17 09:53:00,858 - INFO - --- Iteração 3 (Ratio Atual = 157.777778, Limite de Tempo = 30.0s) ---
+2025-07-17 09:53:30,986 - INFO - Solução melhorada encontrada. Novo Ratio = 162.941176
+2025-07-17 09:53:30,987 - INFO - 
+2025-07-17 09:53:30,987 - INFO - --- Iteração 4 (Ratio Atual = 162.941176, Limite de Tempo = 15.0s) ---
+2025-07-17 09:53:46,143 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-17 09:53:46,143 - INFO - 
+2025-07-17 09:53:46,143 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:53:46,143 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:53:46,143 - INFO - Valor da Função Objetivo REAL (Densidade): 162.9412
+2025-07-17 09:53:46,144 - INFO - Total de Pedidos na Wave: 419
+2025-07-17 09:53:46,144 - INFO - Total de Unidades na Wave: 2770
+2025-07-17 09:53:46,144 - INFO - Total de Corredores Visitados: 17
+2025-07-17 09:53:46,144 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0008.txt'...
+2025-07-17 09:53:46,145 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:53:46,145 - INFO - 
+2025-07-17 09:53:46,146 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:53:46,147 - INFO - INSTANCIA 08 ^^^^^^^^
+2025-07-17 09:53:46,147 - INFO - ========================================================================================================================
+2025-07-17 09:53:46,147 - INFO - ========================================================================================================================
+2025-07-17 09:53:46,148 - INFO - INSTANCIA 09
+2025-07-17 09:53:46,148 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:53:46,148 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0009.txt
+2025-07-17 09:53:46,150 - INFO - Cabeçalho lido: 70 pedidos, 222 itens, 304 corredores.
+2025-07-17 09:53:46,151 - INFO - 70 pedidos lidos.
+2025-07-17 09:53:46,152 - INFO - 304 corredores lidos.
+2025-07-17 09:53:46,152 - INFO - Limites da wave lidos: LB=52, UB=153.
+2025-07-17 09:53:46,157 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:53:46,157 - INFO - Parsing concluído.
+2025-07-17 09:53:46,157 - INFO - 
+2025-07-17 09:53:46,157 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:53:46,157 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:53:46,161 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 1.2645
+2025-07-17 09:53:46,161 - INFO - 
+2025-07-17 09:53:46,161 - INFO - --- Iteração 1 (Ratio Atual = 1.264463, Limite de Tempo = 15.0s) ---
+2025-07-17 09:53:46,279 - INFO - Solução melhorada encontrada. Novo Ratio = 4.135135
+2025-07-17 09:53:46,280 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:53:46,280 - INFO - 
+2025-07-17 09:53:46,280 - INFO - --- Iteração 2 (Ratio Atual = 4.135135, Limite de Tempo = 30.0s) ---
+2025-07-17 09:53:46,498 - INFO - Solução melhorada encontrada. Novo Ratio = 4.285714
+2025-07-17 09:53:46,499 - INFO - 
+2025-07-17 09:53:46,499 - INFO - --- Iteração 3 (Ratio Atual = 4.285714, Limite de Tempo = 15.0s) ---
+2025-07-17 09:53:46,664 - INFO - Solução melhorada encontrada. Novo Ratio = 4.416667
+2025-07-17 09:53:46,665 - INFO - 
+2025-07-17 09:53:46,665 - INFO - --- Iteração 4 (Ratio Atual = 4.416667, Limite de Tempo = 15.0s) ---
+2025-07-17 09:53:47,196 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:53:47,197 - INFO - 
+2025-07-17 09:53:47,197 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:53:47,197 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:53:47,197 - INFO - Valor da Função Objetivo REAL (Densidade): 4.4167
+2025-07-17 09:53:47,197 - INFO - Total de Pedidos na Wave: 9
+2025-07-17 09:53:47,197 - INFO - Total de Unidades na Wave: 53
+2025-07-17 09:53:47,197 - INFO - Total de Corredores Visitados: 12
+2025-07-17 09:53:47,197 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0009.txt'...
+2025-07-17 09:53:47,198 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:53:47,199 - INFO - 
+2025-07-17 09:53:47,199 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:53:47,199 - INFO - INSTANCIA 09 ^^^^^^^^
+2025-07-17 09:53:47,199 - INFO - ========================================================================================================================
+2025-07-17 09:53:47,199 - INFO - ========================================================================================================================
+2025-07-17 09:53:47,199 - INFO - INSTANCIA 10
+2025-07-17 09:53:47,199 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:53:47,199 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0010.txt
+2025-07-17 09:53:47,210 - INFO - Cabeçalho lido: 1602 pedidos, 3689 itens, 383 corredores.
+2025-07-17 09:53:47,214 - INFO - 1602 pedidos lidos.
+2025-07-17 09:53:47,222 - INFO - 383 corredores lidos.
+2025-07-17 09:53:47,222 - INFO - Limites da wave lidos: LB=416, UB=1746.
+2025-07-17 09:53:47,226 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:53:47,226 - INFO - Parsing concluído.
+2025-07-17 09:53:47,227 - INFO - 
+2025-07-17 09:53:47,227 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:53:47,227 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:53:47,242 - INFO - Heurística gerou solução INVIÁVEL para item 270. Descartando.
+2025-07-17 09:53:47,243 - INFO - 
+2025-07-17 09:53:47,243 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:53:47,343 - INFO - Solução melhorada encontrada. Novo Ratio = 4.558747
+2025-07-17 09:53:47,344 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:53:47,344 - INFO - 
+2025-07-17 09:53:47,344 - INFO - --- Iteração 2 (Ratio Atual = 4.558747, Limite de Tempo = 30.0s) ---
+2025-07-17 09:54:17,449 - INFO - Solução melhorada encontrada. Novo Ratio = 16.628571
+2025-07-17 09:54:17,449 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:54:17,450 - INFO - 
+2025-07-17 09:54:17,450 - INFO - --- Iteração 3 (Ratio Atual = 16.628571, Limite de Tempo = 30.0s) ---
+2025-07-17 09:54:47,562 - INFO - Solução melhorada encontrada. Novo Ratio = 16.875000
+2025-07-17 09:54:47,562 - INFO - 
+2025-07-17 09:54:47,563 - INFO - --- Iteração 4 (Ratio Atual = 16.875000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:55:02,677 - INFO - Solução melhorada encontrada. Novo Ratio = 16.951456
+2025-07-17 09:55:02,677 - INFO - 
+2025-07-17 09:55:02,677 - INFO - --- Iteração 5 (Ratio Atual = 16.951456, Limite de Tempo = 15.0s) ---
+2025-07-17 09:55:17,781 - INFO - Solução melhorada encontrada. Novo Ratio = 16.970297
+2025-07-17 09:55:17,781 - INFO - 
+2025-07-17 09:55:17,782 - INFO - --- Iteração 6 (Ratio Atual = 16.970297, Limite de Tempo = 15.0s) ---
+2025-07-17 09:55:32,883 - INFO - Solução melhorada encontrada. Novo Ratio = 16.990196
+2025-07-17 09:55:32,883 - INFO - 
+2025-07-17 09:55:32,883 - INFO - --- Iteração 7 (Ratio Atual = 16.990196, Limite de Tempo = 15.0s) ---
+2025-07-17 09:55:47,990 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-17 09:55:47,990 - INFO - 
+2025-07-17 09:55:47,991 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:55:47,991 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:55:47,991 - INFO - Valor da Função Objetivo REAL (Densidade): 16.9902
+2025-07-17 09:55:47,991 - INFO - Total de Pedidos na Wave: 597
+2025-07-17 09:55:47,991 - INFO - Total de Unidades na Wave: 1733
+2025-07-17 09:55:47,992 - INFO - Total de Corredores Visitados: 102
+2025-07-17 09:55:47,992 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0010.txt'...
+2025-07-17 09:55:47,994 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:55:47,994 - INFO - 
+2025-07-17 09:55:47,994 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:55:47,995 - INFO - INSTANCIA 10 ^^^^^^^^
+2025-07-17 09:55:47,995 - INFO - ========================================================================================================================
+2025-07-17 09:55:47,995 - INFO - ========================================================================================================================
+2025-07-17 09:55:47,995 - INFO - INSTANCIA 11
+2025-07-17 09:55:47,996 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:55:47,996 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0011.txt
+2025-07-17 09:55:47,997 - INFO - Cabeçalho lido: 1029 pedidos, 2784 itens, 375 corredores.
+2025-07-17 09:55:48,001 - INFO - 1029 pedidos lidos.
+2025-07-17 09:55:48,008 - INFO - 375 corredores lidos.
+2025-07-17 09:55:48,008 - INFO - Limites da wave lidos: LB=330, UB=2045.
+2025-07-17 09:55:48,010 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:55:48,011 - INFO - Parsing concluído.
+2025-07-17 09:55:48,011 - INFO - 
+2025-07-17 09:55:48,011 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:55:48,011 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:55:48,032 - INFO - Heurística gerou solução INVIÁVEL para item 254. Descartando.
+2025-07-17 09:55:48,032 - INFO - 
+2025-07-17 09:55:48,032 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:55:48,111 - INFO - Solução melhorada encontrada. Novo Ratio = 5.453333
+2025-07-17 09:55:48,112 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:55:48,112 - INFO - 
+2025-07-17 09:55:48,112 - INFO - --- Iteração 2 (Ratio Atual = 5.453333, Limite de Tempo = 30.0s) ---
+2025-07-17 09:56:18,194 - INFO - Solução melhorada encontrada. Novo Ratio = 14.683453
+2025-07-17 09:56:18,195 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:56:18,195 - INFO - 
+2025-07-17 09:56:18,195 - INFO - --- Iteração 3 (Ratio Atual = 14.683453, Limite de Tempo = 30.0s) ---
+2025-07-17 09:56:48,274 - INFO - Solução melhorada encontrada. Novo Ratio = 15.796610
+2025-07-17 09:56:48,275 - INFO - 
+2025-07-17 09:56:48,275 - INFO - --- Iteração 4 (Ratio Atual = 15.796610, Limite de Tempo = 15.0s) ---
+2025-07-17 09:57:03,353 - INFO - Solução melhorada encontrada. Novo Ratio = 15.800000
+2025-07-17 09:57:03,354 - INFO - 
+2025-07-17 09:57:03,354 - INFO - --- Iteração 5 (Ratio Atual = 15.800000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:57:18,429 - INFO - Solução melhorada encontrada. Novo Ratio = 16.600000
+2025-07-17 09:57:18,429 - INFO - 
+2025-07-17 09:57:18,430 - INFO - --- Iteração 6 (Ratio Atual = 16.600000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:57:33,508 - INFO - Solução melhorada encontrada. Novo Ratio = 16.850000
+2025-07-17 09:57:33,509 - INFO - 
+2025-07-17 09:57:33,509 - INFO - --- Iteração 7 (Ratio Atual = 16.850000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:57:48,574 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-17 09:57:48,575 - INFO - 
+2025-07-17 09:57:48,575 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:57:48,575 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:57:48,575 - INFO - Valor da Função Objetivo REAL (Densidade): 16.8500
+2025-07-17 09:57:48,576 - INFO - Total de Pedidos na Wave: 73
+2025-07-17 09:57:48,576 - INFO - Total de Unidades na Wave: 337
+2025-07-17 09:57:48,576 - INFO - Total de Corredores Visitados: 20
+2025-07-17 09:57:48,576 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0011.txt'...
+2025-07-17 09:57:48,577 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:57:48,577 - INFO - 
+2025-07-17 09:57:48,578 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:57:48,579 - INFO - INSTANCIA 11 ^^^^^^^^
+2025-07-17 09:57:48,579 - INFO - ========================================================================================================================
+2025-07-17 09:57:48,579 - INFO - ========================================================================================================================
+2025-07-17 09:57:48,579 - INFO - INSTANCIA 12
+2025-07-17 09:57:48,580 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:57:48,580 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0012.txt
+2025-07-17 09:57:48,581 - INFO - Cabeçalho lido: 133 pedidos, 337 itens, 342 corredores.
+2025-07-17 09:57:48,581 - INFO - 133 pedidos lidos.
+2025-07-17 09:57:48,583 - INFO - 342 corredores lidos.
+2025-07-17 09:57:48,583 - INFO - Limites da wave lidos: LB=35, UB=177.
+2025-07-17 09:57:48,584 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:57:48,584 - INFO - Parsing concluído.
+2025-07-17 09:57:48,584 - INFO - 
+2025-07-17 09:57:48,584 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:57:48,584 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:57:48,585 - INFO - Heurística gerou solução INVIÁVEL para item 218. Descartando.
+2025-07-17 09:57:48,585 - INFO - 
+2025-07-17 09:57:48,585 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:57:48,598 - INFO - Solução melhorada encontrada. Novo Ratio = 0.517544
+2025-07-17 09:57:48,599 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:57:48,599 - INFO - 
+2025-07-17 09:57:48,599 - INFO - --- Iteração 2 (Ratio Atual = 0.517544, Limite de Tempo = 30.0s) ---
+2025-07-17 09:57:49,474 - INFO - Solução melhorada encontrada. Novo Ratio = 6.321429
+2025-07-17 09:57:49,474 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:57:49,475 - INFO - 
+2025-07-17 09:57:49,475 - INFO - --- Iteração 3 (Ratio Atual = 6.321429, Limite de Tempo = 30.0s) ---
+2025-07-17 09:57:49,520 - INFO - Solução melhorada encontrada. Novo Ratio = 8.818182
+2025-07-17 09:57:49,520 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:57:49,520 - INFO - 
+2025-07-17 09:57:49,520 - INFO - --- Iteração 4 (Ratio Atual = 8.818182, Limite de Tempo = 30.0s) ---
+2025-07-17 09:57:49,616 - INFO - Solução melhorada encontrada. Novo Ratio = 11.250000
+2025-07-17 09:57:49,616 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:57:49,616 - INFO - 
+2025-07-17 09:57:49,617 - INFO - --- Iteração 5 (Ratio Atual = 11.250000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:57:49,706 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:57:49,706 - INFO - 
+2025-07-17 09:57:49,706 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:57:49,706 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:57:49,706 - INFO - Valor da Função Objetivo REAL (Densidade): 11.2500
+2025-07-17 09:57:49,706 - INFO - Total de Pedidos na Wave: 8
+2025-07-17 09:57:49,707 - INFO - Total de Unidades na Wave: 45
+2025-07-17 09:57:49,707 - INFO - Total de Corredores Visitados: 4
+2025-07-17 09:57:49,707 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0012.txt'...
+2025-07-17 09:57:49,708 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:57:49,708 - INFO - 
+2025-07-17 09:57:49,708 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:57:49,708 - INFO - INSTANCIA 12 ^^^^^^^^
+2025-07-17 09:57:49,709 - INFO - ========================================================================================================================
+2025-07-17 09:57:49,709 - INFO - ========================================================================================================================
+2025-07-17 09:57:49,709 - INFO - INSTANCIA 13
+2025-07-17 09:57:49,709 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:57:49,709 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0013.txt
+2025-07-17 09:57:49,712 - INFO - Cabeçalho lido: 8375 pedidos, 7525 itens, 413 corredores.
+2025-07-17 09:57:49,728 - INFO - 8375 pedidos lidos.
+2025-07-17 09:57:49,739 - INFO - 413 corredores lidos.
+2025-07-17 09:57:49,740 - INFO - Limites da wave lidos: LB=1510, UB=4583.
+2025-07-17 09:57:49,752 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:57:49,753 - INFO - Parsing concluído.
+2025-07-17 09:57:49,753 - INFO - 
+2025-07-17 09:57:49,753 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:57:49,753 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:57:49,794 - INFO - Heurística gerou solução INVIÁVEL para item 116. Descartando.
+2025-07-17 09:57:49,794 - INFO - 
+2025-07-17 09:57:49,794 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:57:49,996 - INFO - Solução melhorada encontrada. Novo Ratio = 11.096852
+2025-07-17 09:57:49,996 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:57:49,997 - INFO - 
+2025-07-17 09:57:49,997 - INFO - --- Iteração 2 (Ratio Atual = 11.096852, Limite de Tempo = 30.0s) ---
+2025-07-17 09:58:20,202 - INFO - Solução melhorada encontrada. Novo Ratio = 67.397059
+2025-07-17 09:58:20,203 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:58:20,203 - INFO - 
+2025-07-17 09:58:20,203 - INFO - --- Iteração 3 (Ratio Atual = 67.397059, Limite de Tempo = 30.0s) ---
+2025-07-17 09:58:50,435 - INFO - Solução melhorada encontrada. Novo Ratio = 98.000000
+2025-07-17 09:58:50,436 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:58:50,436 - INFO - 
+2025-07-17 09:58:50,436 - INFO - --- Iteração 4 (Ratio Atual = 98.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 09:58:57,262 - INFO - Solução melhorada encontrada. Novo Ratio = 117.384615
+2025-07-17 09:58:57,263 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:58:57,263 - INFO - 
+2025-07-17 09:58:57,263 - INFO - --- Iteração 5 (Ratio Atual = 117.384615, Limite de Tempo = 30.0s) ---
+2025-07-17 09:59:08,665 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 09:59:08,665 - INFO - 
+2025-07-17 09:59:08,665 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 09:59:08,665 - INFO - Melhor Solução Encontrada:
+2025-07-17 09:59:08,666 - INFO - Valor da Função Objetivo REAL (Densidade): 117.3846
+2025-07-17 09:59:08,666 - INFO - Total de Pedidos na Wave: 1314
+2025-07-17 09:59:08,666 - INFO - Total de Unidades na Wave: 1526
+2025-07-17 09:59:08,666 - INFO - Total de Corredores Visitados: 13
+2025-07-17 09:59:08,666 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0013.txt'...
+2025-07-17 09:59:08,668 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 09:59:08,668 - INFO - 
+2025-07-17 09:59:08,668 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 09:59:08,670 - INFO - INSTANCIA 13 ^^^^^^^^
+2025-07-17 09:59:08,671 - INFO - ========================================================================================================================
+2025-07-17 09:59:08,671 - INFO - ========================================================================================================================
+2025-07-17 09:59:08,671 - INFO - INSTANCIA 14
+2025-07-17 09:59:08,671 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 09:59:08,671 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0014.txt
+2025-07-17 09:59:08,674 - INFO - Cabeçalho lido: 12402 pedidos, 10974 itens, 413 corredores.
+2025-07-17 09:59:08,699 - INFO - 12402 pedidos lidos.
+2025-07-17 09:59:08,717 - INFO - 413 corredores lidos.
+2025-07-17 09:59:08,718 - INFO - Limites da wave lidos: LB=1947, UB=7739.
+2025-07-17 09:59:08,729 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 09:59:08,729 - INFO - Parsing concluído.
+2025-07-17 09:59:08,730 - INFO - 
+2025-07-17 09:59:08,730 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 09:59:08,730 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 09:59:08,846 - INFO - Heurística gerou solução INVIÁVEL para item 228. Descartando.
+2025-07-17 09:59:08,847 - INFO - 
+2025-07-17 09:59:08,847 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 09:59:09,134 - INFO - Solução melhorada encontrada. Novo Ratio = 18.738499
+2025-07-17 09:59:09,135 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:59:09,135 - INFO - 
+2025-07-17 09:59:09,135 - INFO - --- Iteração 2 (Ratio Atual = 18.738499, Limite de Tempo = 30.0s) ---
+2025-07-17 09:59:39,435 - INFO - Solução melhorada encontrada. Novo Ratio = 97.962025
+2025-07-17 09:59:39,435 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 09:59:39,436 - INFO - 
+2025-07-17 09:59:39,436 - INFO - --- Iteração 3 (Ratio Atual = 97.962025, Limite de Tempo = 30.0s) ---
+2025-07-17 10:00:09,722 - INFO - Solução melhorada encontrada. Novo Ratio = 139.533333
+2025-07-17 10:00:09,723 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:00:09,723 - INFO - 
+2025-07-17 10:00:09,723 - INFO - --- Iteração 4 (Ratio Atual = 139.533333, Limite de Tempo = 30.0s) ---
+2025-07-17 10:00:19,349 - INFO - Solução melhorada encontrada. Novo Ratio = 181.636364
+2025-07-17 10:00:19,349 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:00:19,350 - INFO - 
+2025-07-17 10:00:19,350 - INFO - --- Iteração 5 (Ratio Atual = 181.636364, Limite de Tempo = 30.0s) ---
+2025-07-17 10:00:49,686 - INFO - Nenhuma melhoria significativa encontrada. Finalizando.
+2025-07-17 10:00:49,686 - INFO - 
+2025-07-17 10:00:49,686 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:00:49,686 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:00:49,686 - INFO - Valor da Função Objetivo REAL (Densidade): 181.6364
+2025-07-17 10:00:49,686 - INFO - Total de Pedidos na Wave: 1807
+2025-07-17 10:00:49,687 - INFO - Total de Unidades na Wave: 1998
+2025-07-17 10:00:49,687 - INFO - Total de Corredores Visitados: 11
+2025-07-17 10:00:49,687 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0014.txt'...
+2025-07-17 10:00:49,689 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:00:49,689 - INFO - 
+2025-07-17 10:00:49,690 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:00:49,693 - INFO - INSTANCIA 14 ^^^^^^^^
+2025-07-17 10:00:49,693 - INFO - ========================================================================================================================
+2025-07-17 10:00:49,693 - INFO - ========================================================================================================================
+2025-07-17 10:00:49,694 - INFO - INSTANCIA 15
+2025-07-17 10:00:49,694 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 10:00:49,694 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0015.txt
+2025-07-17 10:00:49,696 - INFO - Cabeçalho lido: 7367 pedidos, 6633 itens, 402 corredores.
+2025-07-17 10:00:49,710 - INFO - 7367 pedidos lidos.
+2025-07-17 10:00:49,723 - INFO - 402 corredores lidos.
+2025-07-17 10:00:49,723 - INFO - Limites da wave lidos: LB=384, UB=3679.
+2025-07-17 10:00:49,730 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 10:00:49,731 - INFO - Parsing concluído.
+2025-07-17 10:00:49,731 - INFO - 
+2025-07-17 10:00:49,732 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 10:00:49,732 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 10:00:49,828 - INFO - Heurística gerou solução INVIÁVEL para item 521. Descartando.
+2025-07-17 10:00:49,829 - INFO - 
+2025-07-17 10:00:49,829 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 10:00:50,012 - INFO - Solução melhorada encontrada. Novo Ratio = 9.151741
+2025-07-17 10:00:50,012 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:00:50,012 - INFO - 
+2025-07-17 10:00:50,013 - INFO - --- Iteração 2 (Ratio Atual = 9.151741, Limite de Tempo = 30.0s) ---
+2025-07-17 10:01:20,197 - INFO - Solução melhorada encontrada. Novo Ratio = 75.061224
+2025-07-17 10:01:20,198 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:01:20,198 - INFO - 
+2025-07-17 10:01:20,198 - INFO - --- Iteração 3 (Ratio Atual = 75.061224, Limite de Tempo = 30.0s) ---
+2025-07-17 10:01:50,405 - INFO - Solução melhorada encontrada. Novo Ratio = 100.619048
+2025-07-17 10:01:50,406 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:01:50,406 - INFO - 
+2025-07-17 10:01:50,406 - INFO - --- Iteração 4 (Ratio Atual = 100.619048, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:00,474 - INFO - Solução melhorada encontrada. Novo Ratio = 126.428571
+2025-07-17 10:02:00,475 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:00,475 - INFO - 
+2025-07-17 10:02:00,475 - INFO - --- Iteração 5 (Ratio Atual = 126.428571, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:01,334 - INFO - Solução melhorada encontrada. Novo Ratio = 149.333333
+2025-07-17 10:02:01,334 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:01,334 - INFO - 
+2025-07-17 10:02:01,334 - INFO - --- Iteração 6 (Ratio Atual = 149.333333, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:02,785 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 10:02:02,785 - INFO - 
+2025-07-17 10:02:02,785 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:02:02,785 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:02:02,786 - INFO - Valor da Função Objetivo REAL (Densidade): 149.3333
+2025-07-17 10:02:02,786 - INFO - Total de Pedidos na Wave: 399
+2025-07-17 10:02:02,786 - INFO - Total de Unidades na Wave: 448
+2025-07-17 10:02:02,786 - INFO - Total de Corredores Visitados: 3
+2025-07-17 10:02:02,787 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0015.txt'...
+2025-07-17 10:02:02,788 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:02:02,788 - INFO - 
+2025-07-17 10:02:02,788 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:02:02,790 - INFO - INSTANCIA 15 ^^^^^^^^
+2025-07-17 10:02:02,791 - INFO - ========================================================================================================================
+2025-07-17 10:02:02,791 - INFO - ========================================================================================================================
+2025-07-17 10:02:02,791 - INFO - INSTANCIA 16
+2025-07-17 10:02:02,791 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 10:02:02,792 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0016.txt
+2025-07-17 10:02:02,792 - INFO - Cabeçalho lido: 1108 pedidos, 1051 itens, 88 corredores.
+2025-07-17 10:02:02,795 - INFO - 1108 pedidos lidos.
+2025-07-17 10:02:02,797 - INFO - 88 corredores lidos.
+2025-07-17 10:02:02,798 - INFO - Limites da wave lidos: LB=149, UB=686.
+2025-07-17 10:02:02,799 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 10:02:02,799 - INFO - Parsing concluído.
+2025-07-17 10:02:02,799 - INFO - 
+2025-07-17 10:02:02,799 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 10:02:02,800 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 10:02:02,863 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 8.4691
+2025-07-17 10:02:02,863 - INFO - 
+2025-07-17 10:02:02,863 - INFO - --- Iteração 1 (Ratio Atual = 8.469136, Limite de Tempo = 15.0s) ---
+2025-07-17 10:02:11,889 - INFO - Solução melhorada encontrada. Novo Ratio = 40.352941
+2025-07-17 10:02:11,890 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:11,890 - INFO - 
+2025-07-17 10:02:11,890 - INFO - --- Iteração 2 (Ratio Atual = 40.352941, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:12,321 - INFO - Solução melhorada encontrada. Novo Ratio = 63.000000
+2025-07-17 10:02:12,322 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:12,323 - INFO - 
+2025-07-17 10:02:12,323 - INFO - --- Iteração 3 (Ratio Atual = 63.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:12,459 - INFO - Solução melhorada encontrada. Novo Ratio = 85.000000
+2025-07-17 10:02:12,460 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:12,460 - INFO - 
+2025-07-17 10:02:12,460 - INFO - --- Iteração 4 (Ratio Atual = 85.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:12,574 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 10:02:12,575 - INFO - 
+2025-07-17 10:02:12,575 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:02:12,575 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:02:12,575 - INFO - Valor da Função Objetivo REAL (Densidade): 85.0000
+2025-07-17 10:02:12,575 - INFO - Total de Pedidos na Wave: 170
+2025-07-17 10:02:12,576 - INFO - Total de Unidades na Wave: 170
+2025-07-17 10:02:12,576 - INFO - Total de Corredores Visitados: 2
+2025-07-17 10:02:12,576 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0016.txt'...
+2025-07-17 10:02:12,577 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:02:12,577 - INFO - 
+2025-07-17 10:02:12,577 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:02:12,578 - INFO - INSTANCIA 16 ^^^^^^^^
+2025-07-17 10:02:12,578 - INFO - ========================================================================================================================
+2025-07-17 10:02:12,578 - INFO - ========================================================================================================================
+2025-07-17 10:02:12,578 - INFO - INSTANCIA 17
+2025-07-17 10:02:12,578 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 10:02:12,578 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0017.txt
+2025-07-17 10:02:12,579 - INFO - Cabeçalho lido: 417 pedidos, 411 itens, 83 corredores.
+2025-07-17 10:02:12,580 - INFO - 417 pedidos lidos.
+2025-07-17 10:02:12,581 - INFO - 83 corredores lidos.
+2025-07-17 10:02:12,581 - INFO - Limites da wave lidos: LB=54, UB=175.
+2025-07-17 10:02:12,582 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 10:02:12,582 - INFO - Parsing concluído.
+2025-07-17 10:02:12,582 - INFO - 
+2025-07-17 10:02:12,582 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 10:02:12,582 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 10:02:12,588 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 3.1250
+2025-07-17 10:02:12,588 - INFO - 
+2025-07-17 10:02:12,588 - INFO - --- Iteração 1 (Ratio Atual = 3.125000, Limite de Tempo = 15.0s) ---
+2025-07-17 10:02:15,249 - INFO - Solução melhorada encontrada. Novo Ratio = 21.875000
+2025-07-17 10:02:15,250 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:15,250 - INFO - 
+2025-07-17 10:02:15,250 - INFO - --- Iteração 2 (Ratio Atual = 21.875000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:15,286 - INFO - Solução melhorada encontrada. Novo Ratio = 32.000000
+2025-07-17 10:02:15,287 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:15,287 - INFO - 
+2025-07-17 10:02:15,287 - INFO - --- Iteração 3 (Ratio Atual = 32.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:15,317 - INFO - Solução melhorada encontrada. Novo Ratio = 36.500000
+2025-07-17 10:02:15,318 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:15,318 - INFO - 
+2025-07-17 10:02:15,318 - INFO - --- Iteração 4 (Ratio Atual = 36.500000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:15,359 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 10:02:15,360 - INFO - 
+2025-07-17 10:02:15,360 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:02:15,360 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:02:15,360 - INFO - Valor da Função Objetivo REAL (Densidade): 36.5000
+2025-07-17 10:02:15,360 - INFO - Total de Pedidos na Wave: 73
+2025-07-17 10:02:15,360 - INFO - Total de Unidades na Wave: 73
+2025-07-17 10:02:15,361 - INFO - Total de Corredores Visitados: 2
+2025-07-17 10:02:15,361 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0017.txt'...
+2025-07-17 10:02:15,361 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:02:15,361 - INFO - 
+2025-07-17 10:02:15,361 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:02:15,362 - INFO - INSTANCIA 17 ^^^^^^^^
+2025-07-17 10:02:15,362 - INFO - ========================================================================================================================
+2025-07-17 10:02:15,362 - INFO - ========================================================================================================================
+2025-07-17 10:02:15,362 - INFO - INSTANCIA 18
+2025-07-17 10:02:15,363 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 10:02:15,363 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0018.txt
+2025-07-17 10:02:15,364 - INFO - Cabeçalho lido: 2682 pedidos, 2309 itens, 90 corredores.
+2025-07-17 10:02:15,369 - INFO - 2682 pedidos lidos.
+2025-07-17 10:02:15,372 - INFO - 90 corredores lidos.
+2025-07-17 10:02:15,372 - INFO - Limites da wave lidos: LB=537, UB=1205.
+2025-07-17 10:02:15,375 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 10:02:15,375 - INFO - Parsing concluído.
+2025-07-17 10:02:15,376 - INFO - 
+2025-07-17 10:02:15,376 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 10:02:15,376 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 10:02:15,379 - INFO - Heurística gerou solução INVIÁVEL para item 2056. Descartando.
+2025-07-17 10:02:15,380 - INFO - 
+2025-07-17 10:02:15,380 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 10:02:15,447 - INFO - Solução melhorada encontrada. Novo Ratio = 13.388889
+2025-07-17 10:02:15,447 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:15,448 - INFO - 
+2025-07-17 10:02:15,448 - INFO - --- Iteração 2 (Ratio Atual = 13.388889, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:23,308 - INFO - Solução melhorada encontrada. Novo Ratio = 92.692308
+2025-07-17 10:02:23,309 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:23,309 - INFO - 
+2025-07-17 10:02:23,309 - INFO - --- Iteração 3 (Ratio Atual = 92.692308, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:25,230 - INFO - Solução melhorada encontrada. Novo Ratio = 117.200000
+2025-07-17 10:02:25,231 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:25,231 - INFO - 
+2025-07-17 10:02:25,231 - INFO - --- Iteração 4 (Ratio Atual = 117.200000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:02:32,417 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 10:02:32,418 - INFO - 
+2025-07-17 10:02:32,418 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:02:32,418 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:02:32,418 - INFO - Valor da Função Objetivo REAL (Densidade): 117.2000
+2025-07-17 10:02:32,418 - INFO - Total de Pedidos na Wave: 502
+2025-07-17 10:02:32,418 - INFO - Total de Unidades na Wave: 586
+2025-07-17 10:02:32,418 - INFO - Total de Corredores Visitados: 5
+2025-07-17 10:02:32,419 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0018.txt'...
+2025-07-17 10:02:32,420 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:02:32,420 - INFO - 
+2025-07-17 10:02:32,420 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:02:32,421 - INFO - INSTANCIA 18 ^^^^^^^^
+2025-07-17 10:02:32,421 - INFO - ========================================================================================================================
+2025-07-17 10:02:32,422 - INFO - ========================================================================================================================
+2025-07-17 10:02:32,422 - INFO - INSTANCIA 19
+2025-07-17 10:02:32,422 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 10:02:32,422 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0019.txt
+2025-07-17 10:02:32,423 - INFO - Cabeçalho lido: 2257 pedidos, 2104 itens, 134 corredores.
+2025-07-17 10:02:32,428 - INFO - 2257 pedidos lidos.
+2025-07-17 10:02:32,433 - INFO - 134 corredores lidos.
+2025-07-17 10:02:32,433 - INFO - Limites da wave lidos: LB=152, UB=999.
+2025-07-17 10:02:32,436 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 10:02:32,436 - INFO - Parsing concluído.
+2025-07-17 10:02:32,437 - INFO - 
+2025-07-17 10:02:32,437 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 10:02:32,437 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 10:02:32,441 - INFO - Heurística gerou solução INVIÁVEL para item 2063. Descartando.
+2025-07-17 10:02:32,442 - INFO - 
+2025-07-17 10:02:32,442 - INFO - --- Iteração 1 (Ratio Atual = 0.000000, Limite de Tempo = 15.0s) ---
+2025-07-17 10:02:32,512 - INFO - Solução melhorada encontrada. Novo Ratio = 7.455224
+2025-07-17 10:02:32,512 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:02:32,512 - INFO - 
+2025-07-17 10:02:32,512 - INFO - --- Iteração 2 (Ratio Atual = 7.455224, Limite de Tempo = 30.0s) ---
+2025-07-17 10:03:02,593 - INFO - Solução melhorada encontrada. Novo Ratio = 111.000000
+2025-07-17 10:03:02,593 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:03:02,594 - INFO - 
+2025-07-17 10:03:02,594 - INFO - --- Iteração 3 (Ratio Atual = 111.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:03:03,700 - INFO - Solução melhorada encontrada. Novo Ratio = 150.250000
+2025-07-17 10:03:03,701 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:03:03,701 - INFO - 
+2025-07-17 10:03:03,701 - INFO - --- Iteração 4 (Ratio Atual = 150.250000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:03:04,125 - INFO - Solução melhorada encontrada. Novo Ratio = 178.000000
+2025-07-17 10:03:04,126 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:03:04,126 - INFO - 
+2025-07-17 10:03:04,126 - INFO - --- Iteração 5 (Ratio Atual = 178.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:03:04,327 - INFO - Solução melhorada encontrada. Novo Ratio = 202.000000
+2025-07-17 10:03:04,328 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:03:04,328 - INFO - 
+2025-07-17 10:03:04,328 - INFO - --- Iteração 6 (Ratio Atual = 202.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:03:04,486 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 10:03:04,487 - INFO - 
+2025-07-17 10:03:04,487 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:03:04,487 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:03:04,487 - INFO - Valor da Função Objetivo REAL (Densidade): 202.0000
+2025-07-17 10:03:04,488 - INFO - Total de Pedidos na Wave: 184
+2025-07-17 10:03:04,488 - INFO - Total de Unidades na Wave: 202
+2025-07-17 10:03:04,488 - INFO - Total de Corredores Visitados: 1
+2025-07-17 10:03:04,488 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0019.txt'...
+2025-07-17 10:03:04,489 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:03:04,489 - INFO - 
+2025-07-17 10:03:04,490 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:03:04,490 - INFO - INSTANCIA 19 ^^^^^^^^
+2025-07-17 10:03:04,490 - INFO - ========================================================================================================================
+2025-07-17 10:03:04,491 - INFO - ========================================================================================================================
+2025-07-17 10:03:04,491 - INFO - INSTANCIA 20
+2025-07-17 10:03:04,491 - INFO - --- INICIANDO DESAFIO DE OTIMIZAÇÃO DE WAVE ---
+2025-07-17 10:03:04,491 - INFO - Iniciando o parsing do arquivo: ../datasets/a/instance_0020.txt
+2025-07-17 10:03:04,491 - INFO - Cabeçalho lido: 5 pedidos, 5 itens, 5 corredores.
+2025-07-17 10:03:04,492 - INFO - 5 pedidos lidos.
+2025-07-17 10:03:04,492 - INFO - 5 corredores lidos.
+2025-07-17 10:03:04,492 - INFO - Limites da wave lidos: LB=5, UB=12.
+2025-07-17 10:03:04,492 - INFO - Mapeamento item -> corredor construído.
+2025-07-17 10:03:04,492 - INFO - Parsing concluído.
+2025-07-17 10:03:04,492 - INFO - 
+2025-07-17 10:03:04,493 - INFO - --- INICIANDO SOLVER COM ALGORITMO DE DINKELBACH (GESTÃO 'MOMENTUM') ---
+2025-07-17 10:03:04,493 - INFO - Executando heurística gulosa para obter ponto de partida...
+2025-07-17 10:03:04,493 - INFO - Solução heurística VIÁVEL encontrou ratio inicial: 2.4000
+2025-07-17 10:03:04,493 - INFO - 
+2025-07-17 10:03:04,493 - INFO - --- Iteração 1 (Ratio Atual = 2.400000, Limite de Tempo = 15.0s) ---
+2025-07-17 10:03:04,498 - INFO - Solução melhorada encontrada. Novo Ratio = 5.000000
+2025-07-17 10:03:04,499 - INFO - Melhora significativa! Ganhando 'Momentum' para a próxima iteração.
+2025-07-17 10:03:04,499 - INFO - 
+2025-07-17 10:03:04,499 - INFO - --- Iteração 2 (Ratio Atual = 5.000000, Limite de Tempo = 30.0s) ---
+2025-07-17 10:03:04,501 - INFO - Convergência PROVADA. F(R) = -0.000000 <= 1e-06. Status: Ótimo.
+2025-07-17 10:03:04,502 - INFO - 
+2025-07-17 10:03:04,502 - INFO - --- Processo de Otimização Finalizado ---
+2025-07-17 10:03:04,502 - INFO - Melhor Solução Encontrada:
+2025-07-17 10:03:04,502 - INFO - Valor da Função Objetivo REAL (Densidade): 5.0000
+2025-07-17 10:03:04,502 - INFO - Total de Pedidos na Wave: 4
+2025-07-17 10:03:04,502 - INFO - Total de Unidades na Wave: 10
+2025-07-17 10:03:04,502 - INFO - Total de Corredores Visitados: 2
+2025-07-17 10:03:04,503 - INFO - Salvando a melhor solução encontrada em '../out_answers/a/solucao_0020.txt'...
+2025-07-17 10:03:04,503 - INFO - Arquivo de solução salvo com sucesso.
+2025-07-17 10:03:04,503 - INFO - 
+2025-07-17 10:03:04,503 - INFO - --- EXECUÇÃO FINALIZADA ---
+2025-07-17 10:03:04,504 - INFO - INSTANCIA 20 ^^^^^^^^
+2025-07-17 10:03:04,504 - INFO - ========================================================================================================================
+2025-07-17 10:03:04,505 - INFO - 
+2025-07-17 10:03:04,505 - INFO - Relatório de desempenho salvo em: ../reports/relatorio_desempenho_a.csv
